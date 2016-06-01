@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
   30:.\Generated_Source\PSoC4/sectimer.c **** * Function Name: sectimer_Init
   31:.\Generated_Source\PSoC4/sectimer.c **** ********************************************************************************
   32:.\Generated_Source\PSoC4/sectimer.c **** *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 2
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/sectimer.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
   87:.\Generated_Source\PSoC4/sectimer.c ****                 sectimer_CONTROL2 |= sectimer_CTRL_MODE_PULSEWIDTH;
   88:.\Generated_Source\PSoC4/sectimer.c ****             #endif /* Set Continuous Run Mode in CONTROL2 for PSoC5A */
   89:.\Generated_Source\PSoC4/sectimer.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 3
 
 
   90:.\Generated_Source\PSoC4/sectimer.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  144:.\Generated_Source\PSoC4/sectimer.c ****         /* Use the interrupt output of the status register for IRQ output */
  145:.\Generated_Source\PSoC4/sectimer.c ****         sectimer_STATUS_AUX_CTRL |= sectimer_STATUS_ACTL_INT_EN_MASK;
  146:.\Generated_Source\PSoC4/sectimer.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 4
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 4
 
 
  147:.\Generated_Source\PSoC4/sectimer.c ****         /* Exit Critical Region*/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
   34              		.loc 1 192 0
   35              		@ sp needed
   36 000a 7047     		bx	lr
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 5
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 5
 
 
   37              	.L3:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  232:.\Generated_Source\PSoC4/sectimer.c **** *
  233:.\Generated_Source\PSoC4/sectimer.c **** * Summary:
  234:.\Generated_Source\PSoC4/sectimer.c **** *  The stop function halts the timer, but does not change any modes or disable
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 6
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 6
 
 
  235:.\Generated_Source\PSoC4/sectimer.c **** *  interrupts.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  263:.\Generated_Source\PSoC4/sectimer.c **** * Function Name: sectimer_SetInterruptMode
  264:.\Generated_Source\PSoC4/sectimer.c **** ********************************************************************************
  265:.\Generated_Source\PSoC4/sectimer.c **** *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 7
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 7
 
 
  266:.\Generated_Source\PSoC4/sectimer.c **** * Summary:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  296:.\Generated_Source\PSoC4/sectimer.c **** *  void
  297:.\Generated_Source\PSoC4/sectimer.c **** *
  298:.\Generated_Source\PSoC4/sectimer.c **** * Side Effects:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 8
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 8
 
 
  299:.\Generated_Source\PSoC4/sectimer.c **** *  An existing hardware capture could be overwritten.
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  330:.\Generated_Source\PSoC4/sectimer.c **** *  Status register bits may be clear on read.
  331:.\Generated_Source\PSoC4/sectimer.c **** *
  332:.\Generated_Source\PSoC4/sectimer.c **** *******************************************************************************/
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 9
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 9
 
 
  333:.\Generated_Source\PSoC4/sectimer.c **** uint8   sectimer_ReadStatusRegister(void) 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  152 0000 014B     		ldr	r3, .L17
  153 0002 1878     		ldrb	r0, [r3]
  154 0004 C0B2     		uxtb	r0, r0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 10
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 10
 
 
  360:.\Generated_Source\PSoC4/sectimer.c ****     #else
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  182              	.L21:
  183 0006 C046     		.align	2
  184              	.L20:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 11
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 11
 
 
  185 0008 72000F40 		.word	1074724978
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  213              		.section	.text.sectimer_WritePeriod,"ax",%progbits
  214              		.align	2
  215              		.global	sectimer_WritePeriod
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 12
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 12
 
 
  216              		.code	16
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  243              	sectimer_ReadCapture:
  244              	.LFB12:
  440:.\Generated_Source\PSoC4/sectimer.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 13
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 13
 
 
  441:.\Generated_Source\PSoC4/sectimer.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  471:.\Generated_Source\PSoC4/sectimer.c **** *  This funtion is used to set the counter to a specific value
  472:.\Generated_Source\PSoC4/sectimer.c **** *
  473:.\Generated_Source\PSoC4/sectimer.c **** * Parameters:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 14
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 14
 
 
  474:.\Generated_Source\PSoC4/sectimer.c **** *  counter:  New counter value.
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  504:.\Generated_Source\PSoC4/sectimer.c **** * Return:
  505:.\Generated_Source\PSoC4/sectimer.c **** *  Present compare value.
  506:.\Generated_Source\PSoC4/sectimer.c **** *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 15
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 15
 
 
  507:.\Generated_Source\PSoC4/sectimer.c **** *******************************************************************************/
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  533:.\Generated_Source\PSoC4/sectimer.c ****  * implementation.  If a feature is selected, then the API is enabled.
  534:.\Generated_Source\PSoC4/sectimer.c ****  ******************************************************************************/
  535:.\Generated_Source\PSoC4/sectimer.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 16
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 16
 
 
  536:.\Generated_Source\PSoC4/sectimer.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  590:.\Generated_Source\PSoC4/sectimer.c **** * Summary:
  591:.\Generated_Source\PSoC4/sectimer.c **** *  This function sets the trigger input mode
  592:.\Generated_Source\PSoC4/sectimer.c **** *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 17
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 17
 
 
  593:.\Generated_Source\PSoC4/sectimer.c **** * Parameters:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  647:.\Generated_Source\PSoC4/sectimer.c **** * Function Name: sectimer_DisableTrigger
  648:.\Generated_Source\PSoC4/sectimer.c **** ********************************************************************************
  649:.\Generated_Source\PSoC4/sectimer.c **** *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 18
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 18
 
 
  650:.\Generated_Source\PSoC4/sectimer.c **** * Summary:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  704:.\Generated_Source\PSoC4/sectimer.c **** 
  705:.\Generated_Source\PSoC4/sectimer.c **** 
  706:.\Generated_Source\PSoC4/sectimer.c **** /*******************************************************************************
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 19
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 19
 
 
  707:.\Generated_Source\PSoC4/sectimer.c **** * Function Name: sectimer_SetCaptureCount
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  761:.\Generated_Source\PSoC4/sectimer.c **** *
  762:.\Generated_Source\PSoC4/sectimer.c **** *******************************************************************************/
  763:.\Generated_Source\PSoC4/sectimer.c **** void sectimer_ClearFIFO(void) 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 20
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 20
 
 
  764:.\Generated_Source\PSoC4/sectimer.c **** {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  365 000a 201C     		mov	r0, r4
  366 000c FFF7FEFF 		bl	sectimer_WriteCounter
  367              	.LVL7:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 21
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 21
 
 
  142:.\Generated_Source\PSoC4/sectimer.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  414 0004 1B78     		ldrb	r3, [r3]
  415 0006 002B     		cmp	r3, #0
  416 0008 04D1     		bne	.L44
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 22
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 22
 
 
  219:.\Generated_Source\PSoC4/sectimer.c **** 
@@ -1304,36 +1304,36 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  453 0006 00000000 		.4byte	.Ldebug_abbrev0
  454 000a 04       		.byte	0x4
  455 000b 01       		.uleb128 0x1
- 456 000c 2D020000 		.4byte	.LASF36
+ 456 000c 25020000 		.4byte	.LASF36
  457 0010 01       		.byte	0x1
- 458 0011 9C010000 		.4byte	.LASF37
- 459 0015 01010000 		.4byte	.LASF38
+ 458 0011 56010000 		.4byte	.LASF37
+ 459 0015 90010000 		.4byte	.LASF38
  460 0019 00000000 		.4byte	.Ldebug_ranges0+0
  461 001d 00000000 		.4byte	0
  462 0021 00000000 		.4byte	.Ldebug_line0
  463 0025 02       		.uleb128 0x2
  464 0026 01       		.byte	0x1
  465 0027 06       		.byte	0x6
- 466 0028 21030000 		.4byte	.LASF0
+ 466 0028 19030000 		.4byte	.LASF0
  467 002c 02       		.uleb128 0x2
  468 002d 01       		.byte	0x1
  469 002e 08       		.byte	0x8
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 23
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 23
 
 
  470 002f 9F000000 		.4byte	.LASF1
  471 0033 02       		.uleb128 0x2
  472 0034 02       		.byte	0x2
  473 0035 05       		.byte	0x5
- 474 0036 BB020000 		.4byte	.LASF2
+ 474 0036 B3020000 		.4byte	.LASF2
  475 003a 02       		.uleb128 0x2
  476 003b 02       		.byte	0x2
  477 003c 07       		.byte	0x7
- 478 003d 2D030000 		.4byte	.LASF3
+ 478 003d 25030000 		.4byte	.LASF3
  479 0041 02       		.uleb128 0x2
  480 0042 04       		.byte	0x4
  481 0043 05       		.byte	0x5
- 482 0044 FE020000 		.4byte	.LASF4
+ 482 0044 F6020000 		.4byte	.LASF4
  483 0048 02       		.uleb128 0x2
  484 0049 04       		.byte	0x4
  485 004a 07       		.byte	0x7
@@ -1341,7 +1341,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  487 004f 02       		.uleb128 0x2
  488 0050 08       		.byte	0x8
  489 0051 05       		.byte	0x5
- 490 0052 FC010000 		.4byte	.LASF6
+ 490 0052 F4010000 		.4byte	.LASF6
  491 0056 02       		.uleb128 0x2
  492 0057 08       		.byte	0x8
  493 0058 07       		.byte	0x7
@@ -1353,14 +1353,14 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  499 0064 02       		.uleb128 0x2
  500 0065 04       		.byte	0x4
  501 0066 07       		.byte	0x7
- 502 0067 8F010000 		.4byte	.LASF8
+ 502 0067 49010000 		.4byte	.LASF8
  503 006b 04       		.uleb128 0x4
  504 006c E2000000 		.4byte	.LASF9
  505 0070 02       		.byte	0x2
  506 0071 3801     		.2byte	0x138
  507 0073 2C000000 		.4byte	0x2c
  508 0077 04       		.uleb128 0x4
- 509 0078 71010000 		.4byte	.LASF10
+ 509 0078 2B010000 		.4byte	.LASF10
  510 007c 02       		.byte	0x2
  511 007d 3901     		.2byte	0x139
  512 007f 3A000000 		.4byte	0x3a
@@ -1371,14 +1371,14 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  517 008a 02       		.uleb128 0x2
  518 008b 08       		.byte	0x8
  519 008c 04       		.byte	0x4
- 520 008d 47010000 		.4byte	.LASF12
+ 520 008d 01010000 		.4byte	.LASF12
  521 0091 02       		.uleb128 0x2
  522 0092 01       		.byte	0x1
  523 0093 08       		.byte	0x8
  524 0094 06000000 		.4byte	.LASF13
  525 0098 04       		.uleb128 0x4
  526 0099 CB000000 		.4byte	.LASF14
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 24
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 24
 
 
  527 009d 02       		.byte	0x2
@@ -1396,7 +1396,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  539 00ba 02       		.uleb128 0x2
  540 00bb 04       		.byte	0x4
  541 00bc 07       		.byte	0x7
- 542 00bd F3010000 		.4byte	.LASF16
+ 542 00bd EB010000 		.4byte	.LASF16
  543 00c1 06       		.uleb128 0x6
  544 00c2 51000000 		.4byte	.LASF17
  545 00c6 01       		.byte	0x1
@@ -1414,7 +1414,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  557 00e1 01       		.uleb128 0x1
  558 00e2 9C       		.byte	0x9c
  559 00e3 07       		.uleb128 0x7
- 560 00e4 07030000 		.4byte	.LASF22
+ 560 00e4 FF020000 		.4byte	.LASF22
  561 00e8 01       		.byte	0x1
  562 00e9 1701     		.2byte	0x117
  563 00eb 00000000 		.4byte	.LFB5
@@ -1423,7 +1423,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  566 00f4 9C       		.byte	0x9c
  567 00f5 08010000 		.4byte	0x108
  568 00f9 08       		.uleb128 0x8
- 569 00fa 1F020000 		.4byte	.LASF24
+ 569 00fa 17020000 		.4byte	.LASF24
  570 00fe 01       		.byte	0x1
  571 00ff 1701     		.2byte	0x117
  572 0101 6B000000 		.4byte	0x6b
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  581 0114 0C000000 		.4byte	.LFE6-.LFB6
  582 0118 01       		.uleb128 0x1
  583 0119 9C       		.byte	0x9c
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 25
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 25
 
 
  584 011a 0A       		.uleb128 0xa
@@ -1451,7 +1451,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  591 012e 01       		.uleb128 0x1
  592 012f 9C       		.byte	0x9c
  593 0130 0A       		.uleb128 0xa
- 594 0131 D6010000 		.4byte	.LASF21
+ 594 0131 CE010000 		.4byte	.LASF21
  595 0135 01       		.byte	0x1
  596 0136 6401     		.2byte	0x164
  597 0138 6B000000 		.4byte	0x6b
@@ -1477,7 +1477,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  617 0169 50       		.byte	0x50
  618 016a 00       		.byte	0
  619 016b 0A       		.uleb128 0xa
- 620 016c 5D010000 		.4byte	.LASF26
+ 620 016c 17010000 		.4byte	.LASF26
  621 0170 01       		.byte	0x1
  622 0171 9501     		.2byte	0x195
  623 0173 77000000 		.4byte	0x77
@@ -1486,7 +1486,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  626 017f 01       		.uleb128 0x1
  627 0180 9C       		.byte	0x9c
  628 0181 07       		.uleb128 0x7
- 629 0182 0A020000 		.4byte	.LASF27
+ 629 0182 02020000 		.4byte	.LASF27
  630 0186 01       		.byte	0x1
  631 0187 AF01     		.2byte	0x1af
  632 0189 00000000 		.4byte	.LFB11
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  638 0198 27000000 		.4byte	.LASF28
  639 019c 01       		.byte	0x1
  640 019d AF01     		.2byte	0x1af
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 26
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 26
 
 
  641 019f 77000000 		.4byte	0x77
@@ -1515,7 +1515,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  652 01ba 01       		.uleb128 0x1
  653 01bb 9C       		.byte	0x9c
  654 01bc 07       		.uleb128 0x7
- 655 01bd 40030000 		.4byte	.LASF30
+ 655 01bd 38030000 		.4byte	.LASF30
  656 01c1 01       		.byte	0x1
  657 01c2 E001     		.2byte	0x1e0
  658 01c4 00000000 		.4byte	.LFB13
@@ -1532,7 +1532,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  669 01df 50       		.byte	0x50
  670 01e0 00       		.byte	0
  671 01e1 0A       		.uleb128 0xa
- 672 01e2 56030000 		.4byte	.LASF32
+ 672 01e2 4E030000 		.4byte	.LASF32
  673 01e6 01       		.byte	0x1
  674 01e7 FC01     		.2byte	0x1fc
  675 01e9 77000000 		.4byte	0x77
@@ -1541,7 +1541,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  678 01f5 01       		.uleb128 0x1
  679 01f6 9C       		.byte	0x9c
  680 01f7 07       		.uleb128 0x7
- 681 01f8 EB020000 		.4byte	.LASF33
+ 681 01f8 E3020000 		.4byte	.LASF33
  682 01fc 01       		.byte	0x1
  683 01fd FB02     		.2byte	0x2fb
  684 01ff 00000000 		.4byte	.LFB15
@@ -1557,8 +1557,8 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  694 021b 1A010000 		.4byte	0x11a
  695 021f 00       		.byte	0
  696 0220 0C       		.uleb128 0xc
- 697 0221 C5020000 		.4byte	.LASF34
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 27
+ 697 0221 BD020000 		.4byte	.LASF34
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 27
 
 
  698 0225 01       		.byte	0x1
@@ -1569,7 +1569,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  703 0230 9C       		.byte	0x9c
  704 0231 97020000 		.4byte	0x297
  705 0235 0D       		.uleb128 0xd
- 706 0236 D3020000 		.4byte	.LASF39
+ 706 0236 CB020000 		.4byte	.LASF39
  707 023a 01       		.byte	0x1
  708 023b 2F       		.byte	0x2f
  709 023c 6B000000 		.4byte	0x6b
@@ -1616,9 +1616,9 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  750 0295 00       		.byte	0
  751 0296 00       		.byte	0
  752 0297 0C       		.uleb128 0xc
- 753 0298 4E010000 		.4byte	.LASF35
+ 753 0298 08010000 		.4byte	.LASF35
  754 029c 01       		.byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 28
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 28
 
 
  755 029d D7       		.byte	0xd7
@@ -1643,12 +1643,12 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  774 02cb 03       		.byte	0x3
  775 02cc 00000000 		.4byte	sectimer_initVar
  776 02d0 12       		.uleb128 0x12
- 777 02d1 78010000 		.4byte	.LASF41
+ 777 02d1 32010000 		.4byte	.LASF41
  778 02d5 03       		.byte	0x3
  779 02d6 61       		.byte	0x61
  780 02d7 6B000000 		.4byte	0x6b
  781 02db 13       		.uleb128 0x13
- 782 02dc C0010000 		.4byte	.LASF42
+ 782 02dc 7A010000 		.4byte	.LASF42
  783 02e0 03       		.byte	0x3
  784 02e1 62       		.byte	0x62
  785 02e2 14       		.uleb128 0x14
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  809 0012 00       		.byte	0
  810 0013 02       		.uleb128 0x2
  811 0014 24       		.uleb128 0x24
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 29
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 29
 
 
  812 0015 00       		.byte	0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  866 004b 01       		.uleb128 0x1
  867 004c 12       		.uleb128 0x12
  868 004d 06       		.uleb128 0x6
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 30
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 30
 
 
  869 004e 40       		.uleb128 0x40
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  923 0086 0B       		.uleb128 0xb
  924 0087 3B       		.uleb128 0x3b
  925 0088 05       		.uleb128 0x5
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 31
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 31
 
 
  926 0089 27       		.uleb128 0x27
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  980 00c3 0B       		.uleb128 0xb
  981 00c4 3B       		.uleb128 0x3b
  982 00c5 0B       		.uleb128 0xb
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 32
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 32
 
 
  983 00c6 27       		.uleb128 0x27
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  1037 0104 31       		.uleb128 0x31
  1038 0105 13       		.uleb128 0x13
  1039 0106 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 33
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 33
 
 
  1040 0107 00       		.byte	0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  1094 013d 14       		.uleb128 0x14
  1095 013e 05       		.uleb128 0x5
  1096 013f 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 34
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 34
 
 
  1097 0140 49       		.uleb128 0x49
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  1151              		.section	.debug_ranges,"",%progbits
  1152              	.Ldebug_ranges0:
  1153 0000 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 35
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 35
 
 
  1154 0004 10000000 		.4byte	.LFE2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  1197 002e 73656374 		.ascii	"sectimer_Stop\000"
  1197      696D6572 
  1197      5F53746F 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 36
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 36
 
 
  1197      7000
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  1221 00e8 636F6E74 		.ascii	"control\000"
  1221      726F6C00 
  1222              	.LASF40:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 37
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 37
 
 
  1223 00f0 73656374 		.ascii	"sectimer_initVar\000"
@@ -2166,154 +2166,154 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 1
  1223      5F696E69 
  1223      74566172 
  1223      00
- 1224              	.LASF38:
- 1225 0101 443A5C55 		.ascii	"D:\\Users\\nray\\Desktop\\IRIS WIT\\LORA multisenso"
- 1225      73657273 
- 1225      5C6E7261 
- 1225      795C4465 
- 1225      736B746F 
- 1226 012f 72205357 		.ascii	"r SW\\PSOC4MIO_HAL.cydsn\000"
- 1226      5C50534F 
- 1226      43344D49 
- 1226      4F5F4841 
- 1226      4C2E6379 
- 1227              	.LASF12:
- 1228 0147 646F7562 		.ascii	"double\000"
- 1228      6C6500
- 1229              	.LASF35:
- 1230 014e 73656374 		.ascii	"sectimer_Start\000"
- 1230      696D6572 
- 1230      5F537461 
- 1230      727400
- 1231              	.LASF26:
- 1232 015d 73656374 		.ascii	"sectimer_ReadPeriod\000"
- 1232      696D6572 
- 1232      5F526561 
- 1232      64506572 
- 1232      696F6400 
- 1233              	.LASF10:
- 1234 0171 75696E74 		.ascii	"uint16\000"
- 1234      313600
- 1235              	.LASF41:
- 1236 0178 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 1236      74657243 
- 1236      72697469 
- 1236      63616C53 
- 1236      65637469 
- 1237              	.LASF8:
- 1238 018f 756E7369 		.ascii	"unsigned int\000"
- 1238      676E6564 
- 1238      20696E74 
- 1238      00
- 1239              	.LASF37:
- 1240 019c 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\sectimer.c\000"
- 1240      6E657261 
- 1240      7465645F 
- 1240      536F7572 
- 1240      63655C50 
- 1241              	.LASF42:
- 1242 01c0 43794578 		.ascii	"CyExitCriticalSection\000"
- 1242      69744372 
- 1242      69746963 
- 1242      616C5365 
- 1242      6374696F 
+ 1224              	.LASF12:
+ 1225 0101 646F7562 		.ascii	"double\000"
+ 1225      6C6500
+ 1226              	.LASF35:
+ 1227 0108 73656374 		.ascii	"sectimer_Start\000"
+ 1227      696D6572 
+ 1227      5F537461 
+ 1227      727400
+ 1228              	.LASF26:
+ 1229 0117 73656374 		.ascii	"sectimer_ReadPeriod\000"
+ 1229      696D6572 
+ 1229      5F526561 
+ 1229      64506572 
+ 1229      696F6400 
+ 1230              	.LASF10:
+ 1231 012b 75696E74 		.ascii	"uint16\000"
+ 1231      313600
+ 1232              	.LASF41:
+ 1233 0132 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1233      74657243 
+ 1233      72697469 
+ 1233      63616C53 
+ 1233      65637469 
+ 1234              	.LASF8:
+ 1235 0149 756E7369 		.ascii	"unsigned int\000"
+ 1235      676E6564 
+ 1235      20696E74 
+ 1235      00
+ 1236              	.LASF37:
+ 1237 0156 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\sectimer.c\000"
+ 1237      6E657261 
+ 1237      7465645F 
+ 1237      536F7572 
+ 1237      63655C50 
+ 1238              	.LASF42:
+ 1239 017a 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1239      69744372 
+ 1239      69746963 
+ 1239      616C5365 
+ 1239      6374696F 
+ 1240              	.LASF38:
+ 1241 0190 443A5C55 		.ascii	"D:\\Users\\nray\\Documents\\GitHub\\PSOC4MIOHAL\\PS"
+ 1241      73657273 
+ 1241      5C6E7261 
+ 1241      795C446F 
+ 1241      63756D65 
+ 1242 01bd 4F43344D 		.ascii	"OC4MIO_HAL.cydsn\000"
+ 1242      494F5F48 
+ 1242      414C2E63 
+ 1242      7964736E 
+ 1242      00
  1243              	.LASF21:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 38
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 38
 
 
- 1244 01d6 73656374 		.ascii	"sectimer_ReadControlRegister\000"
+ 1244 01ce 73656374 		.ascii	"sectimer_ReadControlRegister\000"
  1244      696D6572 
  1244      5F526561 
  1244      64436F6E 
  1244      74726F6C 
  1245              	.LASF16:
- 1246 01f3 73697A65 		.ascii	"sizetype\000"
+ 1246 01eb 73697A65 		.ascii	"sizetype\000"
  1246      74797065 
  1246      00
  1247              	.LASF6:
- 1248 01fc 6C6F6E67 		.ascii	"long long int\000"
+ 1248 01f4 6C6F6E67 		.ascii	"long long int\000"
  1248      206C6F6E 
  1248      6720696E 
  1248      7400
  1249              	.LASF27:
- 1250 020a 73656374 		.ascii	"sectimer_WritePeriod\000"
+ 1250 0202 73656374 		.ascii	"sectimer_WritePeriod\000"
  1250      696D6572 
  1250      5F577269 
  1250      74655065 
  1250      72696F64 
  1251              	.LASF24:
- 1252 021f 696E7465 		.ascii	"interruptMode\000"
+ 1252 0217 696E7465 		.ascii	"interruptMode\000"
  1252      72727570 
  1252      744D6F64 
  1252      6500
  1253              	.LASF36:
- 1254 022d 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1254 0225 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  1254      4320342E 
  1254      392E3320 
  1254      32303135 
  1254      30333033 
- 1255 0260 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1255 0258 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  1255      20726576 
  1255      6973696F 
  1255      6E203232 
  1255      31323230 
- 1256 0293 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1256 028b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  1256      66756E63 
  1256      74696F6E 
  1256      2D736563 
  1256      74696F6E 
  1257              	.LASF2:
- 1258 02bb 73686F72 		.ascii	"short int\000"
+ 1258 02b3 73686F72 		.ascii	"short int\000"
  1258      7420696E 
  1258      7400
  1259              	.LASF34:
- 1260 02c5 73656374 		.ascii	"sectimer_Init\000"
+ 1260 02bd 73656374 		.ascii	"sectimer_Init\000"
  1260      696D6572 
  1260      5F496E69 
  1260      7400
  1261              	.LASF39:
- 1262 02d3 73656374 		.ascii	"sectimer_interruptState\000"
+ 1262 02cb 73656374 		.ascii	"sectimer_interruptState\000"
  1262      696D6572 
  1262      5F696E74 
  1262      65727275 
  1262      70745374 
  1263              	.LASF33:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cckP0CSP.s 			page 39
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc2Gsvbx.s 			page 39
 
 
- 1264 02eb 73656374 		.ascii	"sectimer_ClearFIFO\000"
+ 1264 02e3 73656374 		.ascii	"sectimer_ClearFIFO\000"
  1264      696D6572 
  1264      5F436C65 
  1264      61724649 
  1264      464F00
  1265              	.LASF4:
- 1266 02fe 6C6F6E67 		.ascii	"long int\000"
+ 1266 02f6 6C6F6E67 		.ascii	"long int\000"
  1266      20696E74 
  1266      00
  1267              	.LASF22:
- 1268 0307 73656374 		.ascii	"sectimer_SetInterruptMode\000"
+ 1268 02ff 73656374 		.ascii	"sectimer_SetInterruptMode\000"
  1268      696D6572 
  1268      5F536574 
  1268      496E7465 
  1268      72727570 
  1269              	.LASF0:
- 1270 0321 7369676E 		.ascii	"signed char\000"
+ 1270 0319 7369676E 		.ascii	"signed char\000"
  1270      65642063 
  1270      68617200 
  1271              	.LASF3:
- 1272 032d 73686F72 		.ascii	"short unsigned int\000"
+ 1272 0325 73686F72 		.ascii	"short unsigned int\000"
  1272      7420756E 
  1272      7369676E 
  1272      65642069 
  1272      6E7400
  1273              	.LASF30:
- 1274 0340 73656374 		.ascii	"sectimer_WriteCounter\000"
+ 1274 0338 73656374 		.ascii	"sectimer_WriteCounter\000"
  1274      696D6572 
  1274      5F577269 
  1274      7465436F 
  1274      756E7465 
  1275              	.LASF32:
- 1276 0356 73656374 		.ascii	"sectimer_ReadCounter\000"
+ 1276 034e 73656374 		.ascii	"sectimer_ReadCounter\000"
  1276      696D6572 
  1276      5F526561 
  1276      64436F75 

@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: gpio2_5.h  
+* File Name: sw3.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_gpio2_5_ALIASES_H) /* Pins gpio2_5_ALIASES_H */
-#define CY_PINS_gpio2_5_ALIASES_H
+#if !defined(CY_PINS_sw3_ALIASES_H) /* Pins sw3_ALIASES_H */
+#define CY_PINS_sw3_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,17 +26,17 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define gpio2_5_0			(gpio2_5__0__PC)
-#define gpio2_5_0_PS		(gpio2_5__0__PS)
-#define gpio2_5_0_PC		(gpio2_5__0__PC)
-#define gpio2_5_0_DR		(gpio2_5__0__DR)
-#define gpio2_5_0_SHIFT	(gpio2_5__0__SHIFT)
-#define gpio2_5_0_INTR	((uint16)((uint16)0x0003u << (gpio2_5__0__SHIFT*2u)))
+#define sw3_0			(sw3__0__PC)
+#define sw3_0_PS		(sw3__0__PS)
+#define sw3_0_PC		(sw3__0__PC)
+#define sw3_0_DR		(sw3__0__DR)
+#define sw3_0_SHIFT	(sw3__0__SHIFT)
+#define sw3_0_INTR	((uint16)((uint16)0x0003u << (sw3__0__SHIFT*2u)))
 
-#define gpio2_5_INTR_ALL	 ((uint16)(gpio2_5_0_INTR))
+#define sw3_INTR_ALL	 ((uint16)(sw3_0_INTR))
 
 
-#endif /* End Pins gpio2_5_ALIASES_H */
+#endif /* End Pins sw3_ALIASES_H */
 
 
 /* [] END OF FILE */

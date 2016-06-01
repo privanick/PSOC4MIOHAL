@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: gpio2_8.c  
+* File Name: sw3.c  
 * Version 2.20
 *
 * Description:
@@ -13,35 +13,35 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "gpio2_8.h"
+#include "sw3.h"
 
 
-#if defined(gpio2_8__PC)
-    #define gpio2_8_SetP4PinDriveMode(shift, mode)  \
+#if defined(sw3__PC)
+    #define sw3_SetP4PinDriveMode(shift, mode)  \
     do { \
-        gpio2_8_PC =   (gpio2_8_PC & \
-                                (uint32)(~(uint32)(gpio2_8_DRIVE_MODE_IND_MASK << \
-                                (gpio2_8_DRIVE_MODE_BITS * (shift))))) | \
+        sw3_PC =   (sw3_PC & \
+                                (uint32)(~(uint32)(sw3_DRIVE_MODE_IND_MASK << \
+                                (sw3_DRIVE_MODE_BITS * (shift))))) | \
                                 (uint32)((uint32)(mode) << \
-                                (gpio2_8_DRIVE_MODE_BITS * (shift))); \
+                                (sw3_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 #else
     #if (CY_PSOC4_4200L)
-        #define gpio2_8_SetP4PinDriveMode(shift, mode)  \
+        #define sw3_SetP4PinDriveMode(shift, mode)  \
         do { \
-            gpio2_8_USBIO_CTRL_REG = (gpio2_8_USBIO_CTRL_REG & \
-                                    (uint32)(~(uint32)(gpio2_8_DRIVE_MODE_IND_MASK << \
-                                    (gpio2_8_DRIVE_MODE_BITS * (shift))))) | \
+            sw3_USBIO_CTRL_REG = (sw3_USBIO_CTRL_REG & \
+                                    (uint32)(~(uint32)(sw3_DRIVE_MODE_IND_MASK << \
+                                    (sw3_DRIVE_MODE_BITS * (shift))))) | \
                                     (uint32)((uint32)(mode) << \
-                                    (gpio2_8_DRIVE_MODE_BITS * (shift))); \
+                                    (sw3_DRIVE_MODE_BITS * (shift))); \
         } while (0)
     #endif
 #endif
   
 
-#if defined(gpio2_8__PC) || (CY_PSOC4_4200L) 
+#if defined(sw3__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************
-    * Function Name: gpio2_8_SetDriveMode
+    * Function Name: sw3_SetDriveMode
     ****************************************************************************//**
     *
     * \brief Sets the drive mode for each of the Pins component's pins.
@@ -67,17 +67,17 @@
     *  APIs (primary method) or disable interrupts around this function.
     *
     * \funcusage
-    *  \snippet gpio2_8_SUT.c usage_gpio2_8_SetDriveMode
+    *  \snippet sw3_SUT.c usage_sw3_SetDriveMode
     *******************************************************************************/
-    void gpio2_8_SetDriveMode(uint8 mode)
+    void sw3_SetDriveMode(uint8 mode)
     {
-		gpio2_8_SetP4PinDriveMode(gpio2_8__0__SHIFT, mode);
+		sw3_SetP4PinDriveMode(sw3__0__SHIFT, mode);
     }
 #endif
 
 
 /*******************************************************************************
-* Function Name: gpio2_8_Write
+* Function Name: sw3_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -106,18 +106,18 @@
 *  this function.
 *
 * \funcusage
-*  \snippet gpio2_8_SUT.c usage_gpio2_8_Write
+*  \snippet sw3_SUT.c usage_sw3_Write
 *******************************************************************************/
-void gpio2_8_Write(uint8 value)
+void sw3_Write(uint8 value)
 {
-    uint8 drVal = (uint8)(gpio2_8_DR & (uint8)(~gpio2_8_MASK));
-    drVal = (drVal | ((uint8)(value << gpio2_8_SHIFT) & gpio2_8_MASK));
-    gpio2_8_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(sw3_DR & (uint8)(~sw3_MASK));
+    drVal = (drVal | ((uint8)(value << sw3_SHIFT) & sw3_MASK));
+    sw3_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: gpio2_8_Read
+* Function Name: sw3_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -131,16 +131,16 @@ void gpio2_8_Write(uint8 value)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet gpio2_8_SUT.c usage_gpio2_8_Read  
+*  \snippet sw3_SUT.c usage_sw3_Read  
 *******************************************************************************/
-uint8 gpio2_8_Read(void)
+uint8 sw3_Read(void)
 {
-    return (uint8)((gpio2_8_PS & gpio2_8_MASK) >> gpio2_8_SHIFT);
+    return (uint8)((sw3_PS & sw3_MASK) >> sw3_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: gpio2_8_ReadDataReg
+* Function Name: sw3_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -149,8 +149,8 @@ uint8 gpio2_8_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred gpio2_8_Read() API because the 
-* gpio2_8_ReadDataReg() reads the data register instead of the status 
+* preferred sw3_Read() API because the 
+* sw3_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -159,16 +159,16 @@ uint8 gpio2_8_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet gpio2_8_SUT.c usage_gpio2_8_ReadDataReg 
+*  \snippet sw3_SUT.c usage_sw3_ReadDataReg 
 *******************************************************************************/
-uint8 gpio2_8_ReadDataReg(void)
+uint8 sw3_ReadDataReg(void)
 {
-    return (uint8)((gpio2_8_DR & gpio2_8_MASK) >> gpio2_8_SHIFT);
+    return (uint8)((sw3_DR & sw3_MASK) >> sw3_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: gpio2_8_SetInterruptMode
+* Function Name: sw3_SetInterruptMode
 ****************************************************************************//**
 *
 * \brief Configures the interrupt mode for each of the Pins component's
@@ -181,12 +181,12 @@ uint8 gpio2_8_ReadDataReg(void)
 * \param position
 *  The pin position as listed in the Pins component. You may OR these to be 
 *  able to configure the interrupt mode of multiple pins within a Pins 
-*  component. Or you may use gpio2_8_INTR_ALL to configure the
+*  component. Or you may use sw3_INTR_ALL to configure the
 *  interrupt mode of all the pins in the Pins component.       
-*  - gpio2_8_0_INTR       (First pin in the list)
-*  - gpio2_8_1_INTR       (Second pin in the list)
+*  - sw3_0_INTR       (First pin in the list)
+*  - sw3_1_INTR       (Second pin in the list)
 *  - ...
-*  - gpio2_8_INTR_ALL     (All pins in Pins component)
+*  - sw3_INTR_ALL     (All pins in Pins component)
 *
 * \param mode
 *  Interrupt mode for the selected pins. Valid options are documented in
@@ -202,19 +202,19 @@ uint8 gpio2_8_ReadDataReg(void)
 *  port.
 *
 * \funcusage
-*  \snippet gpio2_8_SUT.c usage_gpio2_8_SetInterruptMode
+*  \snippet sw3_SUT.c usage_sw3_SetInterruptMode
 *******************************************************************************/
-void gpio2_8_SetInterruptMode(uint16 position, uint16 mode)
+void sw3_SetInterruptMode(uint16 position, uint16 mode)
 {
     uint32 intrCfg;
     
-    intrCfg =  gpio2_8_INTCFG & (uint32)(~(uint32)position);
-    gpio2_8_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+    intrCfg =  sw3_INTCFG & (uint32)(~(uint32)position);
+    sw3_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
 }
 
 
 /*******************************************************************************
-* Function Name: gpio2_8_ClearInterrupt
+* Function Name: sw3_ClearInterrupt
 ****************************************************************************//**
 *
 * \brief Clears any active interrupts attached with the component and returns 
@@ -231,13 +231,13 @@ void gpio2_8_SetInterruptMode(uint16 position, uint16 mode)
 *  those associated with the Pins component.
 *
 * \funcusage
-*  \snippet gpio2_8_SUT.c usage_gpio2_8_ClearInterrupt
+*  \snippet sw3_SUT.c usage_sw3_ClearInterrupt
 *******************************************************************************/
-uint8 gpio2_8_ClearInterrupt(void)
+uint8 sw3_ClearInterrupt(void)
 {
-	uint8 maskedStatus = (uint8)(gpio2_8_INTSTAT & gpio2_8_MASK);
-	gpio2_8_INTSTAT = maskedStatus;
-    return maskedStatus >> gpio2_8_SHIFT;
+	uint8 maskedStatus = (uint8)(sw3_INTSTAT & sw3_MASK);
+	sw3_INTSTAT = maskedStatus;
+    return maskedStatus >> sw3_SHIFT;
 }
 
 

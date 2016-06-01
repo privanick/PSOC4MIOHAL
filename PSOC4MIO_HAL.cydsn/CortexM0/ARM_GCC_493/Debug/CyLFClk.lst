@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
   31:.\Generated_Source\PSoC4/CyLFClk.c ****                                         CY_SYS_WDT_COUNTER1_INT |\
   32:.\Generated_Source\PSoC4/CyLFClk.c ****                                         CY_SYS_WDT_COUNTER2_INT;
   33:.\Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 2
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 2
 
 
   34:.\Generated_Source\PSoC4/CyLFClk.c ****     static const uint32 counterIntMaskTbl[CY_WDT_NUM_OF_WDT] = {CY_SYS_WDT_COUNTER0_INT,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
   88:.\Generated_Source\PSoC4/CyLFClk.c **** *  PSoC 4100 / PSoC 4200: Note that ILO is required for WDT's operation.
   89:.\Generated_Source\PSoC4/CyLFClk.c **** *  ILO is required for WDT operation.
   90:.\Generated_Source\PSoC4/CyLFClk.c **** *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 3
 
 
   91:.\Generated_Source\PSoC4/CyLFClk.c **** *  PSoC 4100-BL / PSoC 4200-BL and PSoC 4100M / PSoC 4200M:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  145:.\Generated_Source\PSoC4/CyLFClk.c ****     *  1 if ILO is enabled, and 0 if ILO is disabled.
  146:.\Generated_Source\PSoC4/CyLFClk.c ****     *
  147:.\Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 4
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 4
 
 
  148:.\Generated_Source\PSoC4/CyLFClk.c ****     static uint32 CySysClkIloEnabled(void)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  172:.\Generated_Source\PSoC4/CyLFClk.c **** *   CY_SYS_CLK_LFCLK_SRC_WCO    Low Frequency Watch Crystal Oscillator (WCO)
  173:.\Generated_Source\PSoC4/CyLFClk.c **** *
  174:.\Generated_Source\PSoC4/CyLFClk.c **** *******************************************************************************/
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 5
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 5
 
 
  175:.\Generated_Source\PSoC4/CyLFClk.c **** #if (CY_IP_WCO)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  204:.\Generated_Source\PSoC4/CyLFClk.c **** * Parameters:
  205:.\Generated_Source\PSoC4/CyLFClk.c **** *  source: One of the available LFCLK sources.
  206:.\Generated_Source\PSoC4/CyLFClk.c **** *   CY_SYS_CLK_LFCLK_SRC_ILO    Internal Low Frequency (32 kHz) Oscillator (ILO)
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 6
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 6
 
 
  207:.\Generated_Source\PSoC4/CyLFClk.c **** *   CY_SYS_CLK_LFCLK_SRC_WCO    Low Frequency Watch Crystal Oscillator (WCO)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  261:.\Generated_Source\PSoC4/CyLFClk.c ****     *  The CySysClkWcoSetPowerMode() function configures the WCO power mode.
  262:.\Generated_Source\PSoC4/CyLFClk.c ****     *
  263:.\Generated_Source\PSoC4/CyLFClk.c ****     * Parameters:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 7
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 7
 
 
  264:.\Generated_Source\PSoC4/CyLFClk.c ****     *  None.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  318:.\Generated_Source\PSoC4/CyLFClk.c ****     * Summary:
  319:.\Generated_Source\PSoC4/CyLFClk.c ****     *  Reports the WCO enable state.
  320:.\Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 8
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 8
 
 
  321:.\Generated_Source\PSoC4/CyLFClk.c ****     * Parameters:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  375:.\Generated_Source\PSoC4/CyLFClk.c ****         default:
  376:.\Generated_Source\PSoC4/CyLFClk.c ****             CYASSERT(0u != 0u);
  377:.\Generated_Source\PSoC4/CyLFClk.c ****             break;
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 9
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 9
 
 
  378:.\Generated_Source\PSoC4/CyLFClk.c ****         }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  432:.\Generated_Source\PSoC4/CyLFClk.c ****     *
  433:.\Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
  434:.\Generated_Source\PSoC4/CyLFClk.c ****     static uint32 CySysWdtLocked(void)
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 10
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 10
 
 
  435:.\Generated_Source\PSoC4/CyLFClk.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  127              		.size	CySysClkIloStart, .-CySysClkIloStart
  128              		.section	.text.CySysClkWcoStart,"ax",%progbits
  129              		.align	2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 11
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 11
 
 
  130              		.global	CySysClkWcoStart
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
   39:.\Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysClkWcoSetPowerMode(uint32 mode);
   40:.\Generated_Source\PSoC4/CyLFClk.h **** 
   41:.\Generated_Source\PSoC4/CyLFClk.h ****     void CySysClkSetLfclkSource(uint32 source);
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 12
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 12
 
 
   42:.\Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysClkWcoEnabled(void);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
   96:.\Generated_Source\PSoC4/CyLFClk.h **** * API Constants
   97:.\Generated_Source\PSoC4/CyLFClk.h **** ***************************************/
   98:.\Generated_Source\PSoC4/CyLFClk.h **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 13
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 13
 
 
   99:.\Generated_Source\PSoC4/CyLFClk.h **** #define UINT16_MAX_VAL    (0xFFFFu)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  153:.\Generated_Source\PSoC4/CyLFClk.h **** #if(CY_IP_SRSSV2)
  154:.\Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_MODE_NONE                (0u)
  155:.\Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_MODE_INT                 (1u)
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 14
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 14
 
 
  156:.\Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_MODE_RESET               (2u)
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  210:.\Generated_Source\PSoC4/CyLFClk.h ****     #if (CY_PSOC4_4000)
  211:.\Generated_Source\PSoC4/CyLFClk.h ****         #define CY_SYS_WDT_1LFCLK_DELAY_US      ((uint16)( 50u))
  212:.\Generated_Source\PSoC4/CyLFClk.h ****         #define CY_SYS_WDT_3LFCLK_DELAY_US      ((uint16)(150u))
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 15
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 15
 
 
  213:.\Generated_Source\PSoC4/CyLFClk.h ****     #endif /* (CY_PSOC4_4000) */
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  267:.\Generated_Source\PSoC4/CyLFClk.h ****         #define CY_SYS_CLK_WCO_CONFIG_REG               (*(reg32 *) CYREG_BLE_BLESS_WCO_CONFIG)
  268:.\Generated_Source\PSoC4/CyLFClk.h ****         #define CY_SYS_CLK_WCO_CONFIG_PTR               ( (reg32 *) CYREG_BLE_BLESS_WCO_CONFIG)
  269:.\Generated_Source\PSoC4/CyLFClk.h **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 16
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 16
 
 
  270:.\Generated_Source\PSoC4/CyLFClk.h ****         /* WCO Trim Register */
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  324:.\Generated_Source\PSoC4/CyLFClk.h **** 
  325:.\Generated_Source\PSoC4/CyLFClk.h **** #if (CY_IP_WCO)
  326:.\Generated_Source\PSoC4/CyLFClk.h **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 17
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 17
 
 
  327:.\Generated_Source\PSoC4/CyLFClk.h ****     /*******************************************************************************
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  169 0026 A043     		bic	r0, r4
  356:.\Generated_Source\PSoC4/CyLFClk.h ****                     | (uint32)(CY_SYS_CLK_WCO_TRIM_XGM_2620NA << CY_SYS_CLK_WCO_TRIM_XGM_SHIFT);
  170              		.loc 2 356 0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 18
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 18
 
 
  171 0028 0143     		orr	r1, r0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  218              		.align	2
  219              	.L22:
  220 0010 00002240 		.word	1075970048
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 19
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 19
 
 
  221              		.cfi_endproc
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  268              		.loc 2 354 0
  269 0028 2038     		sub	r0, r0, #32
  270              	.LVL5:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 20
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 20
 
 
  271 002a 0143     		orr	r1, r0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  319              		.cfi_offset 3, -8
  320              		.cfi_offset 14, -4
  411:.\Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 21
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 21
 
 
  321              		.loc 1 411 0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  354 0000 10B5     		push	{r4, lr}
  355              		.cfi_def_cfa_offset 8
  356              		.cfi_offset 4, -8
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 22
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 22
 
 
  357              		.cfi_offset 14, -4
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  469:.\Generated_Source\PSoC4/CyLFClk.c **** 
  470:.\Generated_Source\PSoC4/CyLFClk.c **** 
  471:.\Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 23
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 23
 
 
  472:.\Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtGetEnabledStatus
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  427              		@ sp needed
  428 001e 10BD     		pop	{r4, pc}
  429              	.L40:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 24
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 24
 
 
  430              		.align	2
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  451              		.cfi_offset 5, -8
  452              		.cfi_offset 14, -4
  453 0002 041C     		mov	r4, r0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 25
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 25
 
 
  454 0004 0D1C     		mov	r5, r1
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  495 0032 38BD     		pop	{r3, r4, r5, pc}
  496              	.L45:
  497              		.align	2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 26
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 26
 
 
  498              	.L44:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  585:.\Generated_Source\PSoC4/CyLFClk.c ****     *
  586:.\Generated_Source\PSoC4/CyLFClk.c ****     * Side Effects:
  587:.\Generated_Source\PSoC4/CyLFClk.c ****     *   WDT counter counterNum should be disabled. Otherwise this function call
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 27
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 27
 
 
  588:.\Generated_Source\PSoC4/CyLFClk.c ****     *   has no effect. If the specified counter is enabled, call the CySysWdtDisable()
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  642:.\Generated_Source\PSoC4/CyLFClk.c ****     * Summary:
  643:.\Generated_Source\PSoC4/CyLFClk.c ****     *  Enables the specified WDT counters.  All the counters specified in the mask
  644:.\Generated_Source\PSoC4/CyLFClk.c ****     *  are enabled.
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 28
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 28
 
 
  645:.\Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  699:.\Generated_Source\PSoC4/CyLFClk.c ****         {
  700:.\Generated_Source\PSoC4/CyLFClk.c ****             while (0u == CySysWdtGetEnabledStatus(CY_SYS_WDT_COUNTER2))
  701:.\Generated_Source\PSoC4/CyLFClk.c ****             {
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 29
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 29
 
 
  702:.\Generated_Source\PSoC4/CyLFClk.c ****                 /* Wait for changes to come into effect */
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  756:.\Generated_Source\PSoC4/CyLFClk.c ****         }
  757:.\Generated_Source\PSoC4/CyLFClk.c ****     }
  758:.\Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 30
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 30
 
 
  759:.\Generated_Source\PSoC4/CyLFClk.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  813:.\Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtGetCascade
  814:.\Generated_Source\PSoC4/CyLFClk.c ****     ********************************************************************************
  815:.\Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 31
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 31
 
 
  816:.\Generated_Source\PSoC4/CyLFClk.c ****     * Summary:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  870:.\Generated_Source\PSoC4/CyLFClk.c ****         CyDelayUs(CY_SYS_WDT_1LFCLK_DELAY_US);
  871:.\Generated_Source\PSoC4/CyLFClk.c ****     }
  872:.\Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 32
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 32
 
 
  873:.\Generated_Source\PSoC4/CyLFClk.c **** 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  927:.\Generated_Source\PSoC4/CyLFClk.c ****     uint32 CySysWdtGetToggleBit(void)
  928:.\Generated_Source\PSoC4/CyLFClk.c ****     {
  929:.\Generated_Source\PSoC4/CyLFClk.c ****         return ((CY_SYS_WDT_CONFIG_REG >> CY_SYS_WDT_CONFIG_BITS2_POS) & CY_SYS_WDT_CONFIG_BITS2_MA
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 33
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 33
 
 
  930:.\Generated_Source\PSoC4/CyLFClk.c ****     }
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  984:.\Generated_Source\PSoC4/CyLFClk.c ****             case 1u:
  985:.\Generated_Source\PSoC4/CyLFClk.c ****                 regValue = (CY_SYS_WDT_CTRLOW_REG >> CY_SYS_WDT_CNT_MATCH_SHIFT) & CY_SYS_WDT_LOWER
  986:.\Generated_Source\PSoC4/CyLFClk.c ****             break;
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 34
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 34
 
 
  987:.\Generated_Source\PSoC4/CyLFClk.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1041:.\Generated_Source\PSoC4/CyLFClk.c ****     *   Define                    Counter
 1042:.\Generated_Source\PSoC4/CyLFClk.c ****     *   CY_SYS_WDT_COUNTER0_INT    0
 1043:.\Generated_Source\PSoC4/CyLFClk.c ****     *   CY_SYS_WDT_COUNTER1_INT    1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 35
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 35
 
 
 1044:.\Generated_Source\PSoC4/CyLFClk.c ****     *   CY_SYS_WDT_COUNTER2_INT    2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1098:.\Generated_Source\PSoC4/CyLFClk.c ****     *
 1099:.\Generated_Source\PSoC4/CyLFClk.c ****     * Summary:
 1100:.\Generated_Source\PSoC4/CyLFClk.c ****     *  Resets all the WDT counters set in the mask.
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 36
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 36
 
 
 1101:.\Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1155:.\Generated_Source\PSoC4/CyLFClk.c ****             cySysWdtCallback[counterNum] = function;
 1156:.\Generated_Source\PSoC4/CyLFClk.c ****         }
 1157:.\Generated_Source\PSoC4/CyLFClk.c ****         else
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 37
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 37
 
 
 1158:.\Generated_Source\PSoC4/CyLFClk.c ****         {
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1212:.\Generated_Source\PSoC4/CyLFClk.c ****         {
 1213:.\Generated_Source\PSoC4/CyLFClk.c ****             disableServicedIsr &= ~counterIntMaskTbl[counterNum];
 1214:.\Generated_Source\PSoC4/CyLFClk.c ****             wdtIsrMask |= counterIntMaskTbl[counterNum];
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 38
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 38
 
 
 1215:.\Generated_Source\PSoC4/CyLFClk.c ****         }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1269:.\Generated_Source\PSoC4/CyLFClk.c ****     *  selected on the "Low Frequency Clocks" tab.
 1270:.\Generated_Source\PSoC4/CyLFClk.c ****     *
 1271:.\Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 39
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 39
 
 
 1272:.\Generated_Source\PSoC4/CyLFClk.c ****     void CySysWdtIsr(void)
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1326:.\Generated_Source\PSoC4/CyLFClk.c ****     *  "INTERRUPT" mode, the interrupt is generated after the specified number of
 1327:.\Generated_Source\PSoC4/CyLFClk.c ****     *  ticks.
 1328:.\Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 40
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 40
 
 
 1329:.\Generated_Source\PSoC4/CyLFClk.c ****     *  For the correct function operation, the "Clear On Match" option should be
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1383:.\Generated_Source\PSoC4/CyLFClk.c ****         else
 1384:.\Generated_Source\PSoC4/CyLFClk.c ****         {
 1385:.\Generated_Source\PSoC4/CyLFClk.c ****             CYASSERT(0u != 0u);
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 41
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 41
 
 
 1386:.\Generated_Source\PSoC4/CyLFClk.c ****         }
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1440:.\Generated_Source\PSoC4/CyLFClk.c ****     *
 1441:.\Generated_Source\PSoC4/CyLFClk.c ****     * Side effects:
 1442:.\Generated_Source\PSoC4/CyLFClk.c ****     *  In the "INTERRUPT" mode, this function enables ISR callback servicing
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 42
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 42
 
 
 1443:.\Generated_Source\PSoC4/CyLFClk.c ****     *  from the corresponding WDT counter. Servicing of this ISR callback will be
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1497:.\Generated_Source\PSoC4/CyLFClk.c ****     *  "Watchdog w/ Interrupts" mode. Does nothing in other modes.
 1498:.\Generated_Source\PSoC4/CyLFClk.c ****     *
 1499:.\Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 43
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 43
 
 
 1500:.\Generated_Source\PSoC4/CyLFClk.c ****     void CySysWatchdogFeed(uint32 counterNum)
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1554:.\Generated_Source\PSoC4/CyLFClk.c ****     *  To ensure that the WDT counter value is read until it changes, the enabled
 1555:.\Generated_Source\PSoC4/CyLFClk.c ****     *  WDT counter is used. If no counter is enabled, counter 0 is enabled.
 1556:.\Generated_Source\PSoC4/CyLFClk.c ****     *  And after the LFCLK source is switched, the counter 0 configuration
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 44
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 44
 
 
 1557:.\Generated_Source\PSoC4/CyLFClk.c ****     *  is restored.
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1611:.\Generated_Source\PSoC4/CyLFClk.c ****     *
 1612:.\Generated_Source\PSoC4/CyLFClk.c ****     * Summary:
 1613:.\Generated_Source\PSoC4/CyLFClk.c ****     *  Restores the WDT configuration after a CySysClkLfclkPosedgeCatch() call.
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 45
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 45
 
 
 1614:.\Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  537              		.loc 1 1640 0
  538              		@ sp needed
  539 0022 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 46
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 46
 
 
  540              	.L49:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  590              		.cfi_def_cfa_offset 16
  591              		.cfi_offset 3, -16
  592              		.cfi_offset 4, -12
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 47
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 47
 
 
  593              		.cfi_offset 5, -8
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  638 0032 C046     		.align	2
  639              	.L56:
  640 0034 0C020B40 		.word	1074463244
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 48
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 48
 
 
  641              		.cfi_endproc
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  688              		.cfi_endproc
  689              	.LFE17:
  690              		.size	CySysWdtGetClearOnMatch, .-CySysWdtGetClearOnMatch
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 49
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 49
 
 
  691              		.section	.text.CySysWdtEnable,"ax",%progbits
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  738              	.L68:
  700:.\Generated_Source\PSoC4/CyLFClk.c ****             {
  739              		.loc 1 700 0 discriminator 1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 50
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 50
 
 
  740 002c 0220     		mov	r0, #2
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  788 0018 0020     		mov	r0, #0
  789 001a FFF7FEFF 		bl	CySysWdtGetEnabledStatus
  790              	.LVL52:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 51
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 51
 
 
  791 001e 0028     		cmp	r0, #0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  839              		.cfi_def_cfa_offset 16
  840              		.cfi_offset 3, -16
  841              		.cfi_offset 4, -12
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 52
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 52
 
 
  842              		.cfi_offset 5, -8
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  885              		.align	2
  886              	.L82:
  887 002c 0C020B40 		.word	1074463244
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 53
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 53
 
 
  888 0030 F7F7FFFF 		.word	-2057
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  937              		.loc 1 859 0
  938 0006 0128     		cmp	r0, #1
  939 0008 02D9     		bls	.L88
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 54
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 54
 
 
  859:.\Generated_Source\PSoC4/CyLFClk.c ****                  (counterNum == CY_SYS_WDT_COUNTER1));
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  986 0042 00E0     		b	.L90
  987              	.L92:
  988 0044 1F20     		mov	r0, #31
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 55
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 55
 
 
  989              	.L90:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  907:.\Generated_Source\PSoC4/CyLFClk.c ****             CY_SYS_WDT_CONFIG_REG = configRegValue;
  1037              		.loc 1 907 0
  1038 0016 1F21     		mov	r1, #31
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 56
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 56
 
 
  1039 0018 0C40     		and	r4, r1
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1088              		.thumb_func
  1089              		.type	CySysWdtGetMatch, %function
  1090              	CySysWdtGetMatch:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 57
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 57
 
 
  1091              	.LFB25:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1139              		.cfi_def_cfa_offset 8
  1140              		.cfi_offset 3, -8
  1141              		.cfi_offset 14, -4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 58
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 58
 
 
  1142              	.LVL91:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1187 002e 0020     		mov	r0, #0
  1188              	.LVL102:
  1189              	.L111:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 59
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 59
 
 
  999:.\Generated_Source\PSoC4/CyLFClk.c **** 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1585:.\Generated_Source\PSoC4/CyLFClk.c ****         {
  1238              		.loc 1 1585 0
  1239 0026 0220     		mov	r0, #2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 60
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 60
 
 
  1240 0028 FFF7FEFF 		bl	CySysWdtGetEnabledStatus
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1286 006c F9D0     		beq	.L120
 1605:.\Generated_Source\PSoC4/CyLFClk.c **** 
  1287              		.loc 1 1605 0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 61
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 61
 
 
  1288              		@ sp needed
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1335              		.loc 1 114 0
  1336 0024 084A     		ldr	r2, .L126
  1337 0026 1368     		ldr	r3, [r2]
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 62
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 62
 
 
  1338 0028 5B00     		lsl	r3, r3, #1
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1386              		.loc 1 229 0
  1387 0004 FFF7FEFF 		bl	CySysClkGetLfclkSource
  1388              	.LVL123:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 63
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 63
 
 
  1389 0008 A042     		cmp	r0, r4
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1435              	CySysClkWcoStop:
  1436              	.LFB7:
  292:.\Generated_Source\PSoC4/CyLFClk.c ****         uint8  interruptState;
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 64
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 64
 
 
  1437              		.loc 1 292 0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1483 003c 5B08     		lsr	r3, r3, #1
  1484 003e 1360     		str	r3, [r2]
  1485              	.L132:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 65
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 65
 
 
  311:.\Generated_Source\PSoC4/CyLFClk.c **** 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1535              		.cfi_offset 4, -16
  1536              		.cfi_offset 5, -12
  1537              		.cfi_offset 6, -8
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 66
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 66
 
 
  1538              		.cfi_offset 14, -4
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1582 0034 FFF7FEFF 		bl	CySysWdtLock
  1583              	.LVL148:
  1584              	.L142:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 67
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 67
 
 
 1091:.\Generated_Source\PSoC4/CyLFClk.c ****     }
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1633              	.L149:
  1634              		.align	2
  1635              	.L148:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 68
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 68
 
 
  1636 0018 10020B40 		.word	1074463248
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1683 001a 08BD     		pop	{r3, pc}
  1684              	.L154:
  1685              		.align	2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 69
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 69
 
 
  1686              	.L153:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1734              	.L158:
  1735 001c 00000000 		.word	.LANCHOR0
  1736              		.cfi_endproc
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 70
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 70
 
 
  1737              	.LFE31:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1785              	.L163:
  1786 0028 00000000 		.word	.LANCHOR1
  1787 002c 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 71
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 71
 
 
  1788 0030 00000000 		.word	.LANCHOR2
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1837              	.LFE33:
  1838              		.size	CySysWdtDisableCounterIsr, .-CySysWdtDisableCounterIsr
  1839              		.section	.text.CySysWdtIsr,"ax",%progbits
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 72
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 72
 
 
  1840              		.align	2
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1886 0032 FFF7FEFF 		bl	CySysWdtClearInterrupt
  1887              	.LVL182:
  1888              	.L171:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 73
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 73
 
 
 1288:.\Generated_Source\PSoC4/CyLFClk.c ****         {
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  1934 0078 074B     		ldr	r3, .L177+4
  1935 007a 1B68     		ldr	r3, [r3]
  1936 007c 5B03     		lsl	r3, r3, #13
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 74
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 74
 
 
  1937 007e 04D5     		bpl	.L176
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1451:.\Generated_Source\PSoC4/CyLFClk.c ****         {
  1986              		.loc 1 1451 0
  1987 0008 0128     		cmp	r0, #1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 75
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 75
 
 
  1988 000a 23D8     		bhi	.L180
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2032 0042 084A     		ldr	r2, .L185+8
  2033 0044 9369     		ldr	r3, [r2, #24]
  2034 0046 3343     		orr	r3, r6
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 76
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 76
 
 
  2035 0048 9361     		str	r3, [r2, #24]
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
 1376:.\Generated_Source\PSoC4/CyLFClk.c ****         {
  2085              		.loc 1 1376 0
  2086 0008 0128     		cmp	r0, #1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 77
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 77
 
 
  2087 000a 11D8     		bhi	.L188
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2134              		.code	16
  2135              		.thumb_func
  2136              		.type	CySysWatchdogFeed, %function
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 78
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 78
 
 
  2137              	CySysWatchdogFeed:
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2182              	.LVL216:
  2183 0036 0328     		cmp	r0, #3
  2184 0038 03D1     		bne	.L196
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 79
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 79
 
 
 1522:.\Generated_Source\PSoC4/CyLFClk.c ****             }
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2234              		.type	lfclkPosedgeWdtCounter0Enabled, %object
  2235              		.size	lfclkPosedgeWdtCounter0Enabled, 4
  2236              	lfclkPosedgeWdtCounter0Enabled:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 80
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 80
 
 
  2237 0000 00000000 		.space	4
@@ -4771,10 +4771,10 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2262 0006 00000000 		.4byte	.Ldebug_abbrev0
  2263 000a 04       		.byte	0x4
  2264 000b 01       		.uleb128 0x1
- 2265 000c 40040000 		.4byte	.LASF91
+ 2265 000c 0B040000 		.4byte	.LASF91
  2266 0010 01       		.byte	0x1
  2267 0011 89030000 		.4byte	.LASF92
- 2268 0015 E2030000 		.4byte	.LASF93
+ 2268 0015 38050000 		.4byte	.LASF93
  2269 0019 00000000 		.4byte	.Ldebug_ranges0+0
  2270 001d 00000000 		.4byte	0
  2271 0021 00000000 		.4byte	.Ldebug_line0
@@ -4785,11 +4785,11 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2276 002c 02       		.uleb128 0x2
  2277 002d 01       		.byte	0x1
  2278 002e 08       		.byte	0x8
- 2279 002f 41050000 		.4byte	.LASF1
+ 2279 002f 0C050000 		.4byte	.LASF1
  2280 0033 02       		.uleb128 0x2
  2281 0034 02       		.byte	0x2
  2282 0035 05       		.byte	0x5
- 2283 0036 73050000 		.4byte	.LASF2
+ 2283 0036 7C050000 		.4byte	.LASF2
  2284 003a 02       		.uleb128 0x2
  2285 003b 02       		.byte	0x2
  2286 003c 07       		.byte	0x7
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2289 0042 04       		.byte	0x4
  2290 0043 05       		.byte	0x5
  2291 0044 9A010000 		.4byte	.LASF4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 81
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 81
 
 
  2292 0048 02       		.uleb128 0x2
@@ -4839,7 +4839,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2327 008f 02       		.uleb128 0x2
  2328 0090 04       		.byte	0x4
  2329 0091 04       		.byte	0x4
- 2330 0092 FB040000 		.4byte	.LASF12
+ 2330 0092 C6040000 		.4byte	.LASF12
  2331 0096 02       		.uleb128 0x2
  2332 0097 08       		.byte	0x8
  2333 0098 04       		.byte	0x4
@@ -4847,7 +4847,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2335 009d 02       		.uleb128 0x2
  2336 009e 01       		.byte	0x1
  2337 009f 08       		.byte	0x8
- 2338 00a0 18060000 		.4byte	.LASF14
+ 2338 00a0 10060000 		.4byte	.LASF14
  2339 00a4 04       		.uleb128 0x4
  2340 00a5 AC030000 		.4byte	.LASF15
  2341 00a9 03       		.byte	0x3
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2346 00b5 06       		.uleb128 0x6
  2347 00b6 04       		.byte	0x4
  2348 00b7 BB000000 		.4byte	0xbb
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 82
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 82
 
 
  2349 00bb 07       		.uleb128 0x7
@@ -4868,10 +4868,10 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2353 00bf 16       		.byte	0x16
  2354 00c0 D1000000 		.4byte	0xd1
  2355 00c4 09       		.uleb128 0x9
- 2356 00c5 2E040000 		.4byte	.LASF16
+ 2356 00c5 F9030000 		.4byte	.LASF16
  2357 00c9 00       		.sleb128 0
  2358 00ca 09       		.uleb128 0x9
- 2359 00cb F2060000 		.4byte	.LASF17
+ 2359 00cb EA060000 		.4byte	.LASF17
  2360 00cf 01       		.sleb128 1
  2361 00d0 00       		.byte	0
  2362 00d1 0A       		.uleb128 0xa
@@ -4889,7 +4889,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2374 00e9 07       		.byte	0x7
  2375 00ea D9030000 		.4byte	.LASF20
  2376 00ee 0B       		.uleb128 0xb
- 2377 00ef 97050000 		.4byte	.LASF21
+ 2377 00ef A0050000 		.4byte	.LASF21
  2378 00f3 01       		.byte	0x1
  2379 00f4 94       		.byte	0x94
  2380 00f5 83000000 		.4byte	0x83
@@ -4916,9 +4916,9 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2401 0128 50       		.byte	0x50
  2402 0129 00       		.byte	0
  2403 012a 0E       		.uleb128 0xe
- 2404 012b 2B050000 		.4byte	.LASF22
+ 2404 012b F6040000 		.4byte	.LASF22
  2405 012f 01       		.byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 83
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 83
 
 
  2406 0130 B201     		.2byte	0x1b2
@@ -4941,7 +4941,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2423 0157 5801     		.2byte	0x158
  2424 0159 03       		.byte	0x3
  2425 015a 11       		.uleb128 0x11
- 2426 015b 81060000 		.4byte	.LASF25
+ 2426 015b 79060000 		.4byte	.LASF25
  2427 015f 01       		.byte	0x1
  2428 0160 0E01     		.2byte	0x10e
  2429 0162 00000000 		.4byte	.LFB6
@@ -4966,7 +4966,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2448 0195 01       		.uleb128 0x1
  2449 0196 9C       		.byte	0x9c
  2450 0197 14       		.uleb128 0x14
- 2451 0198 E6050000 		.4byte	.LASF29
+ 2451 0198 DE050000 		.4byte	.LASF29
  2452 019c 01       		.byte	0x1
  2453 019d 6501     		.2byte	0x165
  2454 019f 83000000 		.4byte	0x83
@@ -4976,16 +4976,16 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2458 01ac 9C       		.byte	0x9c
  2459 01ad F1010000 		.4byte	0x1f1
  2460 01b1 15       		.uleb128 0x15
- 2461 01b2 1D060000 		.4byte	.LASF31
+ 2461 01b2 15060000 		.4byte	.LASF31
  2462 01b6 01       		.byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 84
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 84
 
 
  2463 01b7 6501     		.2byte	0x165
  2464 01b9 83000000 		.4byte	0x83
  2465 01bd 00000000 		.4byte	.LLST0
  2466 01c1 16       		.uleb128 0x16
- 2467 01c2 9F060000 		.4byte	.LASF24
+ 2467 01c2 97060000 		.4byte	.LASF24
  2468 01c6 01       		.byte	0x1
  2469 01c7 6701     		.2byte	0x167
  2470 01c9 83000000 		.4byte	0x83
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2517 023b 9C       		.byte	0x9c
  2518 023c 63020000 		.4byte	0x263
  2519 0240 16       		.uleb128 0x16
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 85
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 85
 
 
  2520 0241 BF020000 		.4byte	.LASF27
@@ -5095,16 +5095,16 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2571 02bb 83000000 		.4byte	0x83
  2572 02bf D0000000 		.4byte	.LLST5
  2573 02c3 15       		.uleb128 0x15
- 2574 02c4 1D060000 		.4byte	.LASF31
+ 2574 02c4 15060000 		.4byte	.LASF31
  2575 02c8 01       		.byte	0x1
  2576 02c9 1102     		.2byte	0x211
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 86
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 86
 
 
  2577 02cb 83000000 		.4byte	0x83
  2578 02cf FC000000 		.4byte	.LLST6
  2579 02d3 16       		.uleb128 0x16
- 2580 02d4 A6060000 		.4byte	.LASF34
+ 2580 02d4 9E060000 		.4byte	.LASF34
  2581 02d8 01       		.byte	0x1
  2582 02d9 1302     		.2byte	0x213
  2583 02db 83000000 		.4byte	0x83
@@ -5150,7 +5150,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2623 032b 00       		.byte	0
  2624 032c 00       		.byte	0
  2625 032d 14       		.uleb128 0x14
- 2626 032e 71060000 		.4byte	.LASF35
+ 2626 032e 69060000 		.4byte	.LASF35
  2627 0332 01       		.byte	0x1
  2628 0333 3002     		.2byte	0x230
  2629 0335 83000000 		.4byte	0x83
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2631 033d 14000000 		.4byte	.LFE15-.LFB15
  2632 0341 01       		.uleb128 0x1
  2633 0342 9C       		.byte	0x9c
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 87
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 87
 
 
  2634 0343 58030000 		.4byte	0x358
@@ -5170,7 +5170,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2640 0353 46010000 		.4byte	.LLST8
  2641 0357 00       		.byte	0
  2642 0358 11       		.uleb128 0x11
- 2643 0359 46060000 		.4byte	.LASF36
+ 2643 0359 3E060000 		.4byte	.LASF36
  2644 035d 01       		.byte	0x1
  2645 035e 5102     		.2byte	0x251
  2646 0360 00000000 		.4byte	.LFB16
@@ -5191,7 +5191,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2661 0386 83000000 		.4byte	0x83
  2662 038a 93010000 		.4byte	.LLST10
  2663 038e 16       		.uleb128 0x16
- 2664 038f A6060000 		.4byte	.LASF34
+ 2664 038f 9E060000 		.4byte	.LASF34
  2665 0393 01       		.byte	0x1
  2666 0394 5302     		.2byte	0x253
  2667 0396 83000000 		.4byte	0x83
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2688 03c0 00       		.byte	0
  2689 03c1 00       		.byte	0
  2690 03c2 14       		.uleb128 0x14
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 88
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 88
 
 
  2691 03c3 5A020000 		.4byte	.LASF38
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2745 0442 18       		.uleb128 0x18
  2746 0443 01       		.uleb128 0x1
  2747 0444 50       		.byte	0x50
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 89
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 89
 
 
  2748 0445 01       		.uleb128 0x1
@@ -5295,7 +5295,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2759 0456 00       		.byte	0
  2760 0457 00       		.byte	0
  2761 0458 11       		.uleb128 0x11
- 2762 0459 87050000 		.4byte	.LASF41
+ 2762 0459 90050000 		.4byte	.LASF41
  2763 045d 01       		.byte	0x1
  2764 045e D702     		.2byte	0x2d7
  2765 0460 00000000 		.4byte	.LFB19
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2802 04b6 18       		.uleb128 0x18
  2803 04b7 01       		.uleb128 0x1
  2804 04b8 50       		.byte	0x50
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 90
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 90
 
 
  2805 04b9 01       		.uleb128 0x1
@@ -5346,7 +5346,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2807 04bb 00       		.byte	0
  2808 04bc 00       		.byte	0
  2809 04bd 11       		.uleb128 0x11
- 2810 04be 5E060000 		.4byte	.LASF42
+ 2810 04be 56060000 		.4byte	.LASF42
  2811 04c2 01       		.byte	0x1
  2812 04c3 1903     		.2byte	0x319
  2813 04c5 00000000 		.4byte	.LFB20
@@ -5355,13 +5355,13 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2816 04ce 9C       		.byte	0x9c
  2817 04cf 37050000 		.4byte	0x537
  2818 04d3 15       		.uleb128 0x15
- 2819 04d4 D1060000 		.4byte	.LASF43
+ 2819 04d4 C9060000 		.4byte	.LASF43
  2820 04d8 01       		.byte	0x1
  2821 04d9 1903     		.2byte	0x319
  2822 04db 83000000 		.4byte	0x83
  2823 04df 61020000 		.4byte	.LLST15
  2824 04e3 16       		.uleb128 0x16
- 2825 04e4 A6060000 		.4byte	.LASF34
+ 2825 04e4 9E060000 		.4byte	.LASF34
  2826 04e8 01       		.byte	0x1
  2827 04e9 1B03     		.2byte	0x31b
  2828 04eb 83000000 		.4byte	0x83
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2859 052c 63020000 		.4byte	0x263
  2860 0530 18       		.uleb128 0x18
  2861 0531 01       		.uleb128 0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 91
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 91
 
 
  2862 0532 50       		.byte	0x50
@@ -5431,7 +5431,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2889 056b 83000000 		.4byte	0x83
  2890 056f B6020000 		.4byte	.LLST17
  2891 0573 15       		.uleb128 0x15
- 2892 0574 28040000 		.4byte	.LASF48
+ 2892 0574 F3030000 		.4byte	.LASF48
  2893 0578 01       		.byte	0x1
  2894 0579 5703     		.2byte	0x357
  2895 057b 83000000 		.4byte	0x83
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2916 05af 19       		.uleb128 0x19
  2917 05b0 4A000000 		.4byte	.LVL76
  2918 05b4 960D0000 		.4byte	0xd96
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 92
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 92
 
 
  2919 05b8 00       		.byte	0
@@ -5478,7 +5478,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2933 05d7 83000000 		.4byte	0x83
  2934 05db 37030000 		.4byte	.LLST20
  2935 05df 16       		.uleb128 0x16
- 2936 05e0 A6060000 		.4byte	.LASF34
+ 2936 05e0 9E060000 		.4byte	.LASF34
  2937 05e4 01       		.byte	0x1
  2938 05e5 8503     		.2byte	0x385
  2939 05e7 83000000 		.4byte	0x83
@@ -5494,7 +5494,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2949 05fd 00       		.byte	0
  2950 05fe 00       		.byte	0
  2951 05ff 13       		.uleb128 0x13
- 2952 0600 DD060000 		.4byte	.LASF52
+ 2952 0600 D5060000 		.4byte	.LASF52
  2953 0604 01       		.byte	0x1
  2954 0605 9F03     		.2byte	0x39f
  2955 0607 83000000 		.4byte	0x83
@@ -5503,7 +5503,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2958 0613 01       		.uleb128 0x1
  2959 0614 9C       		.byte	0x9c
  2960 0615 14       		.uleb128 0x14
- 2961 0616 C5050000 		.4byte	.LASF53
+ 2961 0616 E2030000 		.4byte	.LASF53
  2962 061a 01       		.byte	0x1
  2963 061b B403     		.2byte	0x3b4
  2964 061d 83000000 		.4byte	0x83
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2973 0635 B403     		.2byte	0x3b4
  2974 0637 83000000 		.4byte	0x83
  2975 063b 8C030000 		.4byte	.LLST22
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 93
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 93
 
 
  2976 063f 17       		.uleb128 0x17
@@ -5532,7 +5532,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  2984 064d 00       		.byte	0
  2985 064e 00       		.byte	0
  2986 064f 14       		.uleb128 0x14
- 2987 0650 22060000 		.4byte	.LASF54
+ 2987 0650 1A060000 		.4byte	.LASF54
  2988 0654 01       		.byte	0x1
  2989 0655 CC03     		.2byte	0x3cc
  2990 0657 83000000 		.4byte	0x83
@@ -5578,11 +5578,11 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3030 06b5 2606     		.2byte	0x626
  3031 06b7 83000000 		.4byte	0x83
  3032 06bb 88040000 		.4byte	.LLST25
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 94
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 94
 
 
  3033 06bf 1C       		.uleb128 0x1c
- 3034 06c0 4F050000 		.4byte	.LASF58
+ 3034 06c0 1A050000 		.4byte	.LASF58
  3035 06c4 01       		.byte	0x1
  3036 06c5 2706     		.2byte	0x627
  3037 06c7 83000000 		.4byte	0x83
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3087 072c 51       		.byte	0x51
  3088 072d 01       		.uleb128 0x1
  3089 072e 30       		.byte	0x30
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 95
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 95
 
 
  3090 072f 18       		.uleb128 0x18
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3144 07ad 32000000 		.4byte	.LVL119
  3145 07b1 07030000 		.4byte	0x307
  3146 07b5 17       		.uleb128 0x17
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 96
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 96
 
 
  3147 07b6 38000000 		.4byte	.LVL120
@@ -5756,9 +5756,9 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3199 082c 00       		.byte	0
  3200 082d 00       		.byte	0
  3201 082e 11       		.uleb128 0x11
- 3202 082f D6050000 		.4byte	.LASF62
+ 3202 082f CE050000 		.4byte	.LASF62
  3203 0833 01       		.byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 97
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 97
 
 
  3204 0834 2301     		.2byte	0x123
@@ -5800,7 +5800,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3240 0890 00       		.byte	0
  3241 0891 00       		.byte	0
  3242 0892 13       		.uleb128 0x13
- 3243 0893 AA050000 		.4byte	.LASF63
+ 3243 0893 B3050000 		.4byte	.LASF63
  3244 0897 01       		.byte	0x1
  3245 0898 FD03     		.2byte	0x3fd
  3246 089a 83000000 		.4byte	0x83
@@ -5809,7 +5809,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3249 08a6 01       		.uleb128 0x1
  3250 08a7 9C       		.byte	0x9c
  3251 08a8 11       		.uleb128 0x11
- 3252 08a9 E4040000 		.4byte	.LASF64
+ 3252 08a9 AF040000 		.4byte	.LASF64
  3253 08ad 01       		.byte	0x1
  3254 08ae 1F04     		.2byte	0x41f
  3255 08b0 00000000 		.4byte	.LFB28
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3258 08b9 9C       		.byte	0x9c
  3259 08ba 23090000 		.4byte	0x923
  3260 08be 15       		.uleb128 0x15
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 98
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 98
 
 
  3261 08bf 4E020000 		.4byte	.LASF40
@@ -5833,7 +5833,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3270 08d6 6B000000 		.4byte	0x6b
  3271 08da 50050000 		.4byte	.LLST31
  3272 08de 16       		.uleb128 0x16
- 3273 08df 92060000 		.4byte	.LASF65
+ 3273 08df 8A060000 		.4byte	.LASF65
  3274 08e3 01       		.byte	0x1
  3275 08e4 2204     		.2byte	0x422
  3276 08e6 83000000 		.4byte	0x83
@@ -5862,7 +5862,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3299 0921 00       		.byte	0
  3300 0922 00       		.byte	0
  3301 0923 11       		.uleb128 0x11
- 3302 0924 CE040000 		.4byte	.LASF66
+ 3302 0924 99040000 		.4byte	.LASF66
  3303 0928 01       		.byte	0x1
  3304 0929 5F04     		.2byte	0x45f
  3305 092b 00000000 		.4byte	.LFB29
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3315 0945 82050000 		.4byte	.LLST33
  3316 0949 00       		.byte	0
  3317 094a 14       		.uleb128 0x14
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 99
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 99
 
 
  3318 094b 31020000 		.4byte	.LASF68
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3372 09cf A1020000 		.4byte	.LASF72
  3373 09d3 01       		.byte	0x1
  3374 09d4 9F04     		.2byte	0x49f
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 100
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 100
 
 
  3375 09d6 DC000000 		.4byte	0xdc
@@ -5979,7 +5979,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3410 0a22 00       		.byte	0
  3411 0a23 00       		.byte	0
  3412 0a24 11       		.uleb128 0x11
- 3413 0a25 FE050000 		.4byte	.LASF74
+ 3413 0a25 F6050000 		.4byte	.LASF74
  3414 0a29 01       		.byte	0x1
  3415 0a2a D204     		.2byte	0x4d2
  3416 0a2c 00000000 		.4byte	.LFB33
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3429 0a4f 690D0000 		.4byte	0xd69
  3430 0a53 18       		.uleb128 0x18
  3431 0a54 01       		.uleb128 0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 101
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 101
 
 
  3432 0a55 50       		.byte	0x50
@@ -6049,7 +6049,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3477 0aa8 00       		.byte	0
  3478 0aa9 00       		.byte	0
  3479 0aaa 11       		.uleb128 0x11
- 3480 0aab 01050000 		.4byte	.LASF76
+ 3480 0aab CC040000 		.4byte	.LASF76
  3481 0aaf 01       		.byte	0x1
  3482 0ab0 A705     		.2byte	0x5a7
  3483 0ab2 00000000 		.4byte	.LFB36
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3486 0abb 9C       		.byte	0x9c
  3487 0abc 660B0000 		.4byte	0xb66
  3488 0ac0 15       		.uleb128 0x15
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 102
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 102
 
 
  3489 0ac1 7D000000 		.4byte	.LASF32
@@ -6067,13 +6067,13 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3492 0ac8 83000000 		.4byte	0x83
  3493 0acc 18070000 		.4byte	.LLST41
  3494 0ad0 15       		.uleb128 0x15
- 3495 0ad1 7D050000 		.4byte	.LASF77
+ 3495 0ad1 86050000 		.4byte	.LASF77
  3496 0ad5 01       		.byte	0x1
  3497 0ad6 A705     		.2byte	0x5a7
  3498 0ad8 D1000000 		.4byte	0xd1
  3499 0adc 44070000 		.4byte	.LLST42
  3500 0ae0 15       		.uleb128 0x15
- 3501 0ae1 28040000 		.4byte	.LASF48
+ 3501 0ae1 F3030000 		.4byte	.LASF48
  3502 0ae5 01       		.byte	0x1
  3503 0ae6 A705     		.2byte	0x5a7
  3504 0ae8 83000000 		.4byte	0x83
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3543 0b3a 00       		.sleb128 0
  3544 0b3b 00       		.byte	0
  3545 0b3c 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 103
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 103
 
 
  3546 0b3d 42000000 		.4byte	.LVL194
@@ -6148,7 +6148,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3570 0b64 00       		.byte	0
  3571 0b65 00       		.byte	0
  3572 0b66 11       		.uleb128 0x11
- 3573 0b67 1B050000 		.4byte	.LASF79
+ 3573 0b67 E6040000 		.4byte	.LASF79
  3574 0b6b 01       		.byte	0x1
  3575 0b6c 5B05     		.2byte	0x55b
  3576 0b6e 00000000 		.4byte	.LFB35
@@ -6163,13 +6163,13 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3585 0b84 83000000 		.4byte	0x83
  3586 0b88 CE070000 		.4byte	.LLST45
  3587 0b8c 15       		.uleb128 0x15
- 3588 0b8d 7D050000 		.4byte	.LASF77
+ 3588 0b8d 86050000 		.4byte	.LASF77
  3589 0b91 01       		.byte	0x1
  3590 0b92 5B05     		.2byte	0x55b
  3591 0b94 D1000000 		.4byte	0xd1
  3592 0b98 FA070000 		.4byte	.LLST46
  3593 0b9c 15       		.uleb128 0x15
- 3594 0b9d 6D050000 		.4byte	.LASF80
+ 3594 0b9d 76050000 		.4byte	.LASF80
  3595 0ba1 01       		.byte	0x1
  3596 0ba2 5B05     		.2byte	0x55b
  3597 0ba4 83000000 		.4byte	0x83
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3600 0bad A3010000 		.4byte	.LASF49
  3601 0bb1 01       		.byte	0x1
  3602 0bb2 5D05     		.2byte	0x55d
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 104
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 104
 
 
  3603 0bb4 83000000 		.4byte	0x83
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3657 0c1b 30       		.byte	0x30
  3658 0c1c 00       		.byte	0
  3659 0c1d 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 105
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 105
 
 
  3660 0c1e 11       		.uleb128 0x11
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3714 0c92 36000000 		.4byte	.LVL216
  3715 0c96 2D030000 		.4byte	0x32d
  3716 0c9a 19       		.uleb128 0x19
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 106
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 106
 
 
  3717 0c9b 40000000 		.4byte	.LVL217
@@ -6345,7 +6345,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3758 0cea 03       		.byte	0x3
  3759 0ceb 00000000 		.4byte	lfclkPosedgeWdtCounter0Enabled
  3760 0cef 0D       		.uleb128 0xd
- 3761 0cf0 B5060000 		.4byte	.LASF84
+ 3761 0cf0 AD060000 		.4byte	.LASF84
  3762 0cf4 01       		.byte	0x1
  3763 0cf5 1B       		.byte	0x1b
  3764 0cf6 83000000 		.4byte	0x83
@@ -6353,12 +6353,12 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3766 0cfb 03       		.byte	0x3
  3767 0cfc 04000000 		.4byte	lfclkPosedgeWdtCounter0Mode
  3768 0d00 0D       		.uleb128 0xd
- 3769 0d01 33060000 		.4byte	.LASF85
+ 3769 0d01 2B060000 		.4byte	.LASF85
  3770 0d05 01       		.byte	0x1
  3771 0d06 1D       		.byte	0x1d
  3772 0d07 B0000000 		.4byte	0xb0
  3773 0d0b 05       		.uleb128 0x5
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 107
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 107
 
 
  3774 0d0c 03       		.byte	0x3
@@ -6404,7 +6404,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3814 0d64 03       		.byte	0x3
  3815 0d65 0C000000 		.4byte	cySysWdtCallback
  3816 0d69 24       		.uleb128 0x24
- 3817 0d6a 3A050000 		.4byte	.LASF89
+ 3817 0d6a 05050000 		.4byte	.LASF89
  3818 0d6e 04       		.byte	0x4
  3819 0d6f 63       		.byte	0x63
  3820 0d70 7A0D0000 		.4byte	0xd7a
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3828 0d81 6B000000 		.4byte	0x6b
  3829 0d85 24       		.uleb128 0x24
  3830 0d86 07000000 		.4byte	.LASF90
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 108
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 108
 
 
  3831 0d8a 04       		.byte	0x4
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3885 0026 08       		.uleb128 0x8
  3886 0027 00       		.byte	0
  3887 0028 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 109
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 109
 
 
  3888 0029 04       		.uleb128 0x4
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3942 005f 1C       		.uleb128 0x1c
  3943 0060 0D       		.uleb128 0xd
  3944 0061 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 110
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 110
 
 
  3945 0062 00       		.byte	0
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  3999 0099 40       		.uleb128 0x40
  4000 009a 18       		.uleb128 0x18
  4001 009b 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 111
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 111
 
 
  4002 009d 19       		.uleb128 0x19
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4056 00d4 27       		.uleb128 0x27
  4057 00d5 19       		.uleb128 0x19
  4058 00d6 11       		.uleb128 0x11
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 112
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 112
 
 
  4059 00d7 01       		.uleb128 0x1
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4113 010f 11       		.uleb128 0x11
  4114 0110 01       		.uleb128 0x1
  4115 0111 12       		.uleb128 0x12
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 113
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 113
 
 
  4116 0112 06       		.uleb128 0x6
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4170 014a 19       		.uleb128 0x19
  4171 014b 01       		.uleb128 0x1
  4172 014c 13       		.uleb128 0x13
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 114
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 114
 
 
  4173 014d 00       		.byte	0
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4227 018a 01       		.uleb128 0x1
  4228 018b 31       		.uleb128 0x31
  4229 018c 13       		.uleb128 0x13
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 115
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 115
 
 
  4230 018d 00       		.byte	0
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4284 01c6 3F       		.uleb128 0x3f
  4285 01c7 19       		.uleb128 0x19
  4286 01c8 03       		.uleb128 0x3
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 116
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 116
 
 
  4287 01c9 0E       		.uleb128 0xe
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4341 0200 03       		.uleb128 0x3
  4342 0201 0E       		.uleb128 0xe
  4343 0202 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 117
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 117
 
 
  4344 0203 0B       		.uleb128 0xb
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4398 023a 19       		.uleb128 0x19
  4399 023b 3C       		.uleb128 0x3c
  4400 023c 19       		.uleb128 0x19
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 118
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 118
 
 
  4401 023d 01       		.uleb128 0x1
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4455 000a 50       		.byte	0x50
  4456 000b 1C000000 		.4byte	.LVL3
  4457 000f 26000000 		.4byte	.LVL4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 119
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 119
 
 
  4458 0013 0300     		.2byte	0x3
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4512 0091 06000000 		.4byte	.LVL13
  4513 0095 25000000 		.4byte	.LVL14-1
  4514 0099 0100     		.2byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 120
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 120
 
 
  4515 009b 50       		.byte	0x50
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4569 011f 9F       		.byte	0x9f
  4570 0120 00000000 		.4byte	0
  4571 0124 00000000 		.4byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 121
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 121
 
 
  4572              	.LLST7:
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4626 01b1 0400     		.2byte	0x4
  4627 01b3 F3       		.byte	0xf3
  4628 01b4 01       		.uleb128 0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 122
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 122
 
 
  4629 01b5 51       		.byte	0x51
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4683 023d 0100     		.2byte	0x1
  4684 023f 50       		.byte	0x50
  4685 0240 07000000 		.4byte	.LVL51-1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 123
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 123
 
 
  4686 0244 3E000000 		.4byte	.LVL55
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4740 02cc 28000000 		.4byte	.LVL71
  4741 02d0 58000000 		.4byte	.LFE22
  4742 02d4 0400     		.2byte	0x4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 124
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 124
 
 
  4743 02d6 F3       		.byte	0xf3
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4797 035a 9F       		.byte	0x9f
  4798 035b 00000000 		.4byte	0
  4799 035f 00000000 		.4byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 125
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 125
 
 
  4800              	.LLST21:
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4854 03e8 50       		.byte	0x50
  4855 03e9 9F       		.byte	0x9f
  4856 03ea 22000000 		.4byte	.LVL97
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 126
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 126
 
 
  4857 03ee 26000000 		.4byte	.LVL98
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4911 0473 30       		.byte	0x30
  4912 0474 9F       		.byte	0x9f
  4913 0475 30000000 		.4byte	.LVL102
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 127
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 127
 
 
  4914 0479 3C000000 		.4byte	.LFE26
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  4968 0508 0100     		.2byte	0x1
  4969 050a 50       		.byte	0x50
  4970 050b 07000000 		.4byte	.LVL139-1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 128
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 128
 
 
  4971 050f 22000000 		.4byte	.LVL146
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5025 0595 0400     		.2byte	0x4
  5026 0597 F3       		.byte	0xf3
  5027 0598 01       		.uleb128 0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 129
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 129
 
 
  5028 0599 50       		.byte	0x50
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5082 0619 1A000000 		.4byte	.LVL162
  5083 061d 0200     		.2byte	0x2
  5084 061f 30       		.byte	0x30
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 130
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 130
 
 
  5085 0620 9F       		.byte	0x9f
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5139 06a4 00000000 		.4byte	.LVL171
  5140 06a8 08000000 		.4byte	.LVL172
  5141 06ac 0100     		.2byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 131
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 131
 
 
  5142 06ae 50       		.byte	0x50
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5196 072d 54       		.byte	0x54
  5197 072e 5A000000 		.4byte	.LVL198
  5198 0732 6C000000 		.4byte	.LFE36
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 132
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 132
 
 
  5199 0736 0400     		.2byte	0x4
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5253 07ba 0A00     		.2byte	0xa
  5254 07bc 74       		.byte	0x74
  5255 07bd 00       		.sleb128 0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 133
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 133
 
 
  5256 07be 32       		.byte	0x32
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5310 083e 9F       		.byte	0x9f
  5311 083f 00000000 		.4byte	0
  5312 0843 00000000 		.4byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 134
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 134
 
 
  5313              	.LLST48:
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5367 0028 00000000 		.4byte	.LFB1
  5368 002c 14000000 		.4byte	.LFE1-.LFB1
  5369 0030 00000000 		.4byte	.LFB6
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 135
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 135
 
 
  5370 0034 40000000 		.4byte	.LFE6-.LFB6
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5424 010c 20000000 		.4byte	.LFE30-.LFB30
  5425 0110 00000000 		.4byte	.LFB31
  5426 0114 20000000 		.4byte	.LFE31-.LFB31
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 136
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 136
 
 
  5427 0118 00000000 		.4byte	.LFB32
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5481 0098 00000000 		.4byte	.LFB22
  5482 009c 58000000 		.4byte	.LFE22
  5483 00a0 00000000 		.4byte	.LFB23
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 137
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 137
 
 
  5484 00a4 2C000000 		.4byte	.LFE23
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5529      6374696F 
  5530              	.LASF23:
  5531 001d 6C66636C 		.ascii	"lfclkSource\000"
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 138
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 138
 
 
  5531      6B536F75 
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5551      6B506F73 
  5551      65646765 
  5551      57647443 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 139
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 139
 
 
  5551      6F756E74 
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5573      00
  5574              	.LASF4:
  5575 019a 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 140
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 140
 
 
  5575      20696E74 
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5600              	.LASF68:
  5601 0231 43795379 		.ascii	"CySysWdtSetInterruptCallback\000"
  5601      73576474 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 141
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 141
 
 
  5601      53657449 
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5623 02f5 43795379 		.ascii	"CySysWdtEnableCounterIsr\000"
  5623      73576474 
  5623      456E6162 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 142
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 142
 
 
  5623      6C65436F 
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5643      00
  5644              	.LASF61:
  5645 03d2 736F7572 		.ascii	"source\000"
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 143
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 143
 
 
  5645      636500
@@ -8526,219 +8526,219 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 1
  5647 03d9 73697A65 		.ascii	"sizetype\000"
  5647      74797065 
  5647      00
- 5648              	.LASF93:
- 5649 03e2 443A5C55 		.ascii	"D:\\Users\\nray\\Desktop\\IRIS WIT\\LORA multisenso"
- 5649      73657273 
- 5649      5C6E7261 
- 5649      795C4465 
- 5649      736B746F 
- 5650 0410 72205357 		.ascii	"r SW\\PSOC4MIO_HAL.cydsn\000"
- 5650      5C50534F 
- 5650      43344D49 
- 5650      4F5F4841 
- 5650      4C2E6379 
- 5651              	.LASF48:
- 5652 0428 6D617463 		.ascii	"match\000"
- 5652      6800
- 5653              	.LASF16:
- 5654 042e 43595F53 		.ascii	"CY_SYS_TIMER_WAIT\000"
- 5654      59535F54 
- 5654      494D4552 
- 5654      5F574149 
- 5654      5400
- 5655              	.LASF91:
- 5656 0440 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 5656      4320342E 
- 5656      392E3320 
- 5656      32303135 
- 5656      30333033 
- 5657 0473 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 5657      20726576 
- 5657      6973696F 
- 5657      6E203232 
- 5657      31323230 
- 5658 04a6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 5658      66756E63 
- 5658      74696F6E 
- 5658      2D736563 
- 5658      74696F6E 
- 5659              	.LASF66:
- 5660 04ce 43795379 		.ascii	"CySysWdtResetCounters\000"
- 5660      73576474 
- 5660      52657365 
- 5660      74436F75 
- 5660      6E746572 
- 5661              	.LASF64:
- 5662 04e4 43795379 		.ascii	"CySysWdtClearInterrupt\000"
- 5662      73576474 
- 5662      436C6561 
- 5662      72496E74 
- 5662      65727275 
- 5663              	.LASF12:
- 5664 04fb 666C6F61 		.ascii	"float\000"
- 5664      7400
- 5665              	.LASF76:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 144
+ 5648              	.LASF53:
+ 5649 03e2 43795379 		.ascii	"CySysWdtGetMatch\000"
+ 5649      73576474 
+ 5649      4765744D 
+ 5649      61746368 
+ 5649      00
+ 5650              	.LASF48:
+ 5651 03f3 6D617463 		.ascii	"match\000"
+ 5651      6800
+ 5652              	.LASF16:
+ 5653 03f9 43595F53 		.ascii	"CY_SYS_TIMER_WAIT\000"
+ 5653      59535F54 
+ 5653      494D4552 
+ 5653      5F574149 
+ 5653      5400
+ 5654              	.LASF91:
+ 5655 040b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 5655      4320342E 
+ 5655      392E3320 
+ 5655      32303135 
+ 5655      30333033 
+ 5656 043e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 5656      20726576 
+ 5656      6973696F 
+ 5656      6E203232 
+ 5656      31323230 
+ 5657 0471 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 5657      66756E63 
+ 5657      74696F6E 
+ 5657      2D736563 
+ 5657      74696F6E 
+ 5658              	.LASF66:
+ 5659 0499 43795379 		.ascii	"CySysWdtResetCounters\000"
+ 5659      73576474 
+ 5659      52657365 
+ 5659      74436F75 
+ 5659      6E746572 
+ 5660              	.LASF64:
+ 5661 04af 43795379 		.ascii	"CySysWdtClearInterrupt\000"
+ 5661      73576474 
+ 5661      436C6561 
+ 5661      72496E74 
+ 5661      65727275 
+ 5662              	.LASF12:
+ 5663 04c6 666C6F61 		.ascii	"float\000"
+ 5663      7400
+ 5664              	.LASF76:
+ 5665 04cc 43795379 		.ascii	"CySysTimerDelayUntilMatch\000"
+ 5665      7354696D 
+ 5665      65724465 
+ 5665      6C617955 
+ 5665      6E74696C 
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 144
 
 
- 5666 0501 43795379 		.ascii	"CySysTimerDelayUntilMatch\000"
- 5666      7354696D 
- 5666      65724465 
- 5666      6C617955 
- 5666      6E74696C 
- 5667              	.LASF79:
- 5668 051b 43795379 		.ascii	"CySysTimerDelay\000"
- 5668      7354696D 
- 5668      65724465 
- 5668      6C617900 
- 5669              	.LASF22:
- 5670 052b 43795379 		.ascii	"CySysWdtLocked\000"
- 5670      73576474 
- 5670      4C6F636B 
- 5670      656400
- 5671              	.LASF89:
- 5672 053a 43794861 		.ascii	"CyHalt\000"
- 5672      6C7400
- 5673              	.LASF1:
- 5674 0541 756E7369 		.ascii	"unsigned char\000"
- 5674      676E6564 
- 5674      20636861 
- 5674      7200
- 5675              	.LASF58:
- 5676 054f 6C66636C 		.ascii	"lfclkPosedgeEnabledWdtCounter\000"
- 5676      6B506F73 
- 5676      65646765 
- 5676      456E6162 
- 5676      6C656457 
- 5677              	.LASF80:
- 5678 056d 64656C61 		.ascii	"delay\000"
- 5678      7900
- 5679              	.LASF2:
- 5680 0573 73686F72 		.ascii	"short int\000"
- 5680      7420696E 
- 5680      7400
- 5681              	.LASF77:
- 5682 057d 64656C61 		.ascii	"delayType\000"
- 5682      79547970 
- 5682      6500
- 5683              	.LASF41:
- 5684 0587 43795379 		.ascii	"CySysWdtDisable\000"
- 5684      73576474 
- 5684      44697361 
- 5684      626C6500 
- 5685              	.LASF21:
- 5686 0597 43795379 		.ascii	"CySysClkIloEnabled\000"
- 5686      73436C6B 
- 5686      496C6F45 
- 5686      6E61626C 
- 5686      656400
- 5687              	.LASF63:
- 5688 05aa 43795379 		.ascii	"CySysWdtGetInterruptSource\000"
- 5688      73576474 
- 5688      47657449 
- 5688      6E746572 
- 5688      72757074 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 145
+ 5666              	.LASF79:
+ 5667 04e6 43795379 		.ascii	"CySysTimerDelay\000"
+ 5667      7354696D 
+ 5667      65724465 
+ 5667      6C617900 
+ 5668              	.LASF22:
+ 5669 04f6 43795379 		.ascii	"CySysWdtLocked\000"
+ 5669      73576474 
+ 5669      4C6F636B 
+ 5669      656400
+ 5670              	.LASF89:
+ 5671 0505 43794861 		.ascii	"CyHalt\000"
+ 5671      6C7400
+ 5672              	.LASF1:
+ 5673 050c 756E7369 		.ascii	"unsigned char\000"
+ 5673      676E6564 
+ 5673      20636861 
+ 5673      7200
+ 5674              	.LASF58:
+ 5675 051a 6C66636C 		.ascii	"lfclkPosedgeEnabledWdtCounter\000"
+ 5675      6B506F73 
+ 5675      65646765 
+ 5675      456E6162 
+ 5675      6C656457 
+ 5676              	.LASF93:
+ 5677 0538 443A5C55 		.ascii	"D:\\Users\\nray\\Documents\\GitHub\\PSOC4MIOHAL\\PS"
+ 5677      73657273 
+ 5677      5C6E7261 
+ 5677      795C446F 
+ 5677      63756D65 
+ 5678 0565 4F43344D 		.ascii	"OC4MIO_HAL.cydsn\000"
+ 5678      494F5F48 
+ 5678      414C2E63 
+ 5678      7964736E 
+ 5678      00
+ 5679              	.LASF80:
+ 5680 0576 64656C61 		.ascii	"delay\000"
+ 5680      7900
+ 5681              	.LASF2:
+ 5682 057c 73686F72 		.ascii	"short int\000"
+ 5682      7420696E 
+ 5682      7400
+ 5683              	.LASF77:
+ 5684 0586 64656C61 		.ascii	"delayType\000"
+ 5684      79547970 
+ 5684      6500
+ 5685              	.LASF41:
+ 5686 0590 43795379 		.ascii	"CySysWdtDisable\000"
+ 5686      73576474 
+ 5686      44697361 
+ 5686      626C6500 
+ 5687              	.LASF21:
+ 5688 05a0 43795379 		.ascii	"CySysClkIloEnabled\000"
+ 5688      73436C6B 
+ 5688      496C6F45 
+ 5688      6E61626C 
+ 5688      656400
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 145
 
 
- 5689              	.LASF53:
- 5690 05c5 43795379 		.ascii	"CySysWdtGetMatch\000"
+ 5689              	.LASF63:
+ 5690 05b3 43795379 		.ascii	"CySysWdtGetInterruptSource\000"
  5690      73576474 
- 5690      4765744D 
- 5690      61746368 
- 5690      00
+ 5690      47657449 
+ 5690      6E746572 
+ 5690      72757074 
  5691              	.LASF62:
- 5692 05d6 43795379 		.ascii	"CySysClkWcoStop\000"
+ 5692 05ce 43795379 		.ascii	"CySysClkWcoStop\000"
  5692      73436C6B 
  5692      57636F53 
  5692      746F7000 
  5693              	.LASF29:
- 5694 05e6 43795379 		.ascii	"CySysClkWcoSetPowerMode\000"
+ 5694 05de 43795379 		.ascii	"CySysClkWcoSetPowerMode\000"
  5694      73436C6B 
  5694      57636F53 
  5694      6574506F 
  5694      7765724D 
  5695              	.LASF74:
- 5696 05fe 43795379 		.ascii	"CySysWdtDisableCounterIsr\000"
+ 5696 05f6 43795379 		.ascii	"CySysWdtDisableCounterIsr\000"
  5696      73576474 
  5696      44697361 
  5696      626C6543 
  5696      6F756E74 
  5697              	.LASF14:
- 5698 0618 63686172 		.ascii	"char\000"
+ 5698 0610 63686172 		.ascii	"char\000"
  5698      00
  5699              	.LASF31:
- 5700 061d 6D6F6465 		.ascii	"mode\000"
+ 5700 0615 6D6F6465 		.ascii	"mode\000"
  5700      00
  5701              	.LASF54:
- 5702 0622 43795379 		.ascii	"CySysWdtGetCount\000"
+ 5702 061a 43795379 		.ascii	"CySysWdtGetCount\000"
  5702      73576474 
  5702      47657443 
  5702      6F756E74 
  5702      00
  5703              	.LASF85:
- 5704 0633 64697361 		.ascii	"disableServicedIsr\000"
+ 5704 062b 64697361 		.ascii	"disableServicedIsr\000"
  5704      626C6553 
  5704      65727669 
  5704      63656449 
  5704      737200
  5705              	.LASF36:
- 5706 0646 43795379 		.ascii	"CySysWdtSetClearOnMatch\000"
+ 5706 063e 43795379 		.ascii	"CySysWdtSetClearOnMatch\000"
  5706      73576474 
  5706      53657443 
  5706      6C656172 
  5706      4F6E4D61 
  5707              	.LASF42:
- 5708 065e 43795379 		.ascii	"CySysWdtSetCascade\000"
+ 5708 0656 43795379 		.ascii	"CySysWdtSetCascade\000"
  5708      73576474 
  5708      53657443 
  5708      61736361 
  5708      646500
  5709              	.LASF35:
- 5710 0671 43795379 		.ascii	"CySysWdtGetMode\000"
+ 5710 0669 43795379 		.ascii	"CySysWdtGetMode\000"
  5710      73576474 
  5710      4765744D 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccGEO1jr.s 			page 146
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccfaVZGj.s 			page 146
 
 
  5710      6F646500 
  5711              	.LASF25:
- 5712 0681 43795379 		.ascii	"CySysClkWcoStart\000"
+ 5712 0679 43795379 		.ascii	"CySysClkWcoStart\000"
  5712      73436C6B 
  5712      57636F53 
  5712      74617274 
  5712      00
  5713              	.LASF65:
- 5714 0692 7764744C 		.ascii	"wdtLockState\000"
+ 5714 068a 7764744C 		.ascii	"wdtLockState\000"
  5714      6F636B53 
  5714      74617465 
  5714      00
  5715              	.LASF24:
- 5716 069f 73746174 		.ascii	"status\000"
+ 5716 0697 73746174 		.ascii	"status\000"
  5716      757300
  5717              	.LASF34:
- 5718 06a6 636F6E66 		.ascii	"configRegValue\000"
+ 5718 069e 636F6E66 		.ascii	"configRegValue\000"
  5718      69675265 
  5718      6756616C 
  5718      756500
  5719              	.LASF84:
- 5720 06b5 6C66636C 		.ascii	"lfclkPosedgeWdtCounter0Mode\000"
+ 5720 06ad 6C66636C 		.ascii	"lfclkPosedgeWdtCounter0Mode\000"
  5720      6B506F73 
  5720      65646765 
  5720      57647443 
  5720      6F756E74 
  5721              	.LASF43:
- 5722 06d1 63617363 		.ascii	"cascadeMask\000"
+ 5722 06c9 63617363 		.ascii	"cascadeMask\000"
  5722      6164654D 
  5722      61736B00 
  5723              	.LASF52:
- 5724 06dd 43795379 		.ascii	"CySysWdtGetToggleBit\000"
+ 5724 06d5 43795379 		.ascii	"CySysWdtGetToggleBit\000"
  5724      73576474 
  5724      47657454 
  5724      6F67676C 
  5724      65426974 
  5725              	.LASF17:
- 5726 06f2 43595F53 		.ascii	"CY_SYS_TIMER_INTERRUPT\000"
+ 5726 06ea 43595F53 		.ascii	"CY_SYS_TIMER_INTERRUPT\000"
  5726      59535F54 
  5726      494D4552 
  5726      5F494E54 

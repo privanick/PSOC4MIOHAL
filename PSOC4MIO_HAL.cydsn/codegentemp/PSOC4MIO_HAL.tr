@@ -21,14 +21,14 @@
 Number of clocks: 16
 Clock: ADC_1_intClock       | N/A                   | Target: 1.00 MHz   | 
 Clock: ADC_1_intClock(FFB)  | N/A                   | Target: 1.00 MHz   | 
-Clock: Clock_2              | N/A                   | Target: 12.00 MHz  | 
-Clock: Clock_2(FFB)         | N/A                   | Target: 12.00 MHz  | 
 Clock: CyHFCLK              | Frequency: 43.60 MHz  | Target: 48.00 MHz  | 
 Clock: CyIMO                | N/A                   | Target: 48.00 MHz  | 
 Clock: CyLFCLK              | N/A                   | Target: 0.03 MHz   | 
 Clock: CyRouted1            | N/A                   | Target: 48.00 MHz  | 
 Clock: CySYSCLK             | N/A                   | Target: 48.00 MHz  | 
 Clock: CyWCO                | N/A                   | Target: 0.03 MHz   | 
+Clock: LCD_SCBCLK           | N/A                   | Target: 0.12 MHz   | 
+Clock: LCD_SCBCLK(FFB)      | N/A                   | Target: 0.12 MHz   | 
 Clock: SPI_1_SCBCLK         | N/A                   | Target: 16.00 MHz  | 
 Clock: SPI_1_SCBCLK(FFB)    | N/A                   | Target: 16.00 MHz  | 
 Clock: console_SCBCLK       | N/A                   | Target: 0.23 MHz   | 

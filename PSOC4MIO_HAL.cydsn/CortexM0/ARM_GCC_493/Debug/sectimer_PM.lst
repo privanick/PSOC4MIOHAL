@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
   30:.\Generated_Source\PSoC4/sectimer_PM.c **** *
   31:.\Generated_Source\PSoC4/sectimer_PM.c **** * Parameters:
   32:.\Generated_Source\PSoC4/sectimer_PM.c **** *  void
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 2
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/sectimer_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
   56              		.section	.text.sectimer_RestoreConfig,"ax",%progbits
   57              		.align	2
   58              		.global	sectimer_RestoreConfig
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 3
 
 
   59              		.code	16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
   81 0012 FFF7FEFF 		bl	sectimer_WriteControlRegister
   82              	.LVL3:
   89:.\Generated_Source\PSoC4/sectimer_PM.c ****         #endif /* Restore the enable state of the Timer component */
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 4
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 4
 
 
   90:.\Generated_Source\PSoC4/sectimer_PM.c ****     #endif /* Restore non retention registers in the UDB implementation only */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  110 0004 1B78     		ldrb	r3, [r3]
  111 0006 5BB2     		sxtb	r3, r3
  112 0008 002B     		cmp	r3, #0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 5
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 5
 
 
  113 000a 03DA     		bge	.L8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  134:.\Generated_Source\PSoC4/sectimer_PM.c **** ********************************************************************************
  135:.\Generated_Source\PSoC4/sectimer_PM.c **** *
  136:.\Generated_Source\PSoC4/sectimer_PM.c **** * Summary:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 6
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 6
 
 
  137:.\Generated_Source\PSoC4/sectimer_PM.c **** *  Restores and enables the user configuration
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  181              		.type	sectimer_backup, %object
  182              		.size	sectimer_backup, 6
  183              	sectimer_backup:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 7
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 7
 
 
  184 0000 00000000 		.space	6
@@ -374,17 +374,17 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  193 0006 00000000 		.4byte	.Ldebug_abbrev0
  194 000a 04       		.byte	0x4
  195 000b 01       		.uleb128 0x1
- 196 000c B7010000 		.4byte	.LASF31
+ 196 000c AF010000 		.4byte	.LASF31
  197 0010 01       		.byte	0x1
- 198 0011 BB020000 		.4byte	.LASF32
- 199 0015 B3000000 		.4byte	.LASF33
+ 198 0011 B3020000 		.4byte	.LASF32
+ 199 0015 CF000000 		.4byte	.LASF33
  200 0019 00000000 		.4byte	.Ldebug_ranges0+0
  201 001d 00000000 		.4byte	0
  202 0021 00000000 		.4byte	.Ldebug_line0
  203 0025 02       		.uleb128 0x2
  204 0026 01       		.byte	0x1
  205 0027 06       		.byte	0x6
- 206 0028 5E020000 		.4byte	.LASF0
+ 206 0028 56020000 		.4byte	.LASF0
  207 002c 02       		.uleb128 0x2
  208 002d 01       		.byte	0x1
  209 002e 08       		.byte	0x8
@@ -392,15 +392,15 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  211 0033 02       		.uleb128 0x2
  212 0034 02       		.byte	0x2
  213 0035 05       		.byte	0x5
- 214 0036 45020000 		.4byte	.LASF2
+ 214 0036 3D020000 		.4byte	.LASF2
  215 003a 02       		.uleb128 0x2
  216 003b 02       		.byte	0x2
  217 003c 07       		.byte	0x7
- 218 003d 6A020000 		.4byte	.LASF3
+ 218 003d 62020000 		.4byte	.LASF3
  219 0041 02       		.uleb128 0x2
  220 0042 04       		.byte	0x4
  221 0043 05       		.byte	0x5
- 222 0044 55020000 		.4byte	.LASF4
+ 222 0044 4D020000 		.4byte	.LASF4
  223 0048 02       		.uleb128 0x2
  224 0049 04       		.byte	0x4
  225 004a 07       		.byte	0x7
@@ -408,29 +408,29 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  227 004f 02       		.uleb128 0x2
  228 0050 08       		.byte	0x8
  229 0051 05       		.byte	0x5
- 230 0052 86010000 		.4byte	.LASF6
+ 230 0052 7E010000 		.4byte	.LASF6
  231 0056 02       		.uleb128 0x2
  232 0057 08       		.byte	0x8
  233 0058 07       		.byte	0x7
- 234 0059 39010000 		.4byte	.LASF7
+ 234 0059 31010000 		.4byte	.LASF7
  235 005d 03       		.uleb128 0x3
  236 005e 04       		.byte	0x4
  237 005f 05       		.byte	0x5
  238 0060 696E7400 		.ascii	"int\000"
  239 0064 02       		.uleb128 0x2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 8
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 8
 
 
  240 0065 04       		.byte	0x4
  241 0066 07       		.byte	0x7
- 242 0067 2C010000 		.4byte	.LASF8
+ 242 0067 24010000 		.4byte	.LASF8
  243 006b 04       		.uleb128 0x4
- 244 006c 4F020000 		.4byte	.LASF9
+ 244 006c 47020000 		.4byte	.LASF9
  245 0070 02       		.byte	0x2
  246 0071 3801     		.2byte	0x138
  247 0073 2C000000 		.4byte	0x2c
  248 0077 04       		.uleb128 0x4
- 249 0078 15010000 		.4byte	.LASF10
+ 249 0078 0D010000 		.4byte	.LASF10
  250 007c 02       		.byte	0x2
  251 007d 3901     		.2byte	0x139
  252 007f 3A000000 		.4byte	0x3a
@@ -441,11 +441,11 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  257 008a 02       		.uleb128 0x2
  258 008b 08       		.byte	0x8
  259 008c 04       		.byte	0x4
- 260 008d 0E010000 		.4byte	.LASF12
+ 260 008d C8000000 		.4byte	.LASF12
  261 0091 02       		.uleb128 0x2
  262 0092 01       		.byte	0x1
  263 0093 08       		.byte	0x8
- 264 0094 94010000 		.4byte	.LASF13
+ 264 0094 8C010000 		.4byte	.LASF13
  265 0098 04       		.uleb128 0x4
  266 0099 86000000 		.4byte	.LASF14
  267 009d 02       		.byte	0x2
@@ -456,7 +456,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  272 00a9 02       		.uleb128 0x2
  273 00aa 04       		.byte	0x4
  274 00ab 07       		.byte	0x7
- 275 00ac 7D010000 		.4byte	.LASF15
+ 275 00ac 75010000 		.4byte	.LASF15
  276 00b0 06       		.uleb128 0x6
  277 00b1 06       		.byte	0x6
  278 00b2 03       		.byte	0x3
@@ -475,16 +475,16 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  291 00cb 77000000 		.4byte	0x77
  292 00cf 02       		.byte	0x2
  293 00d0 07       		.uleb128 0x7
- 294 00d1 A8020000 		.4byte	.LASF18
+ 294 00d1 A0020000 		.4byte	.LASF18
  295 00d5 03       		.byte	0x3
  296 00d6 49       		.byte	0x49
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 9
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 9
 
 
  297 00d7 6B000000 		.4byte	0x6b
  298 00db 04       		.byte	0x4
  299 00dc 07       		.uleb128 0x7
- 300 00dd F9000000 		.4byte	.LASF19
+ 300 00dd B3000000 		.4byte	.LASF19
  301 00e1 03       		.byte	0x3
  302 00e2 4F       		.byte	0x4f
  303 00e3 6B000000 		.4byte	0x6b
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  351 0155 6C010000 		.4byte	0x16c
  352 0159 0A       		.uleb128 0xa
  353 015a 1E000000 		.4byte	.LVL4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 10
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 10
 
 
  354 015e DD010000 		.4byte	0x1dd
@@ -547,7 +547,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  357 0167 F4000000 		.4byte	0xf4
  358 016b 00       		.byte	0
  359 016c 09       		.uleb128 0x9
- 360 016d 50010000 		.4byte	.LASF24
+ 360 016d 48010000 		.4byte	.LASF24
  361 0171 01       		.byte	0x1
  362 0172 96       		.byte	0x96
  363 0173 00000000 		.4byte	.LFB4
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  373 018f E4010000 		.4byte	0x1e4
  374 0193 00       		.byte	0
  375 0194 0B       		.uleb128 0xb
- 376 0195 1C010000 		.4byte	.LASF34
+ 376 0195 14010000 		.4byte	.LASF34
  377 0199 01       		.byte	0x1
  378 019a 15       		.byte	0x15
  379 019b E9000000 		.4byte	0xe9
@@ -571,17 +571,17 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  381 01a0 03       		.byte	0x3
  382 01a1 00000000 		.4byte	sectimer_backup
  383 01a5 0C       		.uleb128 0xc
- 384 01a6 93020000 		.4byte	.LASF25
+ 384 01a6 8B020000 		.4byte	.LASF25
  385 01aa 03       		.byte	0x3
  386 01ab 69       		.byte	0x69
  387 01ac 77000000 		.4byte	0x77
  388 01b0 0C       		.uleb128 0xc
- 389 01b1 60010000 		.4byte	.LASF26
+ 389 01b1 58010000 		.4byte	.LASF26
  390 01b5 03       		.byte	0x3
  391 01b6 63       		.byte	0x63
  392 01b7 6B000000 		.4byte	0x6b
  393 01bb 0D       		.uleb128 0xd
- 394 01bc 7D020000 		.4byte	.LASF27
+ 394 01bc 75020000 		.4byte	.LASF27
  395 01c0 03       		.byte	0x3
  396 01c1 6A       		.byte	0x6a
  397 01c2 CC010000 		.4byte	0x1cc
@@ -589,7 +589,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  399 01c7 77000000 		.4byte	0x77
  400 01cb 00       		.byte	0
  401 01cc 0D       		.uleb128 0xd
- 402 01cd 99010000 		.4byte	.LASF28
+ 402 01cd 91010000 		.4byte	.LASF28
  403 01d1 03       		.byte	0x3
  404 01d2 64       		.byte	0x64
  405 01d3 DD010000 		.4byte	0x1dd
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  408 01dc 00       		.byte	0
  409 01dd 0F       		.uleb128 0xf
  410 01de 11000000 		.4byte	.LASF29
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 11
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 11
 
 
  411 01e2 03       		.byte	0x3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  465 002d 0E       		.uleb128 0xe
  466 002e 3A       		.uleb128 0x3a
  467 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 12
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 12
 
 
  468 0030 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  522 0066 09       		.uleb128 0x9
  523 0067 2E       		.uleb128 0x2e
  524 0068 01       		.byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 13
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 13
 
 
  525 0069 3F       		.uleb128 0x3f
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  579 00a2 0B       		.uleb128 0xb
  580 00a3 3B       		.uleb128 0x3b
  581 00a4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 14
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 14
 
 
  582 00a5 27       		.uleb128 0x27
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  636 0004 0200     		.2byte	0x2
  637 0006 00000000 		.4byte	.Ldebug_info0
  638 000a 04       		.byte	0x4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 15
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 15
 
 
  639 000b 00       		.byte	0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  675              	.LASF17:
  676 0046 54696D65 		.ascii	"TimerUdb\000"
  676      72556462 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 16
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 16
 
 
  676      00
@@ -936,137 +936,137 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 1
  690      5F626163 
  690      6B757053 
  690      74727563 
- 691              	.LASF33:
- 692 00b3 443A5C55 		.ascii	"D:\\Users\\nray\\Desktop\\IRIS WIT\\LORA multisenso"
- 692      73657273 
- 692      5C6E7261 
- 692      795C4465 
- 692      736B746F 
- 693 00e1 72205357 		.ascii	"r SW\\PSOC4MIO_HAL.cydsn\000"
- 693      5C50534F 
- 693      43344D49 
- 693      4F5F4841 
- 693      4C2E6379 
- 694              	.LASF19:
- 695 00f9 54696D65 		.ascii	"TimerControlRegister\000"
- 695      72436F6E 
- 695      74726F6C 
- 695      52656769 
- 695      73746572 
- 696              	.LASF12:
- 697 010e 646F7562 		.ascii	"double\000"
- 697      6C6500
+ 691              	.LASF19:
+ 692 00b3 54696D65 		.ascii	"TimerControlRegister\000"
+ 692      72436F6E 
+ 692      74726F6C 
+ 692      52656769 
+ 692      73746572 
+ 693              	.LASF12:
+ 694 00c8 646F7562 		.ascii	"double\000"
+ 694      6C6500
+ 695              	.LASF33:
+ 696 00cf 443A5C55 		.ascii	"D:\\Users\\nray\\Documents\\GitHub\\PSOC4MIOHAL\\PS"
+ 696      73657273 
+ 696      5C6E7261 
+ 696      795C446F 
+ 696      63756D65 
+ 697 00fc 4F43344D 		.ascii	"OC4MIO_HAL.cydsn\000"
+ 697      494F5F48 
+ 697      414C2E63 
+ 697      7964736E 
+ 697      00
  698              	.LASF10:
- 699 0115 75696E74 		.ascii	"uint16\000"
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 17
+ 699 010d 75696E74 		.ascii	"uint16\000"
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 17
 
 
  699      313600
  700              	.LASF34:
- 701 011c 73656374 		.ascii	"sectimer_backup\000"
+ 701 0114 73656374 		.ascii	"sectimer_backup\000"
  701      696D6572 
  701      5F626163 
  701      6B757000 
  702              	.LASF8:
- 703 012c 756E7369 		.ascii	"unsigned int\000"
+ 703 0124 756E7369 		.ascii	"unsigned int\000"
  703      676E6564 
  703      20696E74 
  703      00
  704              	.LASF7:
- 705 0139 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 705 0131 6C6F6E67 		.ascii	"long long unsigned int\000"
  705      206C6F6E 
  705      6720756E 
  705      7369676E 
  705      65642069 
  706              	.LASF24:
- 707 0150 73656374 		.ascii	"sectimer_Wakeup\000"
+ 707 0148 73656374 		.ascii	"sectimer_Wakeup\000"
  707      696D6572 
  707      5F57616B 
  707      65757000 
  708              	.LASF26:
- 709 0160 73656374 		.ascii	"sectimer_ReadControlRegister\000"
+ 709 0158 73656374 		.ascii	"sectimer_ReadControlRegister\000"
  709      696D6572 
  709      5F526561 
  709      64436F6E 
  709      74726F6C 
  710              	.LASF15:
- 711 017d 73697A65 		.ascii	"sizetype\000"
+ 711 0175 73697A65 		.ascii	"sizetype\000"
  711      74797065 
  711      00
  712              	.LASF6:
- 713 0186 6C6F6E67 		.ascii	"long long int\000"
+ 713 017e 6C6F6E67 		.ascii	"long long int\000"
  713      206C6F6E 
  713      6720696E 
  713      7400
  714              	.LASF13:
- 715 0194 63686172 		.ascii	"char\000"
+ 715 018c 63686172 		.ascii	"char\000"
  715      00
  716              	.LASF28:
- 717 0199 73656374 		.ascii	"sectimer_WriteControlRegister\000"
+ 717 0191 73656374 		.ascii	"sectimer_WriteControlRegister\000"
  717      696D6572 
  717      5F577269 
  717      7465436F 
  717      6E74726F 
  718              	.LASF31:
- 719 01b7 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 719 01af 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  719      4320342E 
  719      392E3320 
  719      32303135 
  719      30333033 
- 720 01ea 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 720 01e2 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  720      20726576 
  720      6973696F 
  720      6E203232 
  720      31323230 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqWDayV.s 			page 18
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccsej9rD.s 			page 18
 
 
- 721 021d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 721 0215 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  721      66756E63 
  721      74696F6E 
  721      2D736563 
  721      74696F6E 
  722              	.LASF2:
- 723 0245 73686F72 		.ascii	"short int\000"
+ 723 023d 73686F72 		.ascii	"short int\000"
  723      7420696E 
  723      7400
  724              	.LASF9:
- 725 024f 75696E74 		.ascii	"uint8\000"
+ 725 0247 75696E74 		.ascii	"uint8\000"
  725      3800
  726              	.LASF4:
- 727 0255 6C6F6E67 		.ascii	"long int\000"
+ 727 024d 6C6F6E67 		.ascii	"long int\000"
  727      20696E74 
  727      00
  728              	.LASF0:
- 729 025e 7369676E 		.ascii	"signed char\000"
+ 729 0256 7369676E 		.ascii	"signed char\000"
  729      65642063 
  729      68617200 
  730              	.LASF3:
- 731 026a 73686F72 		.ascii	"short unsigned int\000"
+ 731 0262 73686F72 		.ascii	"short unsigned int\000"
  731      7420756E 
  731      7369676E 
  731      65642069 
  731      6E7400
  732              	.LASF27:
- 733 027d 73656374 		.ascii	"sectimer_WriteCounter\000"
+ 733 0275 73656374 		.ascii	"sectimer_WriteCounter\000"
  733      696D6572 
  733      5F577269 
  733      7465436F 
  733      756E7465 
  734              	.LASF25:
- 735 0293 73656374 		.ascii	"sectimer_ReadCounter\000"
+ 735 028b 73656374 		.ascii	"sectimer_ReadCounter\000"
  735      696D6572 
  735      5F526561 
  735      64436F75 
  735      6E746572 
  736              	.LASF18:
- 737 02a8 496E7465 		.ascii	"InterruptMaskValue\000"
+ 737 02a0 496E7465 		.ascii	"InterruptMaskValue\000"
  737      72727570 
  737      744D6173 
  737      6B56616C 
  737      756500
  738              	.LASF32:
- 739 02bb 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\sectimer_PM.c\000"
+ 739 02b3 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\sectimer_PM.c\000"
  739      6E657261 
  739      7465645F 
  739      536F7572 

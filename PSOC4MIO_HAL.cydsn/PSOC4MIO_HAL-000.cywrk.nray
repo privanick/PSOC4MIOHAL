@@ -41,9 +41,6 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\chan1\chan1.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\chan1\chan1_aliases.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\chan1\chan1_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\Clock_2</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\Clock_2\Clock_2.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\Clock_2\Clock_2.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console\console.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console\console.h</v>
@@ -134,15 +131,6 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\en5v_gpio1\en5v_gpio1.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\en5v_gpio1\en5v_gpio1_aliases.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\en5v_gpio1\en5v_gpio1_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow\flow.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow\flow.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow\flow_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow2_7</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow2_7\flow2_7.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow2_7\flow2_7.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow2_7\flow2_7_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\flow2_7\flow2_7_PM.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio1</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio1\gpio1.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio1\gpio1.h</v>
@@ -178,43 +166,28 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio1_sda\gpio1_sda.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio1_sda\gpio1_sda_aliases.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio1_sda\gpio1_sda_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_2</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_2\gpio2_2.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_2\gpio2_2.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_2\gpio2_2_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_2\gpio2_2_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_3</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_3\gpio2_3.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_3\gpio2_3.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_3\gpio2_3_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_3\gpio2_3_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_4</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_4\gpio2_4.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_4\gpio2_4.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_4\gpio2_4_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_4\gpio2_4_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_5</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_5\gpio2_5.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_5\gpio2_5.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_5\gpio2_5_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_5\gpio2_5_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_8</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_8\gpio2_8.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_8\gpio2_8.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_8\gpio2_8_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_8\gpio2_8_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_9</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_9\gpio2_9.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_9\gpio2_9.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_9\gpio2_9_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\gpio2_9\gpio2_9_PM.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_AsmGnu.s</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_AsmIar.s</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_AsmRv.s</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_BOOT.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_BOOT.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_PINS.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_PM.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_PVT.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_SPI_UART.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_SPI_UART.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_SPI_UART_INT.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_SPI_UART_PVT.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_UART.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD\LCD_UART_BOOT.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_SCBCLK</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_SCBCLK\LCD_SCBCLK.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_SCBCLK\LCD_SCBCLK.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_tx</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_tx\LCD_tx.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_tx\LCD_tx.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_tx\LCD_tx_aliases.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\LCD_tx\LCD_tx_PM.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\nrst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\nrst\nrst.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\nrst\nrst.h</v>
@@ -229,11 +202,6 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\P7_1\P7_1.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\P7_1\P7_1_aliases.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\P7_1\P7_1_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\press2_6</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\press2_6\press2_6.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\press2_6\press2_6.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\press2_6\press2_6_aliases.h</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\press2_6\press2_6_PM.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sectimer</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sectimer\sectimer.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sectimer\sectimer.h</v>
@@ -292,6 +260,11 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw2\sw2.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw2\sw2_aliases.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw2\sw2_PM.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw3</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw3\sw3.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw3\sw3.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw3\sw3_aliases.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\sw3\sw3_PM.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\switches</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\switches\switches.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\switches\switches.h</v>
@@ -342,9 +315,6 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\chan1\chan1.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\chan1\chan1_aliases.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\chan1\chan1_PM.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\Clock_2</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\Clock_2\Clock_2.c</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\Clock_2\Clock_2.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console\console.c</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console\console.h</v>
@@ -369,6 +339,9 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console_SCBCLK\console_SCBCLK.h</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console_tx</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console_tx\console_tx.c</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console_tx\console_tx.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console_tx\console_tx_aliases.h</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Generated_Source\PSoC4\console_tx\console_tx_PM.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -400,7 +373,6 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\chan1.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\chan1_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_2.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_BOOT.lst</v>
@@ -437,10 +409,6 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio0_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio1.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio1_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\flow.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\flow_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\flow2_7.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\flow2_7_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio1.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio1_BOOT.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio1_I2C.lst</v>
@@ -456,28 +424,22 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio1_scl_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio1_sda.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio1_sda_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_2.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_2_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_3.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_3_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_4.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_4_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_5.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_5_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_8.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_8_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_9.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio2_9_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_AsmGnu.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_BOOT.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_SCBCLK.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_SPI_UART.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_SPI_UART_INT.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_tx.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_tx_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_UART.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\LCD_UART_BOOT.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\nrst.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\nrst_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\P4_4.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\P7_1.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\P7_1_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\press2_6.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\press2_6_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\sectimer.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\sectimer_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\SPI_1.lst</v>
@@ -502,6 +464,8 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\sw1_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\sw2.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\sw2_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\sw3.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\sw3_PM.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\switches.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ubut.lst</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\wdog.lst</v>
@@ -515,54 +479,6 @@
 <VisibleNodeIds>
 <v>PSOC4MIO_HAL-000</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_INT.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_intClock.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_IRQ.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\chan1.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\chan1_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_2.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_BOOT.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_rx.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_rx_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_SCBCLK.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_SPI_UART.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_SPI_UART_INT.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_tx.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_tx_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_UART.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_UART_BOOT.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\coretemp.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\crdy.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyDMA.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio0.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio0_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio1.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio1_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio2.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio2_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en33v_gpio1.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en33v_gpio1_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio0.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio0_PM.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio1.lst</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio1_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -600,10 +516,8 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SCB_P4_v3_10.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SCB_P4_v3_20</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SW_Tx_UART_v1_50.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SwitchSPST_v1_0</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SwitchSPST_v1_0\SwitchSPST_v1_0.pdf</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\TCPWM_P4_v2_10.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Timer_v2_70.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
@@ -636,10 +550,8 @@
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SCB_P4_v3_10.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SCB_P4_v3_20</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SW_Tx_UART_v1_50.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SwitchSPST_v1_0</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\SwitchSPST_v1_0\SwitchSPST_v1_0.pdf</v>
-<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\TCPWM_P4_v2_10.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\Timer_v2_70.pdf</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\ZeroTerminal.pdf</v>
 </VisibleNodeIds>

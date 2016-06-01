@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="PSOC4MIO_HAL" Path="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" Version="5.30" Type="Normal">
+  <Project Name="PSOC4MIO_HAL" Path="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" Version="5.30" Type="Normal">
     <CMSIS_SVD_File>PSOC4MIO_HAL.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,14 +34,14 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC4\Cm0Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="BUILD" Path="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn">
+      <Folder BuildType="BUILD" Path="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn">
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn">
           <File BuildType="BUILD" Toolchain="">.\main.c</File>
           <File BuildType="BUILD" Toolchain="">.\cyapicallbacks.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn\Generated_Source\PSoC4">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn\Generated_Source\PSoC4">
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn">
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cymetadata.c</File>
@@ -165,6 +165,10 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\sw2.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\sw2_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\sw2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\sw3.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\sw3.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\sw3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\sw3_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio1.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio1_I2C.h</File>
@@ -192,10 +196,17 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\SPI_1_BOOT.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_SPI_UART.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_SPI_UART.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_SPI_UART_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_UART.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_UART_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_PINS.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_SPI_UART_PVT.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_PVT.h</File>
-          <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Generated_Source\PSoC4\LCD_AsmGnu.s</File>
-          <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Generated_Source\PSoC4\LCD_AsmRv.s</File>
-          <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Generated_Source\PSoC4\LCD_AsmIar.s</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_BOOT.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\dio0.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\dio0.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\dio0_aliases.h</File>
@@ -212,22 +223,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\nrst.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\nrst_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\nrst_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_5.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_5.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_5_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_5_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_8.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_8.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_8_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_8_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_9.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_9.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_9_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_9_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio1_SCBCLK.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio1_SCBCLK.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio1_sda.c</File>
@@ -258,81 +253,66 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\SPI_1_mosi_s.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\SPI_1_mosi_s_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\SPI_1_mosi_s_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_SCBCLK.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_SCBCLK.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_tx.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_tx.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_tx_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LCD_tx_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\switches.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\switches.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Clock_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Clock_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_4.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_4.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_4_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_4_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\flow.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\flow.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\flow_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\press2_6.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\press2_6.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\press2_6_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\press2_6_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\flow2_7.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\flow2_7.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\flow2_7_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\flow2_7_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\gpio2_3_PM.c</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC3">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC5">
-        <Files Root="D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn" />
+        <Files Root="D:\Users\nray\Documents\GitHub\PSOC4MIOHAL\PSOC4MIO_HAL.cydsn" />
       </Folder>
     </Folders>
   </Project>

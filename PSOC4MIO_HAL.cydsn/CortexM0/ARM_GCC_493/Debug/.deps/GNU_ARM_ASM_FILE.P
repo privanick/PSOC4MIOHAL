@@ -1,12 +1,8 @@
-D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.o : D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
+D:/Users/nray/Documents/GitHub/PSOC4MIOHAL/PSOC4MIO_HAL.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.o : D:/Users/nray/Documents/GitHub/PSOC4MIOHAL/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s D:/Users/nray/Documents/GitHub/PSOC4MIOHAL/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc D:/Users/nray/Documents/GitHub/PSOC4MIOHAL/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
 
-D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
+D:/Users/nray/Documents/GitHub/PSOC4MIOHAL/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
 
-D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
+D:/Users/nray/Documents/GitHub/PSOC4MIOHAL/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
 
-D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
-
-D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/CortexM0/ARM_GCC_493/Debug/LCD_AsmGnu.o : D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/LCD_AsmGnu.s D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
-
-D:/Users/nray/Desktop/IRIS\ WIT/LORA\ multisensor\ SW/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/LCD_AsmGnu.s : 
+D:/Users/nray/Documents/GitHub/PSOC4MIOHAL/PSOC4MIO_HAL.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
 

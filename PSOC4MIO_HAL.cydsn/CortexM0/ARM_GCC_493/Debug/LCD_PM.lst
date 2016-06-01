@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
   30:.\Generated_Source\PSoC4/LCD_PM.c **** #if(LCD_SCB_MODE_SPI_INC || LCD_SCB_MODE_UART_INC)
   31:.\Generated_Source\PSoC4/LCD_PM.c ****     #include "LCD_SPI_UART_PVT.h"
   32:.\Generated_Source\PSoC4/LCD_PM.c **** #endif /* (LCD_SCB_MODE_SPI_INC || LCD_SCB_MODE_UART_INC) */
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 2
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/LCD_PM.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
   81:.\Generated_Source\PSoC4/LCD_PM.c ****             LCD_I2CSaveConfig();
   82:.\Generated_Source\PSoC4/LCD_PM.c ****         }
   83:.\Generated_Source\PSoC4/LCD_PM.c ****         else if(LCD_SCB_MODE_EZI2C_RUNTM_CFG)
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 3
 
 
   84:.\Generated_Source\PSoC4/LCD_PM.c ****         {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
   39 000c 01D0     		beq	.L1
  131:.\Generated_Source\PSoC4/LCD_PM.c ****         {
  132:.\Generated_Source\PSoC4/LCD_PM.c ****             LCD_Stop();
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 4
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 4
 
 
   40              		.loc 1 132 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
   66              		.cfi_def_cfa_offset 8
   67              		.cfi_offset 3, -8
   68              		.cfi_offset 14, -4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 5
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 5
 
 
  161:.\Generated_Source\PSoC4/LCD_PM.c **** #if(LCD_SCB_MODE_UNCONFIG_CONST_CFG)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
   71 0004 1B78     		ldrb	r3, [r3]
   72 0006 002B     		cmp	r3, #0
   73 0008 01D0     		beq	.L5
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 6
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 6
 
 
  213:.\Generated_Source\PSoC4/LCD_PM.c ****         {
@@ -342,36 +342,36 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  104 0006 00000000 		.4byte	.Ldebug_abbrev0
  105 000a 04       		.byte	0x4
  106 000b 01       		.uleb128 0x1
- 107 000c 46010000 		.4byte	.LASF21
+ 107 000c 3E010000 		.4byte	.LASF21
  108 0010 01       		.byte	0x1
- 109 0011 CD000000 		.4byte	.LASF22
- 110 0015 68000000 		.4byte	.LASF23
+ 109 0011 CA000000 		.4byte	.LASF22
+ 110 0015 51000000 		.4byte	.LASF23
  111 0019 00000000 		.4byte	.Ldebug_ranges0+0
  112 001d 00000000 		.4byte	0
  113 0021 00000000 		.4byte	.Ldebug_line0
  114 0025 02       		.uleb128 0x2
  115 0026 01       		.byte	0x1
  116 0027 06       		.byte	0x6
- 117 0028 18010000 		.4byte	.LASF0
+ 117 0028 15010000 		.4byte	.LASF0
  118 002c 02       		.uleb128 0x2
  119 002d 01       		.byte	0x1
  120 002e 08       		.byte	0x8
- 121 002f BF000000 		.4byte	.LASF1
+ 121 002f BC000000 		.4byte	.LASF1
  122 0033 02       		.uleb128 0x2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 7
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 7
 
 
  123 0034 02       		.byte	0x2
  124 0035 05       		.byte	0x5
- 125 0036 E7010000 		.4byte	.LASF2
+ 125 0036 DF010000 		.4byte	.LASF2
  126 003a 02       		.uleb128 0x2
  127 003b 02       		.byte	0x2
  128 003c 07       		.byte	0x7
- 129 003d 05010000 		.4byte	.LASF3
+ 129 003d 02010000 		.4byte	.LASF3
  130 0041 02       		.uleb128 0x2
  131 0042 04       		.byte	0x4
  132 0043 05       		.byte	0x5
- 133 0044 EF000000 		.4byte	.LASF4
+ 133 0044 EC000000 		.4byte	.LASF4
  134 0048 02       		.uleb128 0x2
  135 0049 04       		.byte	0x4
  136 004a 07       		.byte	0x7
@@ -383,7 +383,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  142 0056 02       		.uleb128 0x2
  143 0057 08       		.byte	0x8
  144 0058 07       		.byte	0x7
- 145 0059 51000000 		.4byte	.LASF7
+ 145 0059 8F000000 		.4byte	.LASF7
  146 005d 03       		.uleb128 0x3
  147 005e 04       		.byte	0x4
  148 005f 05       		.byte	0x5
@@ -405,20 +405,20 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  164 0083 02       		.uleb128 0x2
  165 0084 04       		.byte	0x4
  166 0085 04       		.byte	0x4
- 167 0086 AE000000 		.4byte	.LASF11
+ 167 0086 AB000000 		.4byte	.LASF11
  168 008a 02       		.uleb128 0x2
  169 008b 08       		.byte	0x8
  170 008c 04       		.byte	0x4
- 171 008d F8000000 		.4byte	.LASF12
+ 171 008d F5000000 		.4byte	.LASF12
  172 0091 02       		.uleb128 0x2
  173 0092 01       		.byte	0x1
  174 0093 08       		.byte	0x8
- 175 0094 2F010000 		.4byte	.LASF13
+ 175 0094 A6000000 		.4byte	.LASF13
  176 0098 04       		.uleb128 0x4
- 177 0099 FF000000 		.4byte	.LASF14
+ 177 0099 FC000000 		.4byte	.LASF14
  178 009d 02       		.byte	0x2
  179 009e E401     		.2byte	0x1e4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 8
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 8
 
 
  180 00a0 A4000000 		.4byte	0xa4
@@ -427,7 +427,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  183 00a9 02       		.uleb128 0x2
  184 00aa 04       		.byte	0x4
  185 00ab 07       		.byte	0x7
- 186 00ac F1010000 		.4byte	.LASF15
+ 186 00ac E9010000 		.4byte	.LASF15
  187 00b0 06       		.uleb128 0x6
  188 00b1 01       		.byte	0x1
  189 00b2 03       		.byte	0x3
@@ -441,12 +441,12 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  197 00c3 00       		.byte	0
  198 00c4 00       		.byte	0
  199 00c5 08       		.uleb128 0x8
- 200 00c6 34010000 		.4byte	.LASF16
+ 200 00c6 2C010000 		.4byte	.LASF16
  201 00ca 03       		.byte	0x3
  202 00cb 5F       		.byte	0x5f
  203 00cc B0000000 		.4byte	0xb0
  204 00d0 09       		.uleb128 0x9
- 205 00d1 D4010000 		.4byte	.LASF17
+ 205 00d1 CC010000 		.4byte	.LASF17
  206 00d5 01       		.byte	0x1
  207 00d6 49       		.byte	0x49
  208 00d7 00000000 		.4byte	.LFB1
@@ -459,7 +459,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  215 00ea 1F010000 		.4byte	0x11f
  216 00ee 00       		.byte	0
  217 00ef 09       		.uleb128 0x9
- 218 00f0 24010000 		.4byte	.LASF18
+ 218 00f0 21010000 		.4byte	.LASF18
  219 00f4 01       		.byte	0x1
  220 00f5 9F       		.byte	0x9f
  221 00f6 00000000 		.4byte	.LFB2
@@ -478,16 +478,16 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  234 0115 C5000000 		.4byte	0xc5
  235 0119 05       		.uleb128 0x5
  236 011a 03       		.byte	0x3
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 9
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 9
 
 
  237 011b 00000000 		.4byte	LCD_backup
  238 011f 0C       		.uleb128 0xc
- 239 0120 DE010000 		.4byte	.LASF19
+ 239 0120 D6010000 		.4byte	.LASF19
  240 0124 03       		.byte	0x3
  241 0125 6F       		.byte	0x6f
  242 0126 0C       		.uleb128 0xc
- 243 0127 B4000000 		.4byte	.LASF20
+ 243 0127 B1000000 		.4byte	.LASF20
  244 012b 03       		.byte	0x3
  245 012c 6D       		.byte	0x6d
  246 012d 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  291 002a 16       		.uleb128 0x16
  292 002b 00       		.byte	0
  293 002c 03       		.uleb128 0x3
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 10
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 10
 
 
  294 002d 0E       		.uleb128 0xe
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  348 0063 13       		.uleb128 0x13
  349 0064 00       		.byte	0
  350 0065 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 11
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 11
 
 
  351 0066 09       		.uleb128 0x9
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  405 009f 3F       		.uleb128 0x3f
  406 00a0 19       		.uleb128 0x19
  407 00a1 03       		.uleb128 0x3
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 12
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 12
 
 
  408 00a2 0E       		.uleb128 0xe
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  452 0021 756E7369 		.ascii	"unsigned int\000"
  452      676E6564 
  452      20696E74 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 13
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 13
 
 
  452      00
@@ -735,110 +735,110 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 1
  458      69676E65 
  458      6420696E 
  458      7400
- 459              	.LASF7:
- 460 0051 6C6F6E67 		.ascii	"long long unsigned int\000"
- 460      206C6F6E 
- 460      6720756E 
- 460      7369676E 
- 460      65642069 
- 461              	.LASF23:
- 462 0068 443A5C55 		.ascii	"D:\\Users\\nray\\Desktop\\IRIS WIT\\LORA multisenso"
- 462      73657273 
- 462      5C6E7261 
- 462      795C4465 
- 462      736B746F 
- 463 0096 72205357 		.ascii	"r SW\\PSOC4MIO_HAL.cydsn\000"
- 463      5C50534F 
- 463      43344D49 
- 463      4F5F4841 
- 463      4C2E6379 
- 464              	.LASF11:
- 465 00ae 666C6F61 		.ascii	"float\000"
- 465      7400
- 466              	.LASF20:
- 467 00b4 4C43445F 		.ascii	"LCD_Enable\000"
- 467      456E6162 
- 467      6C6500
- 468              	.LASF1:
- 469 00bf 756E7369 		.ascii	"unsigned char\000"
- 469      676E6564 
- 469      20636861 
- 469      7200
- 470              	.LASF22:
- 471 00cd 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\LCD_PM.c\000"
- 471      6E657261 
- 471      7465645F 
- 471      536F7572 
- 471      63655C50 
- 472              	.LASF4:
- 473 00ef 6C6F6E67 		.ascii	"long int\000"
- 473      20696E74 
- 473      00
- 474              	.LASF12:
- 475 00f8 646F7562 		.ascii	"double\000"
- 475      6C6500
- 476              	.LASF14:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 14
+ 459              	.LASF23:
+ 460 0051 443A5C55 		.ascii	"D:\\Users\\nray\\Documents\\GitHub\\PSOC4MIOHAL\\PS"
+ 460      73657273 
+ 460      5C6E7261 
+ 460      795C446F 
+ 460      63756D65 
+ 461 007e 4F43344D 		.ascii	"OC4MIO_HAL.cydsn\000"
+ 461      494F5F48 
+ 461      414C2E63 
+ 461      7964736E 
+ 461      00
+ 462              	.LASF7:
+ 463 008f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 463      206C6F6E 
+ 463      6720756E 
+ 463      7369676E 
+ 463      65642069 
+ 464              	.LASF13:
+ 465 00a6 63686172 		.ascii	"char\000"
+ 465      00
+ 466              	.LASF11:
+ 467 00ab 666C6F61 		.ascii	"float\000"
+ 467      7400
+ 468              	.LASF20:
+ 469 00b1 4C43445F 		.ascii	"LCD_Enable\000"
+ 469      456E6162 
+ 469      6C6500
+ 470              	.LASF1:
+ 471 00bc 756E7369 		.ascii	"unsigned char\000"
+ 471      676E6564 
+ 471      20636861 
+ 471      7200
+ 472              	.LASF22:
+ 473 00ca 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\LCD_PM.c\000"
+ 473      6E657261 
+ 473      7465645F 
+ 473      536F7572 
+ 473      63655C50 
+ 474              	.LASF4:
+ 475 00ec 6C6F6E67 		.ascii	"long int\000"
+ 475      20696E74 
+ 475      00
+ 476              	.LASF12:
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 14
 
 
- 477 00ff 72656733 		.ascii	"reg32\000"
- 477      3200
- 478              	.LASF3:
- 479 0105 73686F72 		.ascii	"short unsigned int\000"
- 479      7420756E 
- 479      7369676E 
- 479      65642069 
- 479      6E7400
- 480              	.LASF0:
- 481 0118 7369676E 		.ascii	"signed char\000"
- 481      65642063 
- 481      68617200 
- 482              	.LASF18:
- 483 0124 4C43445F 		.ascii	"LCD_Wakeup\000"
- 483      57616B65 
- 483      757000
- 484              	.LASF13:
- 485 012f 63686172 		.ascii	"char\000"
- 485      00
+ 477 00f5 646F7562 		.ascii	"double\000"
+ 477      6C6500
+ 478              	.LASF14:
+ 479 00fc 72656733 		.ascii	"reg32\000"
+ 479      3200
+ 480              	.LASF3:
+ 481 0102 73686F72 		.ascii	"short unsigned int\000"
+ 481      7420756E 
+ 481      7369676E 
+ 481      65642069 
+ 481      6E7400
+ 482              	.LASF0:
+ 483 0115 7369676E 		.ascii	"signed char\000"
+ 483      65642063 
+ 483      68617200 
+ 484              	.LASF18:
+ 485 0121 4C43445F 		.ascii	"LCD_Wakeup\000"
+ 485      57616B65 
+ 485      757000
  486              	.LASF16:
- 487 0134 4C43445F 		.ascii	"LCD_BACKUP_STRUCT\000"
+ 487 012c 4C43445F 		.ascii	"LCD_BACKUP_STRUCT\000"
  487      4241434B 
  487      55505F53 
  487      54525543 
  487      5400
  488              	.LASF21:
- 489 0146 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 489 013e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  489      4320342E 
  489      392E3320 
  489      32303135 
  489      30333033 
- 490 0179 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 490 0171 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  490      20726576 
  490      6973696F 
  490      6E203232 
  490      31323230 
- 491 01ac 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 491 01a4 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  491      66756E63 
  491      74696F6E 
  491      2D736563 
  491      74696F6E 
  492              	.LASF17:
- 493 01d4 4C43445F 		.ascii	"LCD_Sleep\000"
+ 493 01cc 4C43445F 		.ascii	"LCD_Sleep\000"
  493      536C6565 
  493      7000
  494              	.LASF19:
- 495 01de 4C43445F 		.ascii	"LCD_Stop\000"
+ 495 01d6 4C43445F 		.ascii	"LCD_Stop\000"
  495      53746F70 
  495      00
  496              	.LASF2:
- 497 01e7 73686F72 		.ascii	"short int\000"
+ 497 01df 73686F72 		.ascii	"short int\000"
  497      7420696E 
  497      7400
  498              	.LASF15:
- 499 01f1 73697A65 		.ascii	"sizetype\000"
+ 499 01e9 73697A65 		.ascii	"sizetype\000"
  499      74797065 
  499      00
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccoIYrRX.s 			page 15
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqVS9uj.s 			page 15
 
 
  500              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

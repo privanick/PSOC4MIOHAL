@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
   30:.\Generated_Source\PSoC4/P7_1.c ****         #define P7_1_SetP4PinDriveMode(shift, mode)  \
   31:.\Generated_Source\PSoC4/P7_1.c ****         do { \
   32:.\Generated_Source\PSoC4/P7_1.c ****             P7_1_USBIO_CTRL_REG = (P7_1_USBIO_CTRL_REG & \
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 2
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/P7_1.c ****                                     (uint32)(~(uint32)(P7_1_DRIVE_MODE_IND_MASK << \
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
   75:.\Generated_Source\PSoC4/P7_1.c ****     }
   38              		.loc 1 75 0
   39              		@ sp needed
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 3
 
 
   40 000e 7047     		bx	lr
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
   57              		.cfi_startproc
   58              	.LVL2:
  113:.\Generated_Source\PSoC4/P7_1.c ****     uint8 drVal = (uint8)(P7_1_DR & (uint8)(~P7_1_MASK));
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 4
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 4
 
 
   59              		.loc 1 113 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  135:.\Generated_Source\PSoC4/P7_1.c **** *******************************************************************************/
  136:.\Generated_Source\PSoC4/P7_1.c **** uint8 P7_1_Read(void)
  137:.\Generated_Source\PSoC4/P7_1.c **** {
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 5
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 5
 
 
   92              		.loc 1 137 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  118              		.cfi_startproc
  166:.\Generated_Source\PSoC4/P7_1.c ****     return (uint8)((P7_1_DR & P7_1_MASK) >> P7_1_SHIFT);
  119              		.loc 1 166 0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 6
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 6
 
 
  120 0000 024B     		ldr	r3, .L11
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  199:.\Generated_Source\PSoC4/P7_1.c **** *  It is recommended that the interrupt be disabled before calling this 
  200:.\Generated_Source\PSoC4/P7_1.c **** *  function to avoid unintended interrupt requests. Note that the interrupt
  201:.\Generated_Source\PSoC4/P7_1.c **** *  type is port wide, and therefore will trigger for any enabled pin on the 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 7
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 7
 
 
  202:.\Generated_Source\PSoC4/P7_1.c **** *  port.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  225:.\Generated_Source\PSoC4/P7_1.c **** *  The right-shifted current value of the interrupt status register. Each pin 
  226:.\Generated_Source\PSoC4/P7_1.c **** *  has one bit set if it generated an interrupt event. For example, bit 0 is 
  227:.\Generated_Source\PSoC4/P7_1.c **** *  for pin 0 and bit 1 is for pin 1 of the Pins component.
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 8
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 8
 
 
  228:.\Generated_Source\PSoC4/P7_1.c **** *  
@@ -469,20 +469,20 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  204 0006 00000000 		.4byte	.Ldebug_abbrev0
  205 000a 04       		.byte	0x4
  206 000b 01       		.uleb128 0x1
- 207 000c 6D010000 		.4byte	.LASF28
+ 207 000c 5F010000 		.4byte	.LASF28
  208 0010 01       		.byte	0x1
  209 0011 2B000000 		.4byte	.LASF29
- 210 0015 8A000000 		.4byte	.LASF30
+ 210 0015 5F000000 		.4byte	.LASF30
  211 0019 00000000 		.4byte	.Ldebug_ranges0+0
  212 001d 00000000 		.4byte	0
  213 0021 00000000 		.4byte	.Ldebug_line0
  214 0025 02       		.uleb128 0x2
  215 0026 01       		.byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 9
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 9
 
 
  216 0027 06       		.byte	0x6
- 217 0028 1E020000 		.4byte	.LASF0
+ 217 0028 10020000 		.4byte	.LASF0
  218 002c 02       		.uleb128 0x2
  219 002d 01       		.byte	0x1
  220 002e 08       		.byte	0x8
@@ -490,27 +490,27 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  222 0033 02       		.uleb128 0x2
  223 0034 02       		.byte	0x2
  224 0035 05       		.byte	0x5
- 225 0036 FB010000 		.4byte	.LASF2
+ 225 0036 ED010000 		.4byte	.LASF2
  226 003a 02       		.uleb128 0x2
  227 003b 02       		.byte	0x2
  228 003c 07       		.byte	0x7
- 229 003d 77000000 		.4byte	.LASF3
+ 229 003d AF000000 		.4byte	.LASF3
  230 0041 02       		.uleb128 0x2
  231 0042 04       		.byte	0x4
  232 0043 05       		.byte	0x5
- 233 0044 0B020000 		.4byte	.LASF4
+ 233 0044 FD010000 		.4byte	.LASF4
  234 0048 02       		.uleb128 0x2
  235 0049 04       		.byte	0x4
  236 004a 07       		.byte	0x7
- 237 004b 65000000 		.4byte	.LASF5
+ 237 004b 9D000000 		.4byte	.LASF5
  238 004f 02       		.uleb128 0x2
  239 0050 08       		.byte	0x8
  240 0051 05       		.byte	0x5
- 241 0052 49010000 		.4byte	.LASF6
+ 241 0052 3B010000 		.4byte	.LASF6
  242 0056 02       		.uleb128 0x2
  243 0057 08       		.byte	0x8
  244 0058 07       		.byte	0x7
- 245 0059 19010000 		.4byte	.LASF7
+ 245 0059 0B010000 		.4byte	.LASF7
  246 005d 03       		.uleb128 0x3
  247 005e 04       		.byte	0x4
  248 005f 05       		.byte	0x5
@@ -518,19 +518,19 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  250 0064 02       		.uleb128 0x2
  251 0065 04       		.byte	0x4
  252 0066 07       		.byte	0x7
- 253 0067 0C010000 		.4byte	.LASF8
+ 253 0067 FE000000 		.4byte	.LASF8
  254 006b 04       		.uleb128 0x4
- 255 006c 05020000 		.4byte	.LASF9
+ 255 006c F7010000 		.4byte	.LASF9
  256 0070 02       		.byte	0x2
  257 0071 3801     		.2byte	0x138
  258 0073 2C000000 		.4byte	0x2c
  259 0077 04       		.uleb128 0x4
- 260 0078 D7000000 		.4byte	.LASF10
+ 260 0078 C9000000 		.4byte	.LASF10
  261 007c 02       		.byte	0x2
  262 007d 3901     		.2byte	0x139
  263 007f 3A000000 		.4byte	0x3a
  264 0083 04       		.uleb128 0x4
- 265 0084 E7000000 		.4byte	.LASF11
+ 265 0084 D9000000 		.4byte	.LASF11
  266 0088 02       		.byte	0x2
  267 0089 3A01     		.2byte	0x13a
  268 008b 48000000 		.4byte	0x48
@@ -538,17 +538,17 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  270 0090 04       		.byte	0x4
  271 0091 04       		.byte	0x4
  272 0092 4B000000 		.4byte	.LASF12
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 10
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 10
 
 
  273 0096 02       		.uleb128 0x2
  274 0097 08       		.byte	0x8
  275 0098 04       		.byte	0x4
- 276 0099 D0000000 		.4byte	.LASF13
+ 276 0099 C2000000 		.4byte	.LASF13
  277 009d 02       		.uleb128 0x2
  278 009e 01       		.byte	0x1
  279 009f 08       		.byte	0x8
- 280 00a0 68010000 		.4byte	.LASF14
+ 280 00a0 5A010000 		.4byte	.LASF14
  281 00a4 04       		.uleb128 0x4
  282 00a5 00000000 		.4byte	.LASF15
  283 00a9 02       		.byte	0x2
@@ -566,14 +566,14 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  295 00c5 9C       		.byte	0x9c
  296 00c6 DA000000 		.4byte	0xda
  297 00ca 07       		.uleb128 0x7
- 298 00cb 30010000 		.4byte	.LASF18
+ 298 00cb 22010000 		.4byte	.LASF18
  299 00cf 01       		.byte	0x1
  300 00d0 48       		.byte	0x48
  301 00d1 6B000000 		.4byte	0x6b
  302 00d5 00000000 		.4byte	.LLST0
  303 00d9 00       		.byte	0
  304 00da 06       		.uleb128 0x6
- 305 00db 2A020000 		.4byte	.LASF17
+ 305 00db 1C020000 		.4byte	.LASF17
  306 00df 01       		.byte	0x1
  307 00e0 6F       		.byte	0x6f
  308 00e1 00000000 		.4byte	.LFB1
@@ -588,17 +588,17 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  317 00f6 6B000000 		.4byte	0x6b
  318 00fa 21000000 		.4byte	.LLST1
  319 00fe 08       		.uleb128 0x8
- 320 00ff 5F000000 		.4byte	.LASF24
+ 320 00ff 27020000 		.4byte	.LASF24
  321 0103 01       		.byte	0x1
  322 0104 71       		.byte	0x71
  323 0105 6B000000 		.4byte	0x6b
  324 0109 42000000 		.4byte	.LLST2
  325 010d 00       		.byte	0
  326 010e 09       		.uleb128 0x9
- 327 010f 14020000 		.4byte	.LASF20
+ 327 010f 06020000 		.4byte	.LASF20
  328 0113 01       		.byte	0x1
  329 0114 88       		.byte	0x88
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 11
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 11
 
 
  330 0115 6B000000 		.4byte	0x6b
@@ -607,7 +607,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  333 0121 01       		.uleb128 0x1
  334 0122 9C       		.byte	0x9c
  335 0123 09       		.uleb128 0x9
- 336 0124 57010000 		.4byte	.LASF21
+ 336 0124 49010000 		.4byte	.LASF21
  337 0128 01       		.byte	0x1
  338 0129 A4       		.byte	0xa4
  339 012a 6B000000 		.4byte	0x6b
@@ -616,7 +616,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  342 0136 01       		.uleb128 0x1
  343 0137 9C       		.byte	0x9c
  344 0138 06       		.uleb128 0x6
- 345 0139 EE000000 		.4byte	.LASF22
+ 345 0139 E0000000 		.4byte	.LASF22
  346 013d 01       		.byte	0x1
  347 013e CF       		.byte	0xcf
  348 013f 00000000 		.4byte	.LFB4
@@ -625,20 +625,20 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  351 0148 9C       		.byte	0x9c
  352 0149 77010000 		.4byte	0x177
  353 014d 0A       		.uleb128 0xa
- 354 014e DE000000 		.4byte	.LASF23
+ 354 014e D0000000 		.4byte	.LASF23
  355 0152 01       		.byte	0x1
  356 0153 CF       		.byte	0xcf
  357 0154 77000000 		.4byte	0x77
  358 0158 01       		.uleb128 0x1
  359 0159 50       		.byte	0x50
  360 015a 07       		.uleb128 0x7
- 361 015b 30010000 		.4byte	.LASF18
+ 361 015b 22010000 		.4byte	.LASF18
  362 015f 01       		.byte	0x1
  363 0160 CF       		.byte	0xcf
  364 0161 77000000 		.4byte	0x77
  365 0165 60000000 		.4byte	.LLST3
  366 0169 0B       		.uleb128 0xb
- 367 016a 04010000 		.4byte	.LASF25
+ 367 016a F6000000 		.4byte	.LASF25
  368 016e 01       		.byte	0x1
  369 016f D1       		.byte	0xd1
  370 0170 83000000 		.4byte	0x83
@@ -646,7 +646,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  372 0175 53       		.byte	0x53
  373 0176 00       		.byte	0
  374 0177 0C       		.uleb128 0xc
- 375 0178 35010000 		.4byte	.LASF26
+ 375 0178 27010000 		.4byte	.LASF26
  376 017c 01       		.byte	0x1
  377 017d EC       		.byte	0xec
  378 017e 6B000000 		.4byte	0x6b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  384 018d 18000000 		.4byte	.LASF27
  385 0191 01       		.byte	0x1
  386 0192 EE       		.byte	0xee
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 12
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 12
 
 
  387 0193 6B000000 		.4byte	0x6b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  441 0030 3B       		.uleb128 0x3b
  442 0031 05       		.uleb128 0x5
  443 0032 49       		.uleb128 0x49
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 13
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 13
 
 
  444 0033 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  498 006a 0E       		.uleb128 0xe
  499 006b 3A       		.uleb128 0x3a
  500 006c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 14
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 14
 
 
  501 006d 3B       		.uleb128 0x3b
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  555 00a4 0B       		.uleb128 0xb
  556 00a5 3B       		.uleb128 0x3b
  557 00a6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 15
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 15
 
 
  558 00a7 49       		.uleb128 0x49
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  612 0030 18000000 		.4byte	.LFE1
  613 0034 0400     		.2byte	0x4
  614 0036 F3       		.byte	0xf3
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 16
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 16
 
 
  615 0037 01       		.uleb128 0x1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  669 0018 00000000 		.4byte	.LFB1
  670 001c 18000000 		.4byte	.LFE1-.LFB1
  671 0020 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 17
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 17
 
 
  672 0024 10000000 		.4byte	.LFE2-.LFB2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  709      63655C50 
  710              	.LASF12:
  711 004b 666C6F61 		.ascii	"float\000"
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 18
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 18
 
 
  711      7400
@@ -1027,131 +1027,131 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 1
  713      676E6564 
  713      20636861 
  713      7200
- 714              	.LASF24:
- 715 005f 64725661 		.ascii	"drVal\000"
- 715      6C00
- 716              	.LASF5:
- 717 0065 6C6F6E67 		.ascii	"long unsigned int\000"
- 717      20756E73 
- 717      69676E65 
- 717      6420696E 
- 717      7400
- 718              	.LASF3:
- 719 0077 73686F72 		.ascii	"short unsigned int\000"
- 719      7420756E 
- 719      7369676E 
- 719      65642069 
- 719      6E7400
- 720              	.LASF30:
- 721 008a 443A5C55 		.ascii	"D:\\Users\\nray\\Desktop\\IRIS WIT\\LORA multisenso"
- 721      73657273 
- 721      5C6E7261 
- 721      795C4465 
- 721      736B746F 
- 722 00b8 72205357 		.ascii	"r SW\\PSOC4MIO_HAL.cydsn\000"
- 722      5C50534F 
- 722      43344D49 
- 722      4F5F4841 
- 722      4C2E6379 
- 723              	.LASF13:
- 724 00d0 646F7562 		.ascii	"double\000"
- 724      6C6500
- 725              	.LASF10:
- 726 00d7 75696E74 		.ascii	"uint16\000"
- 726      313600
- 727              	.LASF23:
- 728 00de 706F7369 		.ascii	"position\000"
- 728      74696F6E 
- 728      00
- 729              	.LASF11:
- 730 00e7 75696E74 		.ascii	"uint32\000"
- 730      333200
- 731              	.LASF22:
- 732 00ee 50375F31 		.ascii	"P7_1_SetInterruptMode\000"
- 732      5F536574 
- 732      496E7465 
- 732      72727570 
- 732      744D6F64 
- 733              	.LASF25:
- 734 0104 696E7472 		.ascii	"intrCfg\000"
- 734      43666700 
- 735              	.LASF8:
- 736 010c 756E7369 		.ascii	"unsigned int\000"
- 736      676E6564 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 19
+ 714              	.LASF30:
+ 715 005f 443A5C55 		.ascii	"D:\\Users\\nray\\Documents\\GitHub\\PSOC4MIOHAL\\PS"
+ 715      73657273 
+ 715      5C6E7261 
+ 715      795C446F 
+ 715      63756D65 
+ 716 008c 4F43344D 		.ascii	"OC4MIO_HAL.cydsn\000"
+ 716      494F5F48 
+ 716      414C2E63 
+ 716      7964736E 
+ 716      00
+ 717              	.LASF5:
+ 718 009d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 718      20756E73 
+ 718      69676E65 
+ 718      6420696E 
+ 718      7400
+ 719              	.LASF3:
+ 720 00af 73686F72 		.ascii	"short unsigned int\000"
+ 720      7420756E 
+ 720      7369676E 
+ 720      65642069 
+ 720      6E7400
+ 721              	.LASF13:
+ 722 00c2 646F7562 		.ascii	"double\000"
+ 722      6C6500
+ 723              	.LASF10:
+ 724 00c9 75696E74 		.ascii	"uint16\000"
+ 724      313600
+ 725              	.LASF23:
+ 726 00d0 706F7369 		.ascii	"position\000"
+ 726      74696F6E 
+ 726      00
+ 727              	.LASF11:
+ 728 00d9 75696E74 		.ascii	"uint32\000"
+ 728      333200
+ 729              	.LASF22:
+ 730 00e0 50375F31 		.ascii	"P7_1_SetInterruptMode\000"
+ 730      5F536574 
+ 730      496E7465 
+ 730      72727570 
+ 730      744D6F64 
+ 731              	.LASF25:
+ 732 00f6 696E7472 		.ascii	"intrCfg\000"
+ 732      43666700 
+ 733              	.LASF8:
+ 734 00fe 756E7369 		.ascii	"unsigned int\000"
+ 734      676E6564 
+ 734      20696E74 
+ 734      00
+ 735              	.LASF7:
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 19
 
 
- 736      20696E74 
- 736      00
- 737              	.LASF7:
- 738 0119 6C6F6E67 		.ascii	"long long unsigned int\000"
- 738      206C6F6E 
- 738      6720756E 
- 738      7369676E 
- 738      65642069 
- 739              	.LASF18:
- 740 0130 6D6F6465 		.ascii	"mode\000"
- 740      00
- 741              	.LASF26:
- 742 0135 50375F31 		.ascii	"P7_1_ClearInterrupt\000"
- 742      5F436C65 
- 742      6172496E 
- 742      74657272 
- 742      75707400 
- 743              	.LASF6:
- 744 0149 6C6F6E67 		.ascii	"long long int\000"
- 744      206C6F6E 
- 744      6720696E 
- 744      7400
- 745              	.LASF21:
- 746 0157 50375F31 		.ascii	"P7_1_ReadDataReg\000"
- 746      5F526561 
- 746      64446174 
- 746      61526567 
+ 736 010b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 736      206C6F6E 
+ 736      6720756E 
+ 736      7369676E 
+ 736      65642069 
+ 737              	.LASF18:
+ 738 0122 6D6F6465 		.ascii	"mode\000"
+ 738      00
+ 739              	.LASF26:
+ 740 0127 50375F31 		.ascii	"P7_1_ClearInterrupt\000"
+ 740      5F436C65 
+ 740      6172496E 
+ 740      74657272 
+ 740      75707400 
+ 741              	.LASF6:
+ 742 013b 6C6F6E67 		.ascii	"long long int\000"
+ 742      206C6F6E 
+ 742      6720696E 
+ 742      7400
+ 743              	.LASF21:
+ 744 0149 50375F31 		.ascii	"P7_1_ReadDataReg\000"
+ 744      5F526561 
+ 744      64446174 
+ 744      61526567 
+ 744      00
+ 745              	.LASF14:
+ 746 015a 63686172 		.ascii	"char\000"
  746      00
- 747              	.LASF14:
- 748 0168 63686172 		.ascii	"char\000"
- 748      00
- 749              	.LASF28:
- 750 016d 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 750      4320342E 
- 750      392E3320 
- 750      32303135 
- 750      30333033 
- 751 01a0 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 751      20726576 
- 751      6973696F 
- 751      6E203232 
- 751      31323230 
- 752 01d3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 752      66756E63 
- 752      74696F6E 
- 752      2D736563 
- 752      74696F6E 
- 753              	.LASF2:
- 754 01fb 73686F72 		.ascii	"short int\000"
- 754      7420696E 
- 754      7400
- 755              	.LASF9:
- 756 0205 75696E74 		.ascii	"uint8\000"
- 756      3800
- 757              	.LASF4:
- 758 020b 6C6F6E67 		.ascii	"long int\000"
- 758      20696E74 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cchz09vy.s 			page 20
+ 747              	.LASF28:
+ 748 015f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 748      4320342E 
+ 748      392E3320 
+ 748      32303135 
+ 748      30333033 
+ 749 0192 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 749      20726576 
+ 749      6973696F 
+ 749      6E203232 
+ 749      31323230 
+ 750 01c5 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 750      66756E63 
+ 750      74696F6E 
+ 750      2D736563 
+ 750      74696F6E 
+ 751              	.LASF2:
+ 752 01ed 73686F72 		.ascii	"short int\000"
+ 752      7420696E 
+ 752      7400
+ 753              	.LASF9:
+ 754 01f7 75696E74 		.ascii	"uint8\000"
+ 754      3800
+ 755              	.LASF4:
+ 756 01fd 6C6F6E67 		.ascii	"long int\000"
+ 756      20696E74 
+ 756      00
+ 757              	.LASF20:
+ 758 0206 50375F31 		.ascii	"P7_1_Read\000"
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccjBLyXd.s 			page 20
 
 
- 758      00
- 759              	.LASF20:
- 760 0214 50375F31 		.ascii	"P7_1_Read\000"
- 760      5F526561 
- 760      6400
- 761              	.LASF0:
- 762 021e 7369676E 		.ascii	"signed char\000"
- 762      65642063 
- 762      68617200 
- 763              	.LASF17:
- 764 022a 50375F31 		.ascii	"P7_1_Write\000"
- 764      5F577269 
- 764      746500
+ 758      5F526561 
+ 758      6400
+ 759              	.LASF0:
+ 760 0210 7369676E 		.ascii	"signed char\000"
+ 760      65642063 
+ 760      68617200 
+ 761              	.LASF17:
+ 762 021c 50375F31 		.ascii	"P7_1_Write\000"
+ 762      5F577269 
+ 762      746500
+ 763              	.LASF24:
+ 764 0227 64725661 		.ascii	"drVal\000"
+ 764      6C00
  765              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

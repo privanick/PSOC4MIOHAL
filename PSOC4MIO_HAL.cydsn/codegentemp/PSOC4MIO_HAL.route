@@ -110,13 +110,11 @@ net ClockBlock_HFCLK
 	term   ":m0s8clockblockcell.hfclk"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_16.clock"
 	term   ":interrupt_16.clock"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_8.clock"
+	term   ":interrupt_8.clock"
 	switch ":m0s8clockblockcell.hfclk==>:udb@[UDB=(1,1)]:clockreset:clk_sc_mux.in_9"
 	switch ":udb@[UDB=(1,1)]:clockreset:clk_sc_mux.sc_clk==>:udb@[UDB=(1,1)]:sync_wrapper:sync1.clock"
 	term   ":udb@[UDB=(1,1)]:sync_wrapper:sync1.clock"
-	switch ":m0s8clockblockcell.hfclk==>:interrupt_8.clock"
-	term   ":interrupt_8.clock"
-	switch ":udb@[UDB=(1,1)]:clockreset:clk_sc_mux.sc_clk==>:udb@[UDB=(1,1)]:sync_wrapper:sync0.clock"
-	term   ":udb@[UDB=(1,1)]:sync_wrapper:sync0.clock"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_7.clock"
 	term   ":interrupt_7.clock"
 	switch ":m0s8clockblockcell.hfclk==>:udb@[UDB=(1,0)]:clockreset:clk_sc_mux.in_9"
@@ -141,6 +139,8 @@ net ClockBlock_HFCLK
 	term   ":interrupt_0.clock"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_1.clock"
 	term   ":interrupt_1.clock"
+	switch ":udb@[UDB=(1,1)]:clockreset:clk_sc_mux.sc_clk==>:udb@[UDB=(1,1)]:sync_wrapper:sync0.clock"
+	term   ":udb@[UDB=(1,1)]:sync_wrapper:sync0.clock"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_10.clock"
 	term   ":interrupt_10.clock"
 	switch ":m0s8clockblockcell.hfclk==>:udb@[UDB=(0,0)]:clockreset:clk_pld1_mux.in_9"
@@ -225,19 +225,21 @@ net Net_1475
 	switch ":interrupt_idmux_8.interrupt_idmux_8__out==>:interrupt_8.interrupt"
 	term   ":interrupt_8.interrupt"
 end Net_1475
-net Net_1550
-	term   ":ioport2:pin5.fb"
-	switch ":ioport2:pin5.fb==>:ioport2:hsiom_in5.hsiom5_in"
-	switch ":ioport2:hsiom_in5.dsi==>Stub-:dsiswitch_top@[DSI=(0,1)][side=top]:dsihc_top:v11+:dsiswitch_top@[DSI=(0,1)][side=top]:dsihc_top:v9"
-	switch "OStub-:dsiswitch_top@[DSI=(0,1)][side=top]:dsihc_top:v11+:dsiswitch_top@[DSI=(0,1)][side=top]:dsihc_top:v9"
-	switch ":dsiswitch_top@[DSI=(0,1)][side=top]:dsihc_top:9,1"
-	switch ":hvswitch@[UDB=(0,0)][side=left]:hseg_1_b"
-	switch ":dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:126,1_f"
-	switch "IStub-:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v122+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v124+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v126"
-	switch "Stub-:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v122+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v124+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v126==>:m0s8tcpwmcell_0_permute.tr_in<6>"
-	switch ":m0s8tcpwmcell_0_permute.count==>:m0s8tcpwmcell_0.count"
-	term   ":m0s8tcpwmcell_0.count"
-end Net_1550
+net Net_1485
+	term   ":ioport0:pin1.fb"
+	switch ":ioport0:pin1.fb==>:ioport0:hsiom_in1.hsiom1_in"
+	switch ":ioport0:hsiom_in1.dsi==>Stub-:dsiswitch_bottom@[DSI=(1,1)][side=bottom]:dsihc_bottom:v1+:dsiswitch_bottom@[DSI=(1,1)][side=bottom]:dsihc_bottom:v3"
+	switch "OStub-:dsiswitch_bottom@[DSI=(1,1)][side=bottom]:dsihc_bottom:v1+:dsiswitch_bottom@[DSI=(1,1)][side=bottom]:dsihc_bottom:v3"
+	switch ":dsiswitch_bottom@[DSI=(1,1)][side=bottom]:dsihc_bottom:1,91"
+	switch ":hvswitch@[UDB=(2,0)][side=left]:20,91_f"
+	switch ":hvswitch@[UDB=(2,0)][side=left]:vseg_20_top_b"
+	switch ":hvswitch@[UDB=(1,0)][side=left]:20,76_b"
+	switch ":hvswitch@[UDB=(1,0)][side=left]:hseg_76_b"
+	switch ":udbswitch@[UDB=(0,0)][side=top]:95,76_f"
+	switch "IStub-:udbswitch@[UDB=(0,0)][side=top]:v95"
+	switch "Stub-:udbswitch@[UDB=(0,0)][side=top]:v95==>:udb@[UDB=(1,0)]:statuscell.status_3"
+	term   ":udb@[UDB=(1,0)]:statuscell.status_3"
+end Net_1485
 net Net_335
 	term   ":udb@[UDB=(0,0)]:pld1:mc1.q"
 	switch ":udb@[UDB=(0,0)]:pld1:mc1.q==>:udb@[UDB=(0,0)]:pld1:output_permute0.q_1"
@@ -282,6 +284,12 @@ net \ADC_1:Net_3112\
 	switch ":interrupt_idmux_16.interrupt_idmux_16__out==>:interrupt_16.interrupt"
 	term   ":interrupt_16.interrupt"
 end \ADC_1:Net_3112\
+net \LCD:tx_wire\
+	term   ":m0s8scbcell_3.tx"
+	switch ":m0s8scbcell_3.tx==>:ioport6:hsiom_out1.fixed_ACT_1"
+	switch ":ioport6:hsiom_out1.hsiom1_out==>:ioport6:pin1.pin_input"
+	term   ":ioport6:pin1.pin_input"
+end \LCD:tx_wire\
 net \SPI_1:Net_1297\
 	term   ":ioport2:pin3.fb"
 	switch ":ioport2:pin3.fb==>:ioport2:hsiom_in3.hsiom3_in"

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
   30:.\Generated_Source\PSoC4/console_UART.c ****         console_UART_SUB_MODE,
   31:.\Generated_Source\PSoC4/console_UART.c ****         console_UART_DIRECTION,
   32:.\Generated_Source\PSoC4/console_UART.c ****         console_UART_DATA_BITS_NUM,
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 2
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/console_UART.c ****         console_UART_PARITY_TYPE,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
   87:.\Generated_Source\PSoC4/console_UART.c ****         }
   88:.\Generated_Source\PSoC4/console_UART.c ****         else
   89:.\Generated_Source\PSoC4/console_UART.c ****         {
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 3
 
 
   90:.\Generated_Source\PSoC4/console_UART.c ****             /* Get direction to configure UART pins: TX, RX or TX+RX */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  144:.\Generated_Source\PSoC4/console_UART.c **** 
  145:.\Generated_Source\PSoC4/console_UART.c ****             if(console_UART_PARITY_NONE != config->parity)
  146:.\Generated_Source\PSoC4/console_UART.c ****             {
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 4
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 4
 
 
  147:.\Generated_Source\PSoC4/console_UART.c ****                console_UART_RX_CTRL_REG |= console_GET_UART_RX_CTRL_PARITY(config->parity) |
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  201:.\Generated_Source\PSoC4/console_UART.c ****             console_INTR_TX_MASK_REG     = config->txInterruptMask;
  202:.\Generated_Source\PSoC4/console_UART.c **** 
  203:.\Generated_Source\PSoC4/console_UART.c ****             /* Clear RX buffer indexes */
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 5
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 5
 
 
  204:.\Generated_Source\PSoC4/console_UART.c ****             console_rxBufferHead     = 0u;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  240:.\Generated_Source\PSoC4/console_UART.c ****         console_RX_CTRL_REG      = console_UART_DEFAULT_RX_CTRL;
   44              		.loc 1 240 0
   45 0014 124A     		ldr	r2, .L2+16
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 6
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 6
 
 
   46 0016 1348     		ldr	r0, .L2+20
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
   71              		.loc 1 269 0
   72 003a 1249     		ldr	r1, .L2+52
   73 003c 0B60     		str	r3, [r1]
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 7
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 7
 
 
  270:.\Generated_Source\PSoC4/console_UART.c ****         console_INTR_SLAVE_MASK_REG  = console_UART_DEFAULT_INTR_SLAVE_MASK;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  112              		.size	console_UartInit, .-console_UartInit
  113              		.section	.text.console_UartPostEnable,"ax",%progbits
  114              		.align	2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 8
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 8
 
 
  115              		.global	console_UartPostEnable
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  125 0002 0B68     		ldr	r3, [r1]
  126 0004 F022     		mov	r2, #240
  127 0006 9343     		bic	r3, r2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 9
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 9
 
 
  128 0008 603A     		sub	r2, r2, #96
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  150              		.cfi_startproc
  362:.\Generated_Source\PSoC4/console_UART.c **** #if(console_SCB_MODE_UNCONFIG_CONST_CFG)
  363:.\Generated_Source\PSoC4/console_UART.c ****     #if (console_TX_SDA_MISO_PIN)
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 10
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 10
 
 
  364:.\Generated_Source\PSoC4/console_UART.c ****         if (console_CHECK_TX_SDA_MISO_PIN_USED)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  162              	.L8:
  163 000c 00040240 		.word	1073873920
  164              		.cfi_endproc
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 11
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 11
 
 
  165              	.LFE3:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  192 000c 1060     		str	r0, [r2]
  434:.\Generated_Source\PSoC4/console_UART.c **** }
  193              		.loc 1 434 0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 12
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 12
 
 
  194              		@ sp needed
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  222              		.loc 1 460 0
  223 0008 0004     		lsl	r0, r0, #16
  224              	.LVL8:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 13
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 13
 
 
  225 000a 1843     		orr	r0, r3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  492:.\Generated_Source\PSoC4/console_UART.c ****     *  and software buffer usage.
  493:.\Generated_Source\PSoC4/console_UART.c ****     *  RX software buffer is enabled: The internal software buffer overflow
  494:.\Generated_Source\PSoC4/console_UART.c ****     *  does not treat as an error condition.
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 14
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 14
 
 
  495:.\Generated_Source\PSoC4/console_UART.c ****     *  Check SCB_rxBufferOverflow to capture that error condition.
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  283 0024 0020     		mov	r0, #0
  284              	.LVL16:
  285              	.L18:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 15
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 15
 
 
  512:.\Generated_Source\PSoC4/console_UART.c ****         }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  304              		.loc 1 547 0
  305              		.cfi_startproc
  306 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 16
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 16
 
 
  307              		.cfi_def_cfa_offset 8
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  583:.\Generated_Source\PSoC4/console_UART.c ****             {
  584:.\Generated_Source\PSoC4/console_UART.c ****                 console_EnableInt();
  585:.\Generated_Source\PSoC4/console_UART.c ****             }
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 17
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 17
 
 
  586:.\Generated_Source\PSoC4/console_UART.c ****             #endif
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  607:.\Generated_Source\PSoC4/console_UART.c ****         * Summary:
  608:.\Generated_Source\PSoC4/console_UART.c ****         *  Sets active polarity of RTS output signal.
  609:.\Generated_Source\PSoC4/console_UART.c ****         *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 18
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 18
 
 
  610:.\Generated_Source\PSoC4/console_UART.c ****         * Parameters:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  393              		.align	2
  394              		.global	console_UartSetRtsFifoLevel
  395              		.code	16
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 19
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 19
 
 
  396              		.thumb_func
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  419              		@ sp needed
  420 000e 7047     		bx	lr
  421              	.L34:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 20
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 20
 
 
  422              		.align	2
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  447              		.loc 1 689 0
  448 0004 0024     		mov	r4, #0
  690:.\Generated_Source\PSoC4/console_UART.c **** 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 21
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 21
 
 
  691:.\Generated_Source\PSoC4/console_UART.c ****         /* Blocks the control flow until all data has been sent */
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  713:.\Generated_Source\PSoC4/console_UART.c ****     * Return:
  714:.\Generated_Source\PSoC4/console_UART.c ****     *  None
  715:.\Generated_Source\PSoC4/console_UART.c ****     *
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 22
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 22
 
 
  716:.\Generated_Source\PSoC4/console_UART.c ****     *******************************************************************************/
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  738:.\Generated_Source\PSoC4/console_UART.c ****         *
  739:.\Generated_Source\PSoC4/console_UART.c ****         *******************************************************************************/
  740:.\Generated_Source\PSoC4/console_UART.c ****         void console_UartEnableCts(void)
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 23
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 23
 
 
  741:.\Generated_Source\PSoC4/console_UART.c ****         {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  544 0004 024B     		ldr	r3, .L43+4
  545 0006 0B40     		and	r3, r1
  546 0008 1360     		str	r3, [r2]
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 24
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 24
 
 
  763:.\Generated_Source\PSoC4/console_UART.c ****         }
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  577 000c 0B43     		orr	r3, r1
  578 000e 1360     		str	r3, [r2]
  579 0010 04E0     		b	.L45
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 25
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 25
 
 
  580              	.L46:
@@ -1477,17 +1477,17 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  607 0006 00000000 		.4byte	.Ldebug_abbrev0
  608 000a 04       		.byte	0x4
  609 000b 01       		.uleb128 0x1
- 610 000c AC020000 		.4byte	.LASF43
+ 610 000c A4020000 		.4byte	.LASF43
  611 0010 01       		.byte	0x1
  612 0011 2F000000 		.4byte	.LASF44
- 613 0015 97010000 		.4byte	.LASF45
+ 613 0015 17010000 		.4byte	.LASF45
  614 0019 00000000 		.4byte	.Ldebug_ranges0+0
  615 001d 00000000 		.4byte	0
  616 0021 00000000 		.4byte	.Ldebug_line0
  617 0025 02       		.uleb128 0x2
  618 0026 01       		.byte	0x1
  619 0027 06       		.byte	0x6
- 620 0028 7A030000 		.4byte	.LASF0
+ 620 0028 72030000 		.4byte	.LASF0
  621 002c 02       		.uleb128 0x2
  622 002d 01       		.byte	0x1
  623 002e 08       		.byte	0x8
@@ -1495,22 +1495,22 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  625 0033 02       		.uleb128 0x2
  626 0034 02       		.byte	0x2
  627 0035 05       		.byte	0x5
- 628 0036 3A030000 		.4byte	.LASF2
+ 628 0036 32030000 		.4byte	.LASF2
  629 003a 02       		.uleb128 0x2
  630 003b 02       		.byte	0x2
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 26
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 26
 
 
  631 003c 07       		.byte	0x7
- 632 003d 43010000 		.4byte	.LASF3
+ 632 003d 7B010000 		.4byte	.LASF3
  633 0041 02       		.uleb128 0x2
  634 0042 04       		.byte	0x4
  635 0043 05       		.byte	0x5
- 636 0044 5E030000 		.4byte	.LASF4
+ 636 0044 56030000 		.4byte	.LASF4
  637 0048 02       		.uleb128 0x2
  638 0049 04       		.byte	0x4
  639 004a 07       		.byte	0x7
- 640 004b 1D010000 		.4byte	.LASF5
+ 640 004b 55010000 		.4byte	.LASF5
  641 004f 02       		.uleb128 0x2
  642 0050 08       		.byte	0x8
  643 0051 05       		.byte	0x5
@@ -1518,7 +1518,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  645 0056 02       		.uleb128 0x2
  646 0057 08       		.byte	0x8
  647 0058 07       		.byte	0x7
- 648 0059 2D020000 		.4byte	.LASF7
+ 648 0059 1F020000 		.4byte	.LASF7
  649 005d 03       		.uleb128 0x3
  650 005e 04       		.byte	0x4
  651 005f 05       		.byte	0x5
@@ -1526,9 +1526,9 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  653 0064 02       		.uleb128 0x2
  654 0065 04       		.byte	0x4
  655 0066 07       		.byte	0x7
- 656 0067 18020000 		.4byte	.LASF8
+ 656 0067 0A020000 		.4byte	.LASF8
  657 006b 04       		.uleb128 0x4
- 658 006c 11020000 		.4byte	.LASF11
+ 658 006c 03020000 		.4byte	.LASF11
  659 0070 02       		.byte	0x2
  660 0071 3A01     		.2byte	0x13a
  661 0073 48000000 		.4byte	0x48
@@ -1539,16 +1539,16 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  666 007e 02       		.uleb128 0x2
  667 007f 08       		.byte	0x8
  668 0080 04       		.byte	0x4
- 669 0081 DD010000 		.4byte	.LASF10
+ 669 0081 CF010000 		.4byte	.LASF10
  670 0085 04       		.uleb128 0x4
- 671 0086 17010000 		.4byte	.LASF12
+ 671 0086 78020000 		.4byte	.LASF12
  672 008a 02       		.byte	0x2
  673 008b 4901     		.2byte	0x149
  674 008d 91000000 		.4byte	0x91
  675 0091 02       		.uleb128 0x2
  676 0092 01       		.byte	0x1
  677 0093 08       		.byte	0x8
- 678 0094 A7020000 		.4byte	.LASF13
+ 678 0094 9F020000 		.4byte	.LASF13
  679 0098 04       		.uleb128 0x4
  680 0099 0E000000 		.4byte	.LASF14
  681 009d 02       		.byte	0x2
@@ -1558,11 +1558,11 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  685 00a5 6B000000 		.4byte	0x6b
  686 00a9 02       		.uleb128 0x2
  687 00aa 04       		.byte	0x4
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 27
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 27
 
 
  688 00ab 07       		.byte	0x7
- 689 00ac 7D020000 		.4byte	.LASF15
+ 689 00ac 6F020000 		.4byte	.LASF15
  690 00b0 06       		.uleb128 0x6
  691 00b1 76000000 		.4byte	.LASF16
  692 00b5 01       		.byte	0x1
@@ -1580,7 +1580,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  704 00d1 01       		.uleb128 0x1
  705 00d2 9C       		.byte	0x9c
  706 00d3 07       		.uleb128 0x7
- 707 00d4 E4010000 		.4byte	.LASF18
+ 707 00d4 D6010000 		.4byte	.LASF18
  708 00d8 01       		.byte	0x1
  709 00d9 6801     		.2byte	0x168
  710 00db 00000000 		.4byte	.LFB3
@@ -1597,13 +1597,13 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  721 00f6 9C       		.byte	0x9c
  722 00f7 1C010000 		.4byte	0x11c
  723 00fb 09       		.uleb128 0x9
- 724 00fc 25020000 		.4byte	.LASF21
+ 724 00fc 17020000 		.4byte	.LASF21
  725 0100 01       		.byte	0x1
  726 0101 A801     		.2byte	0x1a8
  727 0103 6B000000 		.4byte	0x6b
  728 0107 00000000 		.4byte	.LLST0
  729 010b 0A       		.uleb128 0xa
- 730 010c 71030000 		.4byte	.LASF23
+ 730 010c 69030000 		.4byte	.LASF23
  731 0110 01       		.byte	0x1
  732 0111 AA01     		.2byte	0x1aa
  733 0113 6B000000 		.4byte	0x6b
@@ -1618,24 +1618,24 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  742 012c 01       		.uleb128 0x1
  743 012d 9C       		.byte	0x9c
  744 012e 53010000 		.4byte	0x153
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 28
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 28
 
 
  745 0132 09       		.uleb128 0x9
- 746 0133 44020000 		.4byte	.LASF22
+ 746 0133 36020000 		.4byte	.LASF22
  747 0137 01       		.byte	0x1
  748 0138 C501     		.2byte	0x1c5
  749 013a 6B000000 		.4byte	0x6b
  750 013e 3F000000 		.4byte	.LLST2
  751 0142 0A       		.uleb128 0xa
- 752 0143 71030000 		.4byte	.LASF23
+ 752 0143 69030000 		.4byte	.LASF23
  753 0147 01       		.byte	0x1
  754 0148 C701     		.2byte	0x1c7
  755 014a 6B000000 		.4byte	0x6b
  756 014e 60000000 		.4byte	.LLST3
  757 0152 00       		.byte	0
  758 0153 0B       		.uleb128 0xb
- 759 0154 2F010000 		.4byte	.LASF25
+ 759 0154 67010000 		.4byte	.LASF25
  760 0158 01       		.byte	0x1
  761 0159 F201     		.2byte	0x1f2
  762 015b 6B000000 		.4byte	0x6b
@@ -1645,7 +1645,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  766 0168 9C       		.byte	0x9c
  767 0169 90010000 		.4byte	0x190
  768 016d 0A       		.uleb128 0xa
- 769 016e 75010000 		.4byte	.LASF24
+ 769 016e AD010000 		.4byte	.LASF24
  770 0172 01       		.byte	0x1
  771 0173 F401     		.2byte	0x1f4
  772 0175 6B000000 		.4byte	0x6b
@@ -1658,7 +1658,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  779 018b 37030000 		.4byte	0x337
  780 018f 00       		.byte	0
  781 0190 0B       		.uleb128 0xb
- 782 0191 93030000 		.4byte	.LASF26
+ 782 0191 8B030000 		.4byte	.LASF26
  783 0195 01       		.byte	0x1
  784 0196 2202     		.2byte	0x222
  785 0198 6B000000 		.4byte	0x6b
@@ -1668,17 +1668,17 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  789 01a5 9C       		.byte	0x9c
  790 01a6 DD010000 		.4byte	0x1dd
  791 01aa 0A       		.uleb128 0xa
- 792 01ab 75010000 		.4byte	.LASF24
+ 792 01ab AD010000 		.4byte	.LASF24
  793 01af 01       		.byte	0x1
  794 01b0 2402     		.2byte	0x224
  795 01b2 6B000000 		.4byte	0x6b
  796 01b6 D6000000 		.4byte	.LLST5
  797 01ba 0A       		.uleb128 0xa
- 798 01bb 67030000 		.4byte	.LASF27
+ 798 01bb 5F030000 		.4byte	.LASF27
  799 01bf 01       		.byte	0x1
  800 01c0 2502     		.2byte	0x225
  801 01c2 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 29
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 29
 
 
  802 01c6 F4000000 		.4byte	.LLST6
@@ -1699,7 +1699,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  817 01ee 9C       		.byte	0x9c
  818 01ef 02020000 		.4byte	0x202
  819 01f3 0D       		.uleb128 0xd
- 820 01f4 50020000 		.4byte	.LASF29
+ 820 01f4 42020000 		.4byte	.LASF29
  821 01f8 01       		.byte	0x1
  822 01f9 6B02     		.2byte	0x26b
  823 01fb 6B000000 		.4byte	0x6b
@@ -1707,7 +1707,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  825 0200 50       		.byte	0x50
  826 0201 00       		.byte	0
  827 0202 08       		.uleb128 0x8
- 828 0203 F5010000 		.4byte	.LASF30
+ 828 0203 E7010000 		.4byte	.LASF30
  829 0207 01       		.byte	0x1
  830 0208 8A02     		.2byte	0x28a
  831 020a 00000000 		.4byte	.LFB9
@@ -1722,7 +1722,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  840 0220 6B000000 		.4byte	0x6b
  841 0224 07010000 		.4byte	.LLST7
  842 0228 0A       		.uleb128 0xa
- 843 0229 86030000 		.4byte	.LASF32
+ 843 0229 7E030000 		.4byte	.LASF32
  844 022d 01       		.byte	0x1
  845 022e 8C02     		.2byte	0x28c
  846 0230 6B000000 		.4byte	0x6b
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  856 024a 9C       		.byte	0x9c
  857 024b 79020000 		.4byte	0x279
  858 024f 09       		.uleb128 0x9
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 30
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 30
 
 
  859 0250 B2000000 		.4byte	.LASF34
@@ -1747,7 +1747,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  862 0257 79020000 		.4byte	0x279
  863 025b 46010000 		.4byte	.LLST9
  864 025f 0A       		.uleb128 0xa
- 865 0260 59020000 		.4byte	.LASF35
+ 865 0260 4B020000 		.4byte	.LASF35
  866 0264 01       		.byte	0x1
  867 0265 AF02     		.2byte	0x2af
  868 0267 6B000000 		.4byte	0x6b
@@ -1771,7 +1771,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  886 0295 9C       		.byte	0x9c
  887 0296 E2020000 		.4byte	0x2e2
  888 029a 09       		.uleb128 0x9
- 889 029b 86020000 		.4byte	.LASF37
+ 889 029b 7E020000 		.4byte	.LASF37
  890 029f 01       		.byte	0x1
  891 02a0 CD02     		.2byte	0x2cd
  892 02a2 6B000000 		.4byte	0x6b
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  913 02cf 01       		.uleb128 0x1
  914 02d0 3D       		.byte	0x3d
  915 02d1 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 31
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 31
 
 
  916 02d2 12       		.uleb128 0x12
@@ -1812,7 +1812,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  924 02e0 00       		.byte	0
  925 02e1 00       		.byte	0
  926 02e2 07       		.uleb128 0x7
- 927 02e3 91020000 		.4byte	.LASF38
+ 927 02e3 89020000 		.4byte	.LASF38
  928 02e7 01       		.byte	0x1
  929 02e8 E402     		.2byte	0x2e4
  930 02ea 00000000 		.4byte	.LFB12
@@ -1828,7 +1828,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  940 0304 01       		.uleb128 0x1
  941 0305 9C       		.byte	0x9c
  942 0306 08       		.uleb128 0x8
- 943 0307 62020000 		.4byte	.LASF40
+ 943 0307 54020000 		.4byte	.LASF40
  944 030b 01       		.byte	0x1
  945 030c 0E03     		.2byte	0x30e
  946 030e 00000000 		.4byte	.LFB14
@@ -1837,7 +1837,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  949 0317 9C       		.byte	0x9c
  950 0318 2B030000 		.4byte	0x32b
  951 031c 0D       		.uleb128 0xd
- 952 031d 50020000 		.4byte	.LASF29
+ 952 031d 42020000 		.4byte	.LASF29
  953 0321 01       		.byte	0x1
  954 0322 0E03     		.2byte	0x30e
  955 0324 6B000000 		.4byte	0x6b
@@ -1845,20 +1845,20 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  957 0329 50       		.byte	0x50
  958 032a 00       		.byte	0
  959 032b 13       		.uleb128 0x13
- 960 032c 56010000 		.4byte	.LASF41
+ 960 032c 8E010000 		.4byte	.LASF41
  961 0330 03       		.byte	0x3
  962 0331 8601     		.2byte	0x186
  963 0333 6B000000 		.4byte	0x6b
  964 0337 13       		.uleb128 0x13
- 965 0338 44030000 		.4byte	.LASF42
+ 965 0338 3C030000 		.4byte	.LASF42
  966 033c 03       		.byte	0x3
  967 033d 8501     		.2byte	0x185
  968 033f 6B000000 		.4byte	0x6b
  969 0343 14       		.uleb128 0x14
- 970 0344 7C010000 		.4byte	.LASF46
+ 970 0344 B4010000 		.4byte	.LASF46
  971 0348 03       		.byte	0x3
  972 0349 8C01     		.2byte	0x18c
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 32
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 32
 
 
  973 034b 15       		.uleb128 0x15
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1027 0030 3B       		.uleb128 0x3b
  1028 0031 05       		.uleb128 0x5
  1029 0032 49       		.uleb128 0x49
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 33
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 33
 
 
  1030 0033 13       		.uleb128 0x13
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1084 006b 00       		.byte	0
  1085 006c 00       		.byte	0
  1086 006d 08       		.uleb128 0x8
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 34
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 34
 
 
  1087 006e 2E       		.uleb128 0x2e
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1141 00a5 0B       		.uleb128 0xb
  1142 00a6 2E       		.uleb128 0x2e
  1143 00a7 01       		.byte	0x1
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 35
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 35
 
 
  1144 00a8 3F       		.uleb128 0x3f
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1198 00e1 13       		.uleb128 0x13
  1199 00e2 00       		.byte	0
  1200 00e3 00       		.byte	0
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 36
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 36
 
 
  1201 00e4 0F       		.uleb128 0xf
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1255 0121 00       		.byte	0
  1256 0122 14       		.uleb128 0x14
  1257 0123 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 37
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 37
 
 
  1258 0124 01       		.byte	0x1
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1312 0049 50       		.byte	0x50
  1313 004a 0A000000 		.4byte	.LVL8
  1314 004e 18000000 		.4byte	.LFE5
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 38
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 38
 
 
  1315 0052 0400     		.2byte	0x4
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1369 00da 10000000 		.4byte	.LVL19
  1370 00de 0100     		.2byte	0x1
  1371 00e0 50       		.byte	0x50
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 39
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 39
 
 
  1372 00e1 14000000 		.4byte	.LVL20
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1426 016a 00000000 		.4byte	0
  1427 016e 00000000 		.4byte	0
  1428              	.LLST10:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 40
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 40
 
 
  1429 0172 04000000 		.4byte	.LVL31
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1483 0064 14000000 		.4byte	.LFE11-.LFB11
  1484 0068 00000000 		.4byte	.LFB12
  1485 006c 14000000 		.4byte	.LFE12-.LFB12
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 41
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 41
 
 
  1486 0070 00000000 		.4byte	.LFB13
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1532 0014 636F6E73 		.ascii	"console_UartSetRtsPolarity\000"
  1532      6F6C655F 
  1532      55617274 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 42
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 42
 
 
  1532      53657452 
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1552      506F7374 
  1552      456E6162 
  1553              	.LASF9:
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 43
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 43
 
 
  1554 0103 666C6F61 		.ascii	"float\000"
@@ -2528,117 +2528,117 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1556      676E6564 
  1556      20636861 
  1556      7200
- 1557              	.LASF12:
- 1558 0117 63686172 		.ascii	"char8\000"
- 1558      3800
- 1559              	.LASF5:
- 1560 011d 6C6F6E67 		.ascii	"long unsigned int\000"
- 1560      20756E73 
- 1560      69676E65 
- 1560      6420696E 
- 1560      7400
- 1561              	.LASF25:
- 1562 012f 636F6E73 		.ascii	"console_UartGetChar\000"
- 1562      6F6C655F 
- 1562      55617274 
- 1562      47657443 
- 1562      68617200 
- 1563              	.LASF3:
- 1564 0143 73686F72 		.ascii	"short unsigned int\000"
- 1564      7420756E 
- 1564      7369676E 
- 1564      65642069 
- 1564      6E7400
- 1565              	.LASF41:
- 1566 0156 636F6E73 		.ascii	"console_SpiUartGetRxBufferSize\000"
- 1566      6F6C655F 
- 1566      53706955 
- 1566      61727447 
- 1566      65745278 
- 1567              	.LASF24:
- 1568 0175 72784461 		.ascii	"rxData\000"
- 1568      746100
- 1569              	.LASF46:
- 1570 017c 636F6E73 		.ascii	"console_SpiUartWriteTxData\000"
- 1570      6F6C655F 
- 1570      53706955 
- 1570      61727457 
- 1570      72697465 
- 1571              	.LASF45:
- 1572 0197 443A5C55 		.ascii	"D:\\Users\\nray\\Desktop\\IRIS WIT\\LORA multisenso"
- 1572      73657273 
- 1572      5C6E7261 
- 1572      795C4465 
- 1572      736B746F 
- 1573 01c5 72205357 		.ascii	"r SW\\PSOC4MIO_HAL.cydsn\000"
- 1573      5C50534F 
- 1573      43344D49 
- 1573      4F5F4841 
- 1573      4C2E6379 
- 1574              	.LASF10:
- 1575 01dd 646F7562 		.ascii	"double\000"
- 1575      6C6500
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 44
+ 1557              	.LASF45:
+ 1558 0117 443A5C55 		.ascii	"D:\\Users\\nray\\Documents\\GitHub\\PSOC4MIOHAL\\PS"
+ 1558      73657273 
+ 1558      5C6E7261 
+ 1558      795C446F 
+ 1558      63756D65 
+ 1559 0144 4F43344D 		.ascii	"OC4MIO_HAL.cydsn\000"
+ 1559      494F5F48 
+ 1559      414C2E63 
+ 1559      7964736E 
+ 1559      00
+ 1560              	.LASF5:
+ 1561 0155 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1561      20756E73 
+ 1561      69676E65 
+ 1561      6420696E 
+ 1561      7400
+ 1562              	.LASF25:
+ 1563 0167 636F6E73 		.ascii	"console_UartGetChar\000"
+ 1563      6F6C655F 
+ 1563      55617274 
+ 1563      47657443 
+ 1563      68617200 
+ 1564              	.LASF3:
+ 1565 017b 73686F72 		.ascii	"short unsigned int\000"
+ 1565      7420756E 
+ 1565      7369676E 
+ 1565      65642069 
+ 1565      6E7400
+ 1566              	.LASF41:
+ 1567 018e 636F6E73 		.ascii	"console_SpiUartGetRxBufferSize\000"
+ 1567      6F6C655F 
+ 1567      53706955 
+ 1567      61727447 
+ 1567      65745278 
+ 1568              	.LASF24:
+ 1569 01ad 72784461 		.ascii	"rxData\000"
+ 1569      746100
+ 1570              	.LASF46:
+ 1571 01b4 636F6E73 		.ascii	"console_SpiUartWriteTxData\000"
+ 1571      6F6C655F 
+ 1571      53706955 
+ 1571      61727457 
+ 1571      72697465 
+ 1572              	.LASF10:
+ 1573 01cf 646F7562 		.ascii	"double\000"
+ 1573      6C6500
+ 1574              	.LASF18:
+ 1575 01d6 636F6E73 		.ascii	"console_UartStop\000"
+ 1575      6F6C655F 
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 44
 
 
- 1576              	.LASF18:
- 1577 01e4 636F6E73 		.ascii	"console_UartStop\000"
+ 1575      55617274 
+ 1575      53746F70 
+ 1575      00
+ 1576              	.LASF30:
+ 1577 01e7 636F6E73 		.ascii	"console_UartSetRtsFifoLevel\000"
  1577      6F6C655F 
  1577      55617274 
- 1577      53746F70 
- 1577      00
- 1578              	.LASF30:
- 1579 01f5 636F6E73 		.ascii	"console_UartSetRtsFifoLevel\000"
- 1579      6F6C655F 
- 1579      55617274 
- 1579      53657452 
- 1579      74734669 
- 1580              	.LASF11:
- 1581 0211 75696E74 		.ascii	"uint32\000"
- 1581      333200
- 1582              	.LASF8:
- 1583 0218 756E7369 		.ascii	"unsigned int\000"
- 1583      676E6564 
- 1583      20696E74 
- 1583      00
- 1584              	.LASF21:
- 1585 0225 61646472 		.ascii	"address\000"
- 1585      65737300 
- 1586              	.LASF7:
- 1587 022d 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1587      206C6F6E 
- 1587      6720756E 
- 1587      7369676E 
- 1587      65642069 
- 1588              	.LASF22:
- 1589 0244 61646472 		.ascii	"addressMask\000"
- 1589      6573734D 
- 1589      61736B00 
- 1590              	.LASF29:
- 1591 0250 706F6C61 		.ascii	"polarity\000"
- 1591      72697479 
+ 1577      53657452 
+ 1577      74734669 
+ 1578              	.LASF11:
+ 1579 0203 75696E74 		.ascii	"uint32\000"
+ 1579      333200
+ 1580              	.LASF8:
+ 1581 020a 756E7369 		.ascii	"unsigned int\000"
+ 1581      676E6564 
+ 1581      20696E74 
+ 1581      00
+ 1582              	.LASF21:
+ 1583 0217 61646472 		.ascii	"address\000"
+ 1583      65737300 
+ 1584              	.LASF7:
+ 1585 021f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1585      206C6F6E 
+ 1585      6720756E 
+ 1585      7369676E 
+ 1585      65642069 
+ 1586              	.LASF22:
+ 1587 0236 61646472 		.ascii	"addressMask\000"
+ 1587      6573734D 
+ 1587      61736B00 
+ 1588              	.LASF29:
+ 1589 0242 706F6C61 		.ascii	"polarity\000"
+ 1589      72697479 
+ 1589      00
+ 1590              	.LASF35:
+ 1591 024b 62756649 		.ascii	"bufIndex\000"
+ 1591      6E646578 
  1591      00
- 1592              	.LASF35:
- 1593 0259 62756649 		.ascii	"bufIndex\000"
- 1593      6E646578 
- 1593      00
- 1594              	.LASF40:
- 1595 0262 636F6E73 		.ascii	"console_UartSetCtsPolarity\000"
- 1595      6F6C655F 
- 1595      55617274 
- 1595      53657443 
- 1595      7473506F 
- 1596              	.LASF15:
- 1597 027d 73697A65 		.ascii	"sizetype\000"
- 1597      74797065 
- 1597      00
+ 1592              	.LASF40:
+ 1593 0254 636F6E73 		.ascii	"console_UartSetCtsPolarity\000"
+ 1593      6F6C655F 
+ 1593      55617274 
+ 1593      53657443 
+ 1593      7473506F 
+ 1594              	.LASF15:
+ 1595 026f 73697A65 		.ascii	"sizetype\000"
+ 1595      74797065 
+ 1595      00
+ 1596              	.LASF12:
+ 1597 0278 63686172 		.ascii	"char8\000"
+ 1597      3800
  1598              	.LASF37:
- 1599 0286 74784461 		.ascii	"txDataByte\000"
+ 1599 027e 74784461 		.ascii	"txDataByte\000"
  1599      74614279 
  1599      746500
  1600              	.LASF38:
- 1601 0291 636F6E73 		.ascii	"console_UartEnableCts\000"
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 45
+ 1601 0289 636F6E73 		.ascii	"console_UartEnableCts\000"
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 45
 
 
  1601      6F6C655F 
@@ -2646,59 +2646,59 @@ ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 1
  1601      456E6162 
  1601      6C654374 
  1602              	.LASF13:
- 1603 02a7 63686172 		.ascii	"char\000"
+ 1603 029f 63686172 		.ascii	"char\000"
  1603      00
  1604              	.LASF43:
- 1605 02ac 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1605 02a4 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  1605      4320342E 
  1605      392E3320 
  1605      32303135 
  1605      30333033 
- 1606 02df 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1606 02d7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  1606      20726576 
  1606      6973696F 
  1606      6E203232 
  1606      31323230 
- 1607 0312 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1607 030a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  1607      66756E63 
  1607      74696F6E 
  1607      2D736563 
  1607      74696F6E 
  1608              	.LASF2:
- 1609 033a 73686F72 		.ascii	"short int\000"
+ 1609 0332 73686F72 		.ascii	"short int\000"
  1609      7420696E 
  1609      7400
  1610              	.LASF42:
- 1611 0344 636F6E73 		.ascii	"console_SpiUartReadRxData\000"
+ 1611 033c 636F6E73 		.ascii	"console_SpiUartReadRxData\000"
  1611      6F6C655F 
  1611      53706955 
  1611      61727452 
  1611      65616452 
  1612              	.LASF4:
- 1613 035e 6C6F6E67 		.ascii	"long int\000"
+ 1613 0356 6C6F6E67 		.ascii	"long int\000"
  1613      20696E74 
  1613      00
  1614              	.LASF27:
- 1615 0367 746D7053 		.ascii	"tmpStatus\000"
+ 1615 035f 746D7053 		.ascii	"tmpStatus\000"
  1615      74617475 
  1615      7300
  1616              	.LASF23:
- 1617 0371 6D617463 		.ascii	"matchReg\000"
+ 1617 0369 6D617463 		.ascii	"matchReg\000"
  1617      68526567 
  1617      00
  1618              	.LASF0:
- 1619 037a 7369676E 		.ascii	"signed char\000"
+ 1619 0372 7369676E 		.ascii	"signed char\000"
  1619      65642063 
  1619      68617200 
  1620              	.LASF32:
- 1621 0386 75617274 		.ascii	"uartFlowCtrl\000"
+ 1621 037e 75617274 		.ascii	"uartFlowCtrl\000"
  1621      466C6F77 
  1621      4374726C 
  1621      00
  1622              	.LASF26:
- 1623 0393 636F6E73 		.ascii	"console_UartGetByte\000"
+ 1623 038b 636F6E73 		.ascii	"console_UartGetByte\000"
  1623      6F6C655F 
-ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccqEC6vP.s 			page 46
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\cc724Jx1.s 			page 46
 
 
  1623      55617274 

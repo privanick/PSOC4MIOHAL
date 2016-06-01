@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: press2_6.c  
+* File Name: LCD_tx.c  
 * Version 2.20
 *
 * Description:
@@ -13,35 +13,35 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "press2_6.h"
+#include "LCD_tx.h"
 
 
-#if defined(press2_6__PC)
-    #define press2_6_SetP4PinDriveMode(shift, mode)  \
+#if defined(LCD_tx__PC)
+    #define LCD_tx_SetP4PinDriveMode(shift, mode)  \
     do { \
-        press2_6_PC =   (press2_6_PC & \
-                                (uint32)(~(uint32)(press2_6_DRIVE_MODE_IND_MASK << \
-                                (press2_6_DRIVE_MODE_BITS * (shift))))) | \
+        LCD_tx_PC =   (LCD_tx_PC & \
+                                (uint32)(~(uint32)(LCD_tx_DRIVE_MODE_IND_MASK << \
+                                (LCD_tx_DRIVE_MODE_BITS * (shift))))) | \
                                 (uint32)((uint32)(mode) << \
-                                (press2_6_DRIVE_MODE_BITS * (shift))); \
+                                (LCD_tx_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 #else
     #if (CY_PSOC4_4200L)
-        #define press2_6_SetP4PinDriveMode(shift, mode)  \
+        #define LCD_tx_SetP4PinDriveMode(shift, mode)  \
         do { \
-            press2_6_USBIO_CTRL_REG = (press2_6_USBIO_CTRL_REG & \
-                                    (uint32)(~(uint32)(press2_6_DRIVE_MODE_IND_MASK << \
-                                    (press2_6_DRIVE_MODE_BITS * (shift))))) | \
+            LCD_tx_USBIO_CTRL_REG = (LCD_tx_USBIO_CTRL_REG & \
+                                    (uint32)(~(uint32)(LCD_tx_DRIVE_MODE_IND_MASK << \
+                                    (LCD_tx_DRIVE_MODE_BITS * (shift))))) | \
                                     (uint32)((uint32)(mode) << \
-                                    (press2_6_DRIVE_MODE_BITS * (shift))); \
+                                    (LCD_tx_DRIVE_MODE_BITS * (shift))); \
         } while (0)
     #endif
 #endif
   
 
-#if defined(press2_6__PC) || (CY_PSOC4_4200L) 
+#if defined(LCD_tx__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************
-    * Function Name: press2_6_SetDriveMode
+    * Function Name: LCD_tx_SetDriveMode
     ****************************************************************************//**
     *
     * \brief Sets the drive mode for each of the Pins component's pins.
@@ -67,17 +67,17 @@
     *  APIs (primary method) or disable interrupts around this function.
     *
     * \funcusage
-    *  \snippet press2_6_SUT.c usage_press2_6_SetDriveMode
+    *  \snippet LCD_tx_SUT.c usage_LCD_tx_SetDriveMode
     *******************************************************************************/
-    void press2_6_SetDriveMode(uint8 mode)
+    void LCD_tx_SetDriveMode(uint8 mode)
     {
-		press2_6_SetP4PinDriveMode(press2_6__0__SHIFT, mode);
+		LCD_tx_SetP4PinDriveMode(LCD_tx__0__SHIFT, mode);
     }
 #endif
 
 
 /*******************************************************************************
-* Function Name: press2_6_Write
+* Function Name: LCD_tx_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -106,18 +106,18 @@
 *  this function.
 *
 * \funcusage
-*  \snippet press2_6_SUT.c usage_press2_6_Write
+*  \snippet LCD_tx_SUT.c usage_LCD_tx_Write
 *******************************************************************************/
-void press2_6_Write(uint8 value)
+void LCD_tx_Write(uint8 value)
 {
-    uint8 drVal = (uint8)(press2_6_DR & (uint8)(~press2_6_MASK));
-    drVal = (drVal | ((uint8)(value << press2_6_SHIFT) & press2_6_MASK));
-    press2_6_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(LCD_tx_DR & (uint8)(~LCD_tx_MASK));
+    drVal = (drVal | ((uint8)(value << LCD_tx_SHIFT) & LCD_tx_MASK));
+    LCD_tx_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: press2_6_Read
+* Function Name: LCD_tx_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -131,16 +131,16 @@ void press2_6_Write(uint8 value)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet press2_6_SUT.c usage_press2_6_Read  
+*  \snippet LCD_tx_SUT.c usage_LCD_tx_Read  
 *******************************************************************************/
-uint8 press2_6_Read(void)
+uint8 LCD_tx_Read(void)
 {
-    return (uint8)((press2_6_PS & press2_6_MASK) >> press2_6_SHIFT);
+    return (uint8)((LCD_tx_PS & LCD_tx_MASK) >> LCD_tx_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: press2_6_ReadDataReg
+* Function Name: LCD_tx_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -149,8 +149,8 @@ uint8 press2_6_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred press2_6_Read() API because the 
-* press2_6_ReadDataReg() reads the data register instead of the status 
+* preferred LCD_tx_Read() API because the 
+* LCD_tx_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -159,16 +159,16 @@ uint8 press2_6_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet press2_6_SUT.c usage_press2_6_ReadDataReg 
+*  \snippet LCD_tx_SUT.c usage_LCD_tx_ReadDataReg 
 *******************************************************************************/
-uint8 press2_6_ReadDataReg(void)
+uint8 LCD_tx_ReadDataReg(void)
 {
-    return (uint8)((press2_6_DR & press2_6_MASK) >> press2_6_SHIFT);
+    return (uint8)((LCD_tx_DR & LCD_tx_MASK) >> LCD_tx_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: press2_6_SetInterruptMode
+* Function Name: LCD_tx_SetInterruptMode
 ****************************************************************************//**
 *
 * \brief Configures the interrupt mode for each of the Pins component's
@@ -181,12 +181,12 @@ uint8 press2_6_ReadDataReg(void)
 * \param position
 *  The pin position as listed in the Pins component. You may OR these to be 
 *  able to configure the interrupt mode of multiple pins within a Pins 
-*  component. Or you may use press2_6_INTR_ALL to configure the
+*  component. Or you may use LCD_tx_INTR_ALL to configure the
 *  interrupt mode of all the pins in the Pins component.       
-*  - press2_6_0_INTR       (First pin in the list)
-*  - press2_6_1_INTR       (Second pin in the list)
+*  - LCD_tx_0_INTR       (First pin in the list)
+*  - LCD_tx_1_INTR       (Second pin in the list)
 *  - ...
-*  - press2_6_INTR_ALL     (All pins in Pins component)
+*  - LCD_tx_INTR_ALL     (All pins in Pins component)
 *
 * \param mode
 *  Interrupt mode for the selected pins. Valid options are documented in
@@ -202,19 +202,19 @@ uint8 press2_6_ReadDataReg(void)
 *  port.
 *
 * \funcusage
-*  \snippet press2_6_SUT.c usage_press2_6_SetInterruptMode
+*  \snippet LCD_tx_SUT.c usage_LCD_tx_SetInterruptMode
 *******************************************************************************/
-void press2_6_SetInterruptMode(uint16 position, uint16 mode)
+void LCD_tx_SetInterruptMode(uint16 position, uint16 mode)
 {
     uint32 intrCfg;
     
-    intrCfg =  press2_6_INTCFG & (uint32)(~(uint32)position);
-    press2_6_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+    intrCfg =  LCD_tx_INTCFG & (uint32)(~(uint32)position);
+    LCD_tx_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
 }
 
 
 /*******************************************************************************
-* Function Name: press2_6_ClearInterrupt
+* Function Name: LCD_tx_ClearInterrupt
 ****************************************************************************//**
 *
 * \brief Clears any active interrupts attached with the component and returns 
@@ -231,13 +231,13 @@ void press2_6_SetInterruptMode(uint16 position, uint16 mode)
 *  those associated with the Pins component.
 *
 * \funcusage
-*  \snippet press2_6_SUT.c usage_press2_6_ClearInterrupt
+*  \snippet LCD_tx_SUT.c usage_LCD_tx_ClearInterrupt
 *******************************************************************************/
-uint8 press2_6_ClearInterrupt(void)
+uint8 LCD_tx_ClearInterrupt(void)
 {
-	uint8 maskedStatus = (uint8)(press2_6_INTSTAT & press2_6_MASK);
-	press2_6_INTSTAT = maskedStatus;
-    return maskedStatus >> press2_6_SHIFT;
+	uint8 maskedStatus = (uint8)(LCD_tx_INTSTAT & LCD_tx_MASK);
+	LCD_tx_INTSTAT = maskedStatus;
+    return maskedStatus >> LCD_tx_SHIFT;
 }
 
 

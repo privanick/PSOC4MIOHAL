@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: flow2_7.h  
+* File Name: LCD_tx.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_flow2_7_ALIASES_H) /* Pins flow2_7_ALIASES_H */
-#define CY_PINS_flow2_7_ALIASES_H
+#if !defined(CY_PINS_LCD_tx_ALIASES_H) /* Pins LCD_tx_ALIASES_H */
+#define CY_PINS_LCD_tx_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,17 +26,17 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define flow2_7_0			(flow2_7__0__PC)
-#define flow2_7_0_PS		(flow2_7__0__PS)
-#define flow2_7_0_PC		(flow2_7__0__PC)
-#define flow2_7_0_DR		(flow2_7__0__DR)
-#define flow2_7_0_SHIFT	(flow2_7__0__SHIFT)
-#define flow2_7_0_INTR	((uint16)((uint16)0x0003u << (flow2_7__0__SHIFT*2u)))
+#define LCD_tx_0			(LCD_tx__0__PC)
+#define LCD_tx_0_PS		(LCD_tx__0__PS)
+#define LCD_tx_0_PC		(LCD_tx__0__PC)
+#define LCD_tx_0_DR		(LCD_tx__0__DR)
+#define LCD_tx_0_SHIFT	(LCD_tx__0__SHIFT)
+#define LCD_tx_0_INTR	((uint16)((uint16)0x0003u << (LCD_tx__0__SHIFT*2u)))
 
-#define flow2_7_INTR_ALL	 ((uint16)(flow2_7_0_INTR))
+#define LCD_tx_INTR_ALL	 ((uint16)(LCD_tx_0_INTR))
 
 
-#endif /* End Pins flow2_7_ALIASES_H */
+#endif /* End Pins LCD_tx_ALIASES_H */
 
 
 /* [] END OF FILE */

@@ -43,9 +43,11 @@ Archive member included because of file (symbol)
 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
                               .\CortexM0\ARM_GCC_493\Debug\main.o (gpio1_led_Write)
 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
-                              .\CortexM0\ARM_GCC_493\Debug\main.o (LCD_Start)
-.\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
-                              .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o) (LCD_PutChar)
+                              .\CortexM0\ARM_GCC_493\Debug\main.o (LCD_Init)
+.\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+                              .\CortexM0\ARM_GCC_493\Debug\main.o (LCD_SpiUartWriteTxData)
+.\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+                              .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o) (LCD_UartInit)
 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
                               .\CortexM0\ARM_GCC_493\Debug\main.o (switches_Read)
 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
@@ -94,7 +96,7 @@ Common symbol       size              file
 
 aftertab_1M         0x64              .\CortexM0\ARM_GCC_493\Debug\main.o
 swval               0x1               .\CortexM0\ARM_GCC_493\Debug\main.o
-ADC_1_offset        0x6               .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+ADC_1_offset        0x4               .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
 linebuf             0x64              .\CortexM0\ARM_GCC_493\Debug\main.o
 b                   0x1               .\CortexM0\ARM_GCC_493\Debug\main.o
 argv                0x28              .\CortexM0\ARM_GCC_493\Debug\main.o
@@ -113,7 +115,7 @@ obpos               0x4               .\CortexM0\ARM_GCC_493\Debug\main.o
 ctab                0x50              .\CortexM0\ARM_GCC_493\Debug\main.o
 ltime               0x8               .\CortexM0\ARM_GCC_493\Debug\main.o
 ADC_1_countsPer10Volt
-                    0xc               .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+                    0x8               .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
 swreg               0x1               .\CortexM0\ARM_GCC_493\Debug\main.o
 
 Discarded input sections
@@ -524,24 +526,45 @@ Discarded input sections
  .text.gpio1_led_ClearInterrupt
                 0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
  .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .data          0x00000000        0x8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .bss           0x00000000        0x4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .text.LCD_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
  .text.LCD_Stop
-                0x00000000        0x4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .text.LCD_PutString
-                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .text.LCD_PutArray
-                0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .text.LCD_PutHexByte
                 0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .text.LCD_PutHexInt
+ .text.LCD_SetRxFifoLevel
                 0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .text.LCD_PutCRLF
-                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .rodata        0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .text          0x00000000       0xe0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
- .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
- .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
+ .text.LCD_SetTxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .text.LCD_SpiUartPutArray
+                0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .text.LCD_SpiUartGetTxBufferSize
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .text.LCD_SpiUartClearTxBuffer
+                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .text.LCD_SpiUartDisableIntRx
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .text.LCD_SpiUartDisableIntTx
+                0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .text.LCD_UartStop
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .text.LCD_UartSetRxAddress
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .text.LCD_UartSetRxAddressMask
+                0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .text.LCD_UartPutCRLF
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .text.LCD_UartEnableCts
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .text.LCD_UartDisableCts
+                0x00000000       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .text.LCD_UartSetCtsPolarity
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
  .text          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
  .data          0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
  .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
@@ -685,7 +708,7 @@ END GROUP
                 0x00000000                CY_APPL_LOADABLE = 0x0
                 0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
                 0x00000000                CY_APP_FOR_STACK_AND_COPIER = 0x0
-                0x200004f0                PROVIDE (__cy_heap_start, _end)
+                0x200004e8                PROVIDE (__cy_heap_start, _end)
                 0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
                 0x20004000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x4000))
                 0x20003800                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
@@ -698,7 +721,7 @@ END GROUP
                 0x00000001                cy_project_type_bootloader = (appl_start == 0x0)?0x1:0x0
                 0x00000000                cy_project_type_app_for_stack_and_copier = (CY_APP_FOR_STACK_AND_COPIER == 0x1)?0x1:0x0
 
-.text           0x00000000     0x2620
+.text           0x00000000     0x275c
  CREATE_OBJECT_SYMBOLS
                 0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -712,162 +735,162 @@ END GROUP
                 0x00000010                Reset
                 0x00000001                ASSERT ((. != __cy_reset), No reset code)
  *(.psocinit)
- .psocinit      0x00000018      0x2b8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+ .psocinit      0x00000018      0x2bc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
                 0x00000130                cyfitter_cfg
-                0x000002d0                . = MAX (., 0x100)
+                0x000002d4                . = MAX (., 0x100)
  *(.text .text.* .gnu.linkonce.t.*)
- .text          0x000002d0       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .text          0x000002d4       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
  .text.CRDY_isr
-                0x00000330       0x24 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000330                CRDY_isr
+                0x00000334       0x24 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000334                CRDY_isr
  .text.sticks_isr
-                0x00000354       0xb0 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000354                sticks_isr
- .text.ticker   0x00000404       0xcc .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000404                ticker
+                0x00000358       0xb0 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000358                sticks_isr
+ .text.ticker   0x00000408       0xcc .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000408                ticker
  .text.boardledoff
-                0x000004d0        0xc .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000004d0                boardledoff
+                0x000004d4        0xc .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000004d4                boardledoff
  .text.sensorledoff
-                0x000004dc        0xc .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000004dc                sensorledoff
+                0x000004e0        0xc .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000004e0                sensorledoff
  .text.UBUT_isr
-                0x000004e8       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000004e8                UBUT_isr
- .text.WDT_isr  0x00000504       0x28 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000504                WDT_isr
- .text.checkip  0x0000052c       0x30 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x0000052c                checkip
- .text.init_io  0x0000055c       0x28 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x0000055c                init_io
+                0x000004ec       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000004ec                UBUT_isr
+ .text.WDT_isr  0x00000508       0x28 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000508                WDT_isr
+ .text.checkip  0x00000530       0x30 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000530                checkip
+ .text.init_io  0x00000560       0x28 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000560                init_io
  .text.printbuff
-                0x00000584       0x40 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000584                printbuff
- .text.newline  0x000005c4       0x40 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000005c4                newline
- .text.printc   0x00000604       0x48 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000604                printc
- .text.prints   0x0000064c       0x5c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x0000064c                prints
- .text.do_exit  0x000006a8       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000006a8                do_exit
+                0x00000588       0x40 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000588                printbuff
+ .text.newline  0x000005c8       0x40 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000005c8                newline
+ .text.printc   0x00000608       0x48 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000608                printc
+ .text.prints   0x00000650       0x5c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000650                prints
+ .text.do_exit  0x000006ac       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000006ac                do_exit
  .text.backspace
-                0x000006bc       0x18 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000006bc                backspace
- .text.printn   0x000006d4      0x11c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000006d4                printn
- .text.do_help  0x000007f0       0x68 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000007f0                do_help
- .text.ntos     0x00000858       0x5c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000858                ntos
+                0x000006c0       0x18 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000006c0                backspace
+ .text.printn   0x000006d8      0x11c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000006d8                printn
+ .text.do_help  0x000007f4       0x68 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000007f4                do_help
+ .text.ntos     0x0000085c       0x5c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x0000085c                ntos
  .text.xstrncpy
-                0x000008b4       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000008b4                xstrncpy
+                0x000008b8       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000008b8                xstrncpy
  .text.xstrncmp
-                0x000008c8       0x20 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000008c8                xstrncmp
- .text.xstrchr  0x000008e8       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000008e8                xstrchr
+                0x000008cc       0x20 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000008cc                xstrncmp
+ .text.xstrchr  0x000008ec       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000008ec                xstrchr
  .text.pr_n_just
-                0x00000904       0x7c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000904                pr_n_just
+                0x00000908       0x7c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000908                pr_n_just
  .text.do_after
-                0x00000980      0x140 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000980                do_after
+                0x00000984      0x140 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000984                do_after
  .text.pr_n_ljust
-                0x00000ac0       0x3c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000ac0                pr_n_ljust
+                0x00000ac4       0x3c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000ac4                pr_n_ljust
  .text.do_onevent
-                0x00000afc       0x64 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000afc                do_onevent
- .text.getline  0x00000b60       0xb0 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000b60                getline
- .text.mkparam  0x00000c10       0xa0 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000c10                mkparam
+                0x00000b00       0x64 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000b00                do_onevent
+ .text.getline  0x00000b64       0xb0 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000b64                getline
+ .text.mkparam  0x00000c14       0xa0 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000c14                mkparam
  .text.do_command
-                0x00000cb0       0x50 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000cb0                do_command
- .text.do_line  0x00000d00       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000d00                do_line
+                0x00000cb4       0x50 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000cb4                do_command
+ .text.do_line  0x00000d04       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000d04                do_line
  .text.loadctab
-                0x00000d1c       0x38 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000d1c                loadctab
+                0x00000d20       0x38 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000d20                loadctab
  .text.initctab
-                0x00000d54       0x44 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000d54                initctab
+                0x00000d58       0x44 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000d58                initctab
  .text.do_measure
-                0x00000d98      0x15c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000d98                do_measure
+                0x00000d9c      0x15c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000d9c                do_measure
  .text.start_measure
-                0x00000ef4        0xc .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000ef4                start_measure
+                0x00000ef8        0xc .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000ef8                start_measure
  .text.init_after
-                0x00000f00       0x30 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000f00                init_after
- .text.afterS   0x00000f30       0x78 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000f30                afterS
- .text.afterMS  0x00000fa8       0x80 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00000fa8                afterMS
+                0x00000f04       0x30 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000f04                init_after
+ .text.afterS   0x00000f34       0x78 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000f34                afterS
+ .text.afterMS  0x00000fac       0x80 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000fac                afterMS
  .text.boardled_flash
-                0x00001028       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001028                boardled_flash
+                0x0000102c       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x0000102c                boardled_flash
  .text.sensorled_flash
-                0x00001044       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001044                sensorled_flash
+                0x00001048       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001048                sensorled_flash
  .text.addto_systic_handler
-                0x00001060       0x24 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001060                addto_systic_handler
- .text.lcd_on   0x00001084       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001084                lcd_on
- .text.lcd_off  0x00001094       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001094                lcd_off
+                0x00001064       0x24 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001064                addto_systic_handler
+ .text.lcd_on   0x00001088       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001088                lcd_on
+ .text.lcd_off  0x00001098       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001098                lcd_off
  .text.lcd_clear
-                0x000010a4       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000010a4                lcd_clear
+                0x000010a8       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000010a8                lcd_clear
  .text.lcd_disp
-                0x000010b4       0x2c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000010b4                lcd_disp
- .text.lcd_put  0x000010e0       0x7c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000010e0                lcd_put
- .text.sw_disp  0x0000115c       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x0000115c                sw_disp
+                0x000010b8       0x2c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000010b8                lcd_disp
+ .text.lcd_put  0x000010e4       0x7c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000010e4                lcd_put
+ .text.sw_disp  0x00001160       0x1c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001160                sw_disp
  .text.ubut_disp
-                0x00001178       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001178                ubut_disp
+                0x0000117c       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x0000117c                ubut_disp
  .text.measure_disp
-                0x0000118c       0x34 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x0000118c                measure_disp
+                0x00001190       0x34 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001190                measure_disp
  .text.lcd_posclear
-                0x000011c0       0x3c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000011c0                lcd_posclear
+                0x000011c4       0x3c .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000011c4                lcd_posclear
  .text.pclear_lcd
-                0x000011fc       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000011fc                pclear_lcd
+                0x00001200       0x14 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001200                pclear_lcd
  .text.on_event
-                0x00001210       0x30 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001210                on_event
- .text.main     0x00001240      0x1c8 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00001240                main
+                0x00001214       0x30 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001214                on_event
+ .text.main     0x00001244      0x1c8 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001244                main
  .text.IntDefaultHandler
-                0x00001408        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x00001408                IntDefaultHandler
- .text.Start_c  0x0000140c       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x0000140c                Start_c
+                0x0000140c        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x0000140c                IntDefaultHandler
+ .text.Start_c  0x00001410       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00001410                Start_c
  .text.initialize_psoc
-                0x00001454       0x54 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x00001454                initialize_psoc
+                0x00001458       0x54 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00001458                initialize_psoc
  .text.cfg_write_bytes32
-                0x000014a8       0x34 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+                0x000014ac       0x34 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
  .text.CYMEMZERO
-                0x000014dc        0xc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+                0x000014e0        0xc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
  .text.SetAnalogRoutingPumps
-                0x000014e8       0x20 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
-                0x000014e8                SetAnalogRoutingPumps
+                0x000014ec       0x20 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+                0x000014ec                SetAnalogRoutingPumps
  .text.AnalogSetDefault
-                0x00001508       0x48 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+                0x0000150c       0x48 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
  .text.ADC_1_Init
-                0x00001550      0x1c0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
-                0x00001550                ADC_1_Init
+                0x00001554      0x1bc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+                0x00001554                ADC_1_Init
  .text.ADC_1_Enable
                 0x00001710       0x30 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
                 0x00001710                ADC_1_Enable
@@ -1129,31 +1152,51 @@ END GROUP
  .text.gpio1_led_Write
                 0x00002244       0x18 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
                 0x00002244                gpio1_led_Write
+ .text.LCD_ScbModePostEnable
+                0x0000225c        0x8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .text.LCD_Init
+                0x00002264        0x8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+                0x00002264                LCD_Init
+ .text.LCD_Enable
+                0x0000226c       0x18 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+                0x0000226c                LCD_Enable
  .text.LCD_Start
-                0x0000225c        0x4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
-                0x0000225c                LCD_Start
+                0x00002284       0x20 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+                0x00002284                LCD_Start
+ .text.LCD_SpiUartWriteTxData
+                0x000022a4       0x1c .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+                0x000022a4                LCD_SpiUartWriteTxData
+ .text.LCD_UartInit
+                0x000022c0       0xa0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+                0x000022c0                LCD_UartInit
+ .text.LCD_UartPostEnable
+                0x00002360       0x24 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+                0x00002360                LCD_UartPostEnable
+ .text.LCD_UartPutString
+                0x00002384       0x18 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+                0x00002384                LCD_UartPutString
  .text.switches_Read
-                0x00002260        0xc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
-                0x00002260                switches_Read
+                0x0000239c        0xc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+                0x0000239c                switches_Read
  .text.CySysFlashSetWaitCycles
-                0x0000226c       0x54 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
-                0x0000226c                CySysFlashSetWaitCycles
- .text          0x000022c0      0x120 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
-                0x000022c0                __aeabi_uidiv
-                0x000022c0                __udivsi3
-                0x000023cc                __aeabi_uidivmod
- .text          0x000023e0      0x1e0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
-                0x000023e0                __divsi3
-                0x000023e0                __aeabi_idiv
-                0x000025ac                __aeabi_idivmod
- .text          0x000025c0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
-                0x000025c0                __aeabi_idiv0
-                0x000025c0                __aeabi_ldiv0
+                0x000023a8       0x54 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+                0x000023a8                CySysFlashSetWaitCycles
+ .text          0x000023fc      0x120 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                0x000023fc                __aeabi_uidiv
+                0x000023fc                __udivsi3
+                0x00002508                __aeabi_uidivmod
+ .text          0x0000251c      0x1e0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+                0x0000251c                __divsi3
+                0x0000251c                __aeabi_idiv
+                0x000026e8                __aeabi_idivmod
+ .text          0x000026fc        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x000026fc                __aeabi_idiv0
+                0x000026fc                __aeabi_ldiv0
  .text.__libc_init_array
-                0x000025c4       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
-                0x000025c4                __libc_init_array
- .text.memset   0x00002610       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
-                0x00002610                memset
+                0x00002700       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00002700                __libc_init_array
+ .text.memset   0x0000274c       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x0000274c                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -1166,86 +1209,87 @@ END GROUP
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x00002620        0x0
+.v4_bx          0x0000275c        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00002620        0x0
+.iplt           0x0000275c        0x0
  .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x00002620        0x4
+.eh_frame       0x0000275c        0x4
  *(.eh_frame)
- .eh_frame      0x00002620        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
- .eh_frame      0x00002620        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
-                0x00002624                PROVIDE (__exidx_start, .)
+ .eh_frame      0x0000275c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .eh_frame      0x0000275c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+                0x00002760                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00002624                __exidx_end = .
+                0x00002760                __exidx_end = .
 
-.rodata         0x00002624      0x37c
+.rodata         0x00002760      0x378
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00002624       0x58 .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x00002624                ChkStr
+ .rodata        0x00002760       0x58 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00002760                ChkStr
  .rodata.str1.4
-                0x0000267c      0x164 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000027b8      0x164 .\CortexM0\ARM_GCC_493\Debug\main.o
                                 0x174 (size before relaxing)
- .rodata        0x000027e0      0x134 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
- .rodata        0x00002914       0x10 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
- .rodata        0x00002924       0x48 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
-                0x00002924                cyImoFreqMhz2Reg
-                0x00002954                cyImoFreqMhz2DpllOffset
-                0x0000296c                . = ALIGN (0x4)
+ .rodata        0x0000291c      0x130 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+ .rodata        0x00002a4c        0xc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+ .rodata        0x00002a58       0x48 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
+                0x00002a58                cyImoFreqMhz2Reg
+                0x00002a88                cyImoFreqMhz2DpllOffset
+                0x00002aa0                . = ALIGN (0x4)
  *(.init)
- .init          0x0000296c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
-                0x0000296c                _init
- .init          0x00002970        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
-                0x00002978                . = ALIGN (0x4)
-                0x00002978                __preinit_array_start = .
+ .init          0x00002aa0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x00002aa0                _init
+ .init          0x00002aa4        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x00002aac                . = ALIGN (0x4)
+                0x00002aac                __preinit_array_start = .
  *(.preinit_array)
-                0x00002978                __preinit_array_end = .
-                0x00002978                . = ALIGN (0x4)
-                0x00002978                __init_array_start = .
+                0x00002aac                __preinit_array_end = .
+                0x00002aac                . = ALIGN (0x4)
+                0x00002aac                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00002978        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
- .init_array    0x0000297c        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x00002980                __init_array_end = .
-                0x00002980                . = ALIGN (0x4)
+ .init_array    0x00002aac        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .init_array    0x00002ab0        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00002ab4                __init_array_end = .
+                0x00002ab4                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00002980        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
-                0x00002980                _fini
- .fini          0x00002984        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
-                0x0000298c                . = ALIGN (0x4)
-                0x0000298c                __fini_array_start = .
+ .fini          0x00002ab4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x00002ab4                _fini
+ .fini          0x00002ab8        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x00002ac0                . = ALIGN (0x4)
+                0x00002ac0                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x0000298c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .fini_array    0x00002ac0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00002990                __fini_array_end = .
-                0x00002990                . = ALIGN (0x4)
+                0x00002ac4                __fini_array_end = .
+                0x00002ac4                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00002990                . = ALIGN (0x4)
+                0x00002ac4                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00002990                . = ALIGN (0x4)
-                0x00002990                __cy_regions = .
-                0x00002990        0x4 LONG 0x29a0 __cy_region_init_ram
-                0x00002994        0x4 LONG 0x200000c8 __cy_region_start_data
-                0x00002998        0x4 LONG 0x18 __cy_region_init_size_ram
-                0x0000299c        0x4 LONG 0x410 __cy_region_zero_size_ram
-                0x000029a0                __cy_regions_end = .
-                0x000029a0                . = ALIGN (0x8)
-                0x000029a0                _etext = .
+                0x00002ac4                . = ALIGN (0x4)
+                0x00002ac4                __cy_regions = .
+                0x00002ac4        0x4 LONG 0x2ad8 __cy_region_init_ram
+                0x00002ac8        0x4 LONG 0x200000c8 __cy_region_start_data
+                0x00002acc        0x4 LONG 0x18 __cy_region_init_size_ram
+                0x00002ad0        0x4 LONG 0x408 __cy_region_zero_size_ram
+                0x00002ad4                __cy_regions_end = .
+                0x00002ad8                . = ALIGN (0x8)
+ *fill*         0x00002ad4        0x4 
+                0x00002ad8                _etext = .
 
 .cy_checksum_exclude
-                0x000029a0        0x0
+                0x00002ad8        0x0
  *(.cy_checksum_exclude)
 
 .ramvectors     0x20000000       0xc0
@@ -1258,7 +1302,7 @@ END GROUP
  *(.noinit)
  .noinit        0x200000c0        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
 
-.data           0x200000c8       0x18 load address 0x000029a0
+.data           0x200000c8       0x18 load address 0x00002ad8
                 0x200000c8                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x200000c8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
@@ -1277,10 +1321,10 @@ END GROUP
  *(.ram)
                 0x200000e0                _edata = .
 
-.igot.plt       0x200000e0        0x0 load address 0x000029b8
+.igot.plt       0x200000e0        0x0 load address 0x00002af0
  .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
 
-.bss            0x200000e0      0x410 load address 0x000029b8
+.bss            0x200000e0      0x408 load address 0x00002af0
                 0x200000e0                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -1301,8 +1345,12 @@ END GROUP
                 0x2000012c                CySysTickInitVar
  .bss           0x20000130        0x1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
                 0x20000130                sectimer_initVar
+ *fill*         0x20000131        0x1 
+ .bss           0x20000132        0x4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+                0x20000132                LCD_initVar
+                0x20000134                LCD_IntrTxMask
  *(COMMON)
- *fill*         0x20000131        0x7 
+ *fill*         0x20000136        0x2 
  COMMON         0x20000138      0x3a1 .\CortexM0\ARM_GCC_493\Debug\main.o
                 0x20000138                aftertab_1M
                 0x2000019c                swval
@@ -1325,24 +1373,24 @@ END GROUP
                 0x200004d0                ltime
                 0x200004d8                swreg
  *fill*         0x200004d9        0x3 
- COMMON         0x200004dc       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+ COMMON         0x200004dc        0xc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
                 0x200004dc                ADC_1_offset
-                0x200004e4                ADC_1_countsPer10Volt
-                0x200004f0                . = ALIGN (0x8)
+                0x200004e0                ADC_1_countsPer10Volt
+                0x200004e8                . = ALIGN (0x8)
  *(.ram.b)
-                0x200004f0                _end = .
-                0x200004f0                __end = .
-                0x200004f0                PROVIDE (end, .)
-                0x200004f0                PROVIDE (__bss_end__, .)
-                0x000029a0                __cy_region_init_ram = LOADADDR (.data)
+                0x200004e8                _end = .
+                0x200004e8                __end = .
+                0x200004e8                PROVIDE (end, .)
+                0x200004e8                PROVIDE (__bss_end__, .)
+                0x00002ad8                __cy_region_init_ram = LOADADDR (.data)
                 0x00000018                __cy_region_init_size_ram = (_edata - ADDR (.data))
-                0x00000410                __cy_region_zero_size_ram = (_end - _edata)
+                0x00000408                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x200004f0       0x80 load address 0x000029b8
-                0x200004f0                . = _end
-                0x20000570                . = (. + 0x80)
- *fill*         0x200004f0       0x80 
-                0x20000570                __cy_heap_limit = .
+.heap           0x200004e8       0x80 load address 0x00002af0
+                0x200004e8                . = _end
+                0x20000568                . = (. + 0x80)
+ *fill*         0x200004e8       0x80 
+                0x20000568                __cy_heap_limit = .
 
 .stack          0x20003800      0x800
                 0x20003800                __cy_stack_limit = .
@@ -1378,7 +1426,7 @@ END GROUP
                 0x90600000        0x4 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
                 0x90600000                cy_meta_chipprotect
 
-.rel.dyn        0x000029b8        0x0 load address 0x90600004
+.rel.dyn        0x00002af0        0x0 load address 0x90600004
  .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
 
 .stab
@@ -1399,7 +1447,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0xd18
+.debug_aranges  0x00000000      0xdb0
  *(.debug_aranges)
  .debug_aranges
                 0x00000000      0x1e0 .\CortexM0\ARM_GCC_493\Debug\main.o
@@ -1450,111 +1498,116 @@ END GROUP
  .debug_aranges
                 0x00000be0       0x48 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
  .debug_aranges
-                0x00000c28       0x50 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+                0x00000c28       0x58 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
  .debug_aranges
-                0x00000c78       0x20 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
+                0x00000c80       0x48 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
  .debug_aranges
-                0x00000c98       0x40 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+                0x00000cc8       0x68 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
  .debug_aranges
-                0x00000cd8       0x40 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+                0x00000d30       0x40 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+ .debug_aranges
+                0x00000d70       0x40 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x77e4
+.debug_info     0x00000000     0x79f5
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x232a .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_info    0x0000232a       0xfe .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
- .debug_info    0x00002428      0x38e .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_info    0x000027b6      0x3f6 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
- .debug_info    0x00002bac      0x5d1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
- .debug_info    0x0000317d       0xc4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
- .debug_info    0x00003241      0x20a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
- .debug_info    0x0000344b      0x217 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
- .debug_info    0x00003662      0x352 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
- .debug_info    0x000039b4      0x152 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
- .debug_info    0x00003b06       0x96 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyBootAsmGnu.o)
- .debug_info    0x00003b9c      0xcf4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
- .debug_info    0x00004890      0x2e9 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
- .debug_info    0x00004b79      0xda4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
- .debug_info    0x0000591d      0x2e9 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
- .debug_info    0x00005c06      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
- .debug_info    0x00005f06      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
- .debug_info    0x00006206      0x12b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
- .debug_info    0x00006331      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
- .debug_info    0x00006631      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
- .debug_info    0x00006931      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
- .debug_info    0x00006ace      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
- .debug_info    0x00006c6b      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
- .debug_info    0x00006e08      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
- .debug_info    0x00006fa5      0x2c6 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .debug_info    0x0000726b       0x94 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
- .debug_info    0x000072ff      0x17a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
- .debug_info    0x00007479      0x36b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+ .debug_info    0x00000000     0x2253 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00002253       0xfe .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x00002351      0x38e .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_info    0x000026df      0x3f6 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+ .debug_info    0x00002ad5      0x5d1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+ .debug_info    0x000030a6       0xc4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
+ .debug_info    0x0000316a      0x20a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
+ .debug_info    0x00003374      0x217 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
+ .debug_info    0x0000358b      0x352 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
+ .debug_info    0x000038dd      0x152 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
+ .debug_info    0x00003a2f       0x8e .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyBootAsmGnu.o)
+ .debug_info    0x00003abd      0xcf4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
+ .debug_info    0x000047b1      0x2e9 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
+ .debug_info    0x00004a9a      0xda4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
+ .debug_info    0x0000583e      0x2e9 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
+ .debug_info    0x00005b27      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
+ .debug_info    0x00005e27      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
+ .debug_info    0x00006127      0x12b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
+ .debug_info    0x00006252      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
+ .debug_info    0x00006552      0x300 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
+ .debug_info    0x00006852      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
+ .debug_info    0x000069ef      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
+ .debug_info    0x00006b8c      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
+ .debug_info    0x00006d29      0x19d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
+ .debug_info    0x00006ec6      0x227 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .debug_info    0x000070ed      0x1b8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .debug_info    0x000072a5      0x26b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .debug_info    0x00007510      0x17a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+ .debug_info    0x0000768a      0x36b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
 
-.debug_abbrev   0x00000000     0x23ca
+.debug_abbrev   0x00000000     0x257d
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x3cd .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_abbrev  0x000003cd       0x5d .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
- .debug_abbrev  0x0000042a      0x1d5 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_abbrev  0x000005ff      0x200 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
- .debug_abbrev  0x000007ff      0x1c3 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
- .debug_abbrev  0x000009c2       0x65 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
- .debug_abbrev  0x00000a27       0xd5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
- .debug_abbrev  0x00000afc      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
- .debug_abbrev  0x00000c65      0x13b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
- .debug_abbrev  0x00000da0       0xaa .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
- .debug_abbrev  0x00000e4a       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyBootAsmGnu.o)
- .debug_abbrev  0x00000e5e      0x245 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
- .debug_abbrev  0x000010a3      0x155 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
- .debug_abbrev  0x000011f8      0x26d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
- .debug_abbrev  0x00001465      0x145 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
- .debug_abbrev  0x000015aa      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
- .debug_abbrev  0x0000175e      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
- .debug_abbrev  0x00001912       0x85 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
- .debug_abbrev  0x00001997      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
- .debug_abbrev  0x00001b4b      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
- .debug_abbrev  0x00001cff       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
- .debug_abbrev  0x00001dc7       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
- .debug_abbrev  0x00001e8f       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
- .debug_abbrev  0x00001f57       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
- .debug_abbrev  0x0000201f      0x110 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .debug_abbrev  0x0000212f       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
- .debug_abbrev  0x00002143       0xc6 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
- .debug_abbrev  0x00002209      0x1c1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+ .debug_abbrev  0x00000000      0x3b5 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x000003b5       0x5d .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x00000412      0x1d5 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_abbrev  0x000005e7      0x200 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000007e7      0x1c3 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+ .debug_abbrev  0x000009aa       0x65 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
+ .debug_abbrev  0x00000a0f       0xd5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
+ .debug_abbrev  0x00000ae4      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
+ .debug_abbrev  0x00000c4d      0x13b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
+ .debug_abbrev  0x00000d88       0xaa .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
+ .debug_abbrev  0x00000e32       0x14 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000e46      0x245 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
+ .debug_abbrev  0x0000108b      0x155 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
+ .debug_abbrev  0x000011e0      0x26d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
+ .debug_abbrev  0x0000144d      0x145 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
+ .debug_abbrev  0x00001592      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
+ .debug_abbrev  0x00001746      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
+ .debug_abbrev  0x000018fa       0x85 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
+ .debug_abbrev  0x0000197f      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
+ .debug_abbrev  0x00001b33      0x1b4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
+ .debug_abbrev  0x00001ce7       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
+ .debug_abbrev  0x00001daf       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
+ .debug_abbrev  0x00001e77       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
+ .debug_abbrev  0x00001f3f       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
+ .debug_abbrev  0x00002007       0xd5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .debug_abbrev  0x000020dc       0xfd .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .debug_abbrev  0x000021d9      0x11d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .debug_abbrev  0x000022f6       0xc6 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+ .debug_abbrev  0x000023bc      0x1c1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
 
-.debug_line     0x00000000     0x2f94
+.debug_line     0x00000000     0x319b
  *(.debug_line)
- .debug_line    0x00000000      0x9a2 .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_line    0x000009a2       0x53 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
- .debug_line    0x000009f5      0x249 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_line    0x00000c3e      0x1c7 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
- .debug_line    0x00000e05      0x2bb .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
- .debug_line    0x000010c0       0x66 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
- .debug_line    0x00001126      0x127 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
- .debug_line    0x0000124d      0x136 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
- .debug_line    0x00001383      0x1bc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
- .debug_line    0x0000153f       0xaa .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
- .debug_line    0x000015e9       0x68 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyBootAsmGnu.o)
- .debug_line    0x00001651      0x51a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
- .debug_line    0x00001b6b      0x143 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
- .debug_line    0x00001cae      0x4c5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
- .debug_line    0x00002173      0x17e .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
- .debug_line    0x000022f1      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
- .debug_line    0x0000245a      0x167 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
- .debug_line    0x000025c1       0x6f .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
- .debug_line    0x00002630      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
- .debug_line    0x00002799      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
- .debug_line    0x00002902       0xbe .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
- .debug_line    0x000029c0       0xc4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
- .debug_line    0x00002a84       0xc5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
- .debug_line    0x00002b49       0xc3 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
- .debug_line    0x00002c0c       0xea .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .debug_line    0x00002cf6       0x9e .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
- .debug_line    0x00002d94       0xb9 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
- .debug_line    0x00002e4d      0x147 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+ .debug_line    0x00000000      0x9b4 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_line    0x000009b4       0x53 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x00000a07      0x249 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_line    0x00000c50      0x1c8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+ .debug_line    0x00000e18      0x2bb .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+ .debug_line    0x000010d3       0x66 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
+ .debug_line    0x00001139      0x127 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
+ .debug_line    0x00001260      0x136 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
+ .debug_line    0x00001396      0x1bc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
+ .debug_line    0x00001552       0xaa .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
+ .debug_line    0x000015fc       0x68 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyBootAsmGnu.o)
+ .debug_line    0x00001664      0x51a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
+ .debug_line    0x00001b7e      0x143 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
+ .debug_line    0x00001cc1      0x4c5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
+ .debug_line    0x00002186      0x17e .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
+ .debug_line    0x00002304      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
+ .debug_line    0x0000246d      0x167 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
+ .debug_line    0x000025d4       0x6f .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
+ .debug_line    0x00002643      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
+ .debug_line    0x000027ac      0x169 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
+ .debug_line    0x00002915       0xbe .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
+ .debug_line    0x000029d3       0xc4 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
+ .debug_line    0x00002a97       0xc5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
+ .debug_line    0x00002b5c       0xc3 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
+ .debug_line    0x00002c1f      0x11f .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .debug_line    0x00002d3e       0xf6 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .debug_line    0x00002e34      0x167 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .debug_line    0x00002f9b       0xb9 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+ .debug_line    0x00003054      0x147 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
 
-.debug_frame    0x00000000     0x2218
+.debug_frame    0x00000000     0x2374
  *(.debug_frame)
  .debug_frame   0x00000000      0x6b0 .\CortexM0\ARM_GCC_493\Debug\main.o
  .debug_frame   0x000006b0       0xb0 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
@@ -1578,80 +1631,86 @@ END GROUP
  .debug_frame   0x00001c5c       0x70 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
  .debug_frame   0x00001ccc       0x70 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
  .debug_frame   0x00001d3c       0x70 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
- .debug_frame   0x00001dac       0xc8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .debug_frame   0x00001e74       0x78 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
- .debug_frame   0x00001eec       0x90 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
- .debug_frame   0x00001f7c       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
- .debug_frame   0x00001f9c       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
- .debug_frame   0x00001fbc       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
- .debug_frame   0x00001ff0       0x50 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(bpabi.o)
- .debug_frame   0x00002040       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divsf3.o)
- .debug_frame   0x0000207c       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(mulsf3.o)
- .debug_frame   0x000020b8       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsisf.o)
- .debug_frame   0x000020e4       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divdi3.o)
- .debug_frame   0x00002120       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivdi3.o)
- .debug_frame   0x0000215c       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x0000217c       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
- .debug_frame   0x000021a4       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x000021d0       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
- .debug_frame   0x000021f8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00001dac       0xd8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .debug_frame   0x00001e84       0x80 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .debug_frame   0x00001f04       0xcc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .debug_frame   0x00001fd0       0x78 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+ .debug_frame   0x00002048       0x90 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+ .debug_frame   0x000020d8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x000020f8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00002118       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
+ .debug_frame   0x0000214c       0x50 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(bpabi.o)
+ .debug_frame   0x0000219c       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divsf3.o)
+ .debug_frame   0x000021d8       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(mulsf3.o)
+ .debug_frame   0x00002214       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsisf.o)
+ .debug_frame   0x00002240       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divdi3.o)
+ .debug_frame   0x0000227c       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivdi3.o)
+ .debug_frame   0x000022b8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000022d8       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00002300       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x0000232c       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00002354       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x247f
+.debug_str      0x00000000     0x258c
  *(.debug_str)
- .debug_str     0x00000000      0x7ca .\CortexM0\ARM_GCC_493\Debug\main.o
-                                0x853 (size before relaxing)
- .debug_str     0x000007ca       0x5b .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
-                                0x1d4 (size before relaxing)
- .debug_str     0x00000825      0x13d .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                                0x2fb (size before relaxing)
- .debug_str     0x00000962      0x12a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
-                                0x2fb (size before relaxing)
- .debug_str     0x00000a8c      0x1d8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
-                                0x425 (size before relaxing)
- .debug_str     0x00000c64       0x3b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
-                                0x1bb (size before relaxing)
- .debug_str     0x00000c9f       0xf1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
-                                0x2a1 (size before relaxing)
- .debug_str     0x00000d90      0x13a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
-                                0x2e6 (size before relaxing)
- .debug_str     0x00000eca      0x171 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
-                                0x3a7 (size before relaxing)
- .debug_str     0x0000103b       0x79 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
-                                0x207 (size before relaxing)
- .debug_str     0x000010b4      0x534 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
-                                0x7c8 (size before relaxing)
- .debug_str     0x000015e8       0xbf .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
-                                0x2cd (size before relaxing)
- .debug_str     0x000016a7      0x464 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
-                                0x709 (size before relaxing)
- .debug_str     0x00001b0b      0x16c .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
-                                0x36b (size before relaxing)
- .debug_str     0x00001c77       0xdc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
-                                0x2d6 (size before relaxing)
- .debug_str     0x00001d53       0xe7 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
-                                0x2f2 (size before relaxing)
- .debug_str     0x00001e3a       0x53 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
-                                0x203 (size before relaxing)
- .debug_str     0x00001e8d       0xbb .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
-                                0x2d6 (size before relaxing)
- .debug_str     0x00001f48       0xcd .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
-                                0x2d6 (size before relaxing)
- .debug_str     0x00002015       0x7f .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
-                                0x235 (size before relaxing)
- .debug_str     0x00002094       0x9b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
-                                0x25f (size before relaxing)
- .debug_str     0x0000212f       0xa1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
-                                0x266 (size before relaxing)
- .debug_str     0x000021d0       0x95 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
-                                0x258 (size before relaxing)
- .debug_str     0x00002265       0xec .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
-                                0x290 (size before relaxing)
- .debug_str     0x00002351       0x7c .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
-                                0x249 (size before relaxing)
- .debug_str     0x000023cd       0xb2 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
-                                0x2aa (size before relaxing)
+ .debug_str     0x00000000      0x7cf .\CortexM0\ARM_GCC_493\Debug\main.o
+                                0x858 (size before relaxing)
+ .debug_str     0x000007cf       0x5b .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+                                0x1cc (size before relaxing)
+ .debug_str     0x0000082a      0x13d .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                                0x2f3 (size before relaxing)
+ .debug_str     0x00000967      0x12a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyfitter_cfg.o)
+                                0x2f3 (size before relaxing)
+ .debug_str     0x00000a91      0x1d8 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1.o)
+                                0x41d (size before relaxing)
+ .debug_str     0x00000c69       0x3b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ADC_1_INT.o)
+                                0x1b3 (size before relaxing)
+ .debug_str     0x00000ca4       0xf1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console.o)
+                                0x299 (size before relaxing)
+ .debug_str     0x00000d95      0x13a .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_SPI_UART.o)
+                                0x2de (size before relaxing)
+ .debug_str     0x00000ecf      0x16b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(console_UART.o)
+                                0x39f (size before relaxing)
+ .debug_str     0x0000103a       0x79 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P4_4.o)
+                                0x1ff (size before relaxing)
+ .debug_str     0x000010b3      0x534 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLib.o)
+                                0x7c0 (size before relaxing)
+ .debug_str     0x000015e7       0xbf .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(cyPm.o)
+                                0x2c5 (size before relaxing)
+ .debug_str     0x000016a6      0x464 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyLFClk.o)
+                                0x701 (size before relaxing)
+ .debug_str     0x00001b0a      0x16c .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sectimer.o)
+                                0x363 (size before relaxing)
+ .debug_str     0x00001c76       0xdc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(wdog.o)
+                                0x2ce (size before relaxing)
+ .debug_str     0x00001d52       0xe7 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(sticks.o)
+                                0x2ea (size before relaxing)
+ .debug_str     0x00001e39       0x53 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(coretemp.o)
+                                0x1fb (size before relaxing)
+ .debug_str     0x00001e8c       0xbb .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(ubut.o)
+                                0x2ce (size before relaxing)
+ .debug_str     0x00001f47       0xcd .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(crdy.o)
+                                0x2ce (size before relaxing)
+ .debug_str     0x00002014       0x7f .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(P7_1.o)
+                                0x22d (size before relaxing)
+ .debug_str     0x00002093       0x9b .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
+                                0x257 (size before relaxing)
+ .debug_str     0x0000212e       0xa1 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
+                                0x25e (size before relaxing)
+ .debug_str     0x000021cf       0x95 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
+                                0x250 (size before relaxing)
+ .debug_str     0x00002264       0xbc .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+                                0x27b (size before relaxing)
+ .debug_str     0x00002320       0xa0 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+                                0x265 (size before relaxing)
+ .debug_str     0x000023c0       0x9e .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+                                0x2c9 (size before relaxing)
+ .debug_str     0x0000245e       0x7c .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+                                0x241 (size before relaxing)
+ .debug_str     0x000024da       0xb2 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+                                0x2a2 (size before relaxing)
 
-.debug_loc      0x00000000     0x3430
+.debug_loc      0x00000000     0x34ed
  *(.debug_loc)
  .debug_loc     0x00000000      0xfe0 .\CortexM0\ARM_GCC_493\Debug\main.o
  .debug_loc     0x00000fe0      0x14f .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
@@ -1674,14 +1733,16 @@ END GROUP
  .debug_loc     0x00002f92       0xa2 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
  .debug_loc     0x00003034       0xa2 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
  .debug_loc     0x000030d6       0xa2 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
- .debug_loc     0x00003178      0x12d .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .debug_loc     0x000032a5       0x44 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
- .debug_loc     0x000032e9      0x147 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+ .debug_loc     0x00003178       0x7e .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .debug_loc     0x000031f6       0x77 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .debug_loc     0x0000326d       0xf5 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .debug_loc     0x00003362       0x44 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+ .debug_loc     0x000033a6      0x147 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
 
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000      0xb30
+.debug_ranges   0x00000000      0xbc8
  *(.debug_ranges)
  .debug_ranges  0x00000000      0x1d0 .\CortexM0\ARM_GCC_493\Debug\main.o
  .debug_ranges  0x000001d0       0x38 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
@@ -1705,9 +1766,11 @@ END GROUP
  .debug_ranges  0x000009e8       0x38 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en5v_gpio0.o)
  .debug_ranges  0x00000a20       0x38 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
  .debug_ranges  0x00000a58       0x38 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
- .debug_ranges  0x00000a90       0x40 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
- .debug_ranges  0x00000ad0       0x30 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
- .debug_ranges  0x00000b00       0x30 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+ .debug_ranges  0x00000a90       0x48 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .debug_ranges  0x00000ad8       0x38 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .debug_ranges  0x00000b10       0x58 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
+ .debug_ranges  0x00000b68       0x30 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+ .debug_ranges  0x00000b98       0x30 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 .\CortexM0\ARM_GCC_493\Debug\main.o
@@ -1735,6 +1798,8 @@ END GROUP
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(en33v_gpio1.o)
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(gpio1_led.o)
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
 
@@ -1813,53 +1878,55 @@ END GROUP
  .ARM.attributes
                 0x000004ed       0x31 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD.o)
  .ARM.attributes
-                0x0000051e       0x21 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_AsmGnu.o)
+                0x0000051e       0x31 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_SPI_UART.o)
  .ARM.attributes
-                0x0000053f       0x31 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
+                0x0000054f       0x31 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(LCD_UART.o)
  .ARM.attributes
-                0x00000570       0x31 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
+                0x00000580       0x31 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(switches.o)
  .ARM.attributes
-                0x000005a1       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                0x000005b1       0x31 .\CortexM0\ARM_GCC_493\Debug\PSOC4MIO_HAL.a(CyFlash.o)
  .ARM.attributes
-                0x000005bf       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+                0x000005e2       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x000005dd       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x00000600       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
  .ARM.attributes
-                0x000005fb       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_aeabi_ldivmod.o)
+                0x0000061e       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000619       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
+                0x0000063c       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_aeabi_ldivmod.o)
  .ARM.attributes
-                0x00000645       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(bpabi.o)
+                0x0000065a       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
  .ARM.attributes
-                0x00000671       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divsf3.o)
+                0x00000686       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(bpabi.o)
  .ARM.attributes
-                0x0000069d       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(mulsf3.o)
+                0x000006b2       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divsf3.o)
  .ARM.attributes
-                0x000006c9       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsisf.o)
+                0x000006de       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(mulsf3.o)
  .ARM.attributes
-                0x000006f5       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
+                0x0000070a       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsisf.o)
  .ARM.attributes
-                0x00000713       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divdi3.o)
+                0x00000736       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
  .ARM.attributes
-                0x0000073f       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivdi3.o)
+                0x00000754       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divdi3.o)
  .ARM.attributes
-                0x0000076b       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzdi2.o)
+                0x00000780       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivdi3.o)
  .ARM.attributes
-                0x00000789       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                0x000007ac       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzdi2.o)
  .ARM.attributes
-                0x000007b5       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+                0x000007ca       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
  .ARM.attributes
-                0x000007e1       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x000007f6       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
  .ARM.attributes
-                0x0000080d       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00000822       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000839       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+                0x0000084e       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000865       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x0000087a       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
  .ARM.attributes
-                0x00000891       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+                0x000008a6       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x000008bd       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x000008d2       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .ARM.attributes
+                0x000008fe       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
 
 /DISCARD/
  *(.note.GNU-stack)

@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 25 2016 12:55:34
 
-#File Generated:     May 31 2016 18:08:28
+#File Generated:     Jun 1 2016 11:15:23
 
 #Purpose:            
 
@@ -55,7 +55,7 @@ Design Statistics after Packing
 Device Utilization Summary after Packing
     Macrocells                  :	2/32
     UDBS                        :	3/4
-    IOs                         :	31/55
+    IOs                         :	24/55
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -79,14 +79,14 @@ analysis after routing.
 Number of clocks: 16
 Clock: ADC_1_intClock       | Frequency: N/A       | Target:   1.0 MHz
 Clock: ADC_1_intClock(FFB)  | Frequency: N/A       | Target:   1.0 MHz
-Clock: Clock_2              | Frequency: N/A       | Target:  12.0 MHz
-Clock: Clock_2(FFB)         | Frequency: N/A       | Target:  12.0 MHz
 Clock: CyHFCLK              | Frequency:  41.7 MHz | Target:  48.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyLFCLK              | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyRouted1            | Frequency: N/A       | Target:  48.0 MHz
 Clock: CySYSCLK             | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyWCO                | Frequency: N/A       | Target:   0.0 MHz
+Clock: LCD_SCBCLK           | Frequency: N/A       | Target:   0.1 MHz
+Clock: LCD_SCBCLK(FFB)      | Frequency: N/A       | Target:   0.1 MHz
 Clock: SPI_1_SCBCLK         | Frequency: N/A       | Target:  16.0 MHz
 Clock: SPI_1_SCBCLK(FFB)    | Frequency: N/A       | Target:  16.0 MHz
 Clock: console_SCBCLK       | Frequency: N/A       | Target:   0.2 MHz
@@ -107,14 +107,14 @@ Phase 7
 Number of clocks: 16
 Clock: ADC_1_intClock       | Frequency: N/A       | Target:   1.0 MHz
 Clock: ADC_1_intClock(FFB)  | Frequency: N/A       | Target:   1.0 MHz
-Clock: Clock_2              | Frequency: N/A       | Target:  12.0 MHz
-Clock: Clock_2(FFB)         | Frequency: N/A       | Target:  12.0 MHz
 Clock: CyHFCLK              | Frequency:  41.7 MHz | Target:  48.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyLFCLK              | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyRouted1            | Frequency: N/A       | Target:  48.0 MHz
 Clock: CySYSCLK             | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyWCO                | Frequency: N/A       | Target:   0.0 MHz
+Clock: LCD_SCBCLK           | Frequency: N/A       | Target:   0.1 MHz
+Clock: LCD_SCBCLK(FFB)      | Frequency: N/A       | Target:   0.1 MHz
 Clock: SPI_1_SCBCLK         | Frequency: N/A       | Target:  16.0 MHz
 Clock: SPI_1_SCBCLK(FFB)    | Frequency: N/A       | Target:  16.0 MHz
 Clock: console_SCBCLK       | Frequency: N/A       | Target:   0.2 MHz
@@ -135,11 +135,11 @@ Final Design Statistics
     Number of Status            	:	2
     Number of SyncCells         	:	2
     Number of count7cells       	:	0
-    Number of IOs       	:	31
+    Number of IOs       	:	24
 
 Device Utilization Summary
     Macrocells                  :	2/32
-    IOs                         :	31/55
+    IOs                         :	24/55
 
 
 
@@ -158,14 +158,14 @@ analysis after routing.
 Number of clocks: 16
 Clock: ADC_1_intClock       | Frequency: N/A       | Target:   1.0 MHz
 Clock: ADC_1_intClock(FFB)  | Frequency: N/A       | Target:   1.0 MHz
-Clock: Clock_2              | Frequency: N/A       | Target:  12.0 MHz
-Clock: Clock_2(FFB)         | Frequency: N/A       | Target:  12.0 MHz
 Clock: CyHFCLK              | Frequency:  41.7 MHz | Target:  48.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyLFCLK              | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyRouted1            | Frequency: N/A       | Target:  48.0 MHz
 Clock: CySYSCLK             | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyWCO                | Frequency: N/A       | Target:   0.0 MHz
+Clock: LCD_SCBCLK           | Frequency: N/A       | Target:   0.1 MHz
+Clock: LCD_SCBCLK(FFB)      | Frequency: N/A       | Target:   0.1 MHz
 Clock: SPI_1_SCBCLK         | Frequency: N/A       | Target:  16.0 MHz
 Clock: SPI_1_SCBCLK(FFB)    | Frequency: N/A       | Target:  16.0 MHz
 Clock: console_SCBCLK       | Frequency: N/A       | Target:   0.2 MHz
@@ -182,5 +182,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.6 sec.
+I2076: Total run-time: 0.3 sec.
 

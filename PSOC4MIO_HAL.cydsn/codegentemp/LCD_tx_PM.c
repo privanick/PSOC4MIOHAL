@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: gpio2_9.c  
+* File Name: LCD_tx.c  
 * Version 2.20
 *
 * Description:
@@ -15,13 +15,13 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "gpio2_9.h"
+#include "LCD_tx.h"
 
-static gpio2_9_BACKUP_STRUCT  gpio2_9_backup = {0u, 0u, 0u};
+static LCD_tx_BACKUP_STRUCT  LCD_tx_backup = {0u, 0u, 0u};
 
 
 /*******************************************************************************
-* Function Name: gpio2_9_Sleep
+* Function Name: LCD_tx_Sleep
 ****************************************************************************//**
 *
 * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -39,30 +39,30 @@ static gpio2_9_BACKUP_STRUCT  gpio2_9_backup = {0u, 0u, 0u};
 *  deep-sleep/hibernate modes.
 *
 * \funcusage
-*  \snippet gpio2_9_SUT.c usage_gpio2_9_Sleep_Wakeup
+*  \snippet LCD_tx_SUT.c usage_LCD_tx_Sleep_Wakeup
 *******************************************************************************/
-void gpio2_9_Sleep(void)
+void LCD_tx_Sleep(void)
 {
-    #if defined(gpio2_9__PC)
-        gpio2_9_backup.pcState = gpio2_9_PC;
+    #if defined(LCD_tx__PC)
+        LCD_tx_backup.pcState = LCD_tx_PC;
     #else
         #if (CY_PSOC4_4200L)
             /* Save the regulator state and put the PHY into suspend mode */
-            gpio2_9_backup.usbState = gpio2_9_CR1_REG;
-            gpio2_9_USB_POWER_REG |= gpio2_9_USBIO_ENTER_SLEEP;
-            gpio2_9_CR1_REG &= gpio2_9_USBIO_CR1_OFF;
+            LCD_tx_backup.usbState = LCD_tx_CR1_REG;
+            LCD_tx_USB_POWER_REG |= LCD_tx_USBIO_ENTER_SLEEP;
+            LCD_tx_CR1_REG &= LCD_tx_USBIO_CR1_OFF;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(gpio2_9__SIO)
-        gpio2_9_backup.sioState = gpio2_9_SIO_REG;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(LCD_tx__SIO)
+        LCD_tx_backup.sioState = LCD_tx_SIO_REG;
         /* SIO requires unregulated output buffer and single ended input buffer */
-        gpio2_9_SIO_REG &= (uint32)(~gpio2_9_SIO_LPM_MASK);
+        LCD_tx_SIO_REG &= (uint32)(~LCD_tx_SIO_LPM_MASK);
     #endif  
 }
 
 
 /*******************************************************************************
-* Function Name: gpio2_9_Wakeup
+* Function Name: LCD_tx_Wakeup
 ****************************************************************************//**
 *
 * \brief Restores the pin configuration that was saved during Pin_Sleep().
@@ -75,22 +75,22 @@ void gpio2_9_Sleep(void)
 *  None
 *  
 * \funcusage
-*  Refer to gpio2_9_Sleep() for an example usage.
+*  Refer to LCD_tx_Sleep() for an example usage.
 *******************************************************************************/
-void gpio2_9_Wakeup(void)
+void LCD_tx_Wakeup(void)
 {
-    #if defined(gpio2_9__PC)
-        gpio2_9_PC = gpio2_9_backup.pcState;
+    #if defined(LCD_tx__PC)
+        LCD_tx_PC = LCD_tx_backup.pcState;
     #else
         #if (CY_PSOC4_4200L)
             /* Restore the regulator state and come out of suspend mode */
-            gpio2_9_USB_POWER_REG &= gpio2_9_USBIO_EXIT_SLEEP_PH1;
-            gpio2_9_CR1_REG = gpio2_9_backup.usbState;
-            gpio2_9_USB_POWER_REG &= gpio2_9_USBIO_EXIT_SLEEP_PH2;
+            LCD_tx_USB_POWER_REG &= LCD_tx_USBIO_EXIT_SLEEP_PH1;
+            LCD_tx_CR1_REG = LCD_tx_backup.usbState;
+            LCD_tx_USB_POWER_REG &= LCD_tx_USBIO_EXIT_SLEEP_PH2;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(gpio2_9__SIO)
-        gpio2_9_SIO_REG = gpio2_9_backup.sioState;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(LCD_tx__SIO)
+        LCD_tx_SIO_REG = LCD_tx_backup.sioState;
     #endif
 }
 
