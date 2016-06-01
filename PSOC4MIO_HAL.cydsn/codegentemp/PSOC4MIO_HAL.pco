@@ -1,0 +1,67 @@
+# PSOC4MIO_HAL
+# 2016-05-31 16:08:29Z
+
+# IO_4@[IOP=(0)][IoId=(4)] is reserved: KhzXtalEnabled
+dont_use_io iocell 0 4
+# IO_5@[IOP=(0)][IoId=(5)] is reserved: KhzXtalEnabled
+dont_use_io iocell 0 5
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_location "ClockBlock" m0s8clockblockcell -1 -1 0
+set_io "chan1(0)" iocell 2 2
+set_io "\console:tx(0)\" iocell 4 1
+set_io "\console:rx(0)\" iocell 4 0
+set_io "P4_4(0)" iocell 4 4
+set_location "P7_1" logicalport -1 -1 7
+set_io "P7_1(0)" iocell 7 1
+set_io "en5v_gpio0(0)" iocell 5 3
+set_io "gpio1_led(0)" iocell 5 4
+set_io "en5v_gpio1(0)" iocell 4 5
+set_io "en33v_gpio1(0)" iocell 4 6
+set_io "sw0(0)" iocell 2 0
+set_io "sw1(0)" iocell 2 1
+set_io "sw2(0)" iocell 0 0
+set_io "\gpio1:sda(0)\" iocell 5 1
+set_io "\gpio1:scl(0)\" iocell 5 0
+set_io "\SPI_1:ss_s(0)\" iocell 2 3
+set_io "\SPI_1:miso_s(0)\" iocell 3 1
+set_io "\SPI_1:sclk_s(0)\" iocell 0 6
+set_io "\SPI_1:mosi_s(0)\" iocell 3 0
+set_io "gpio2_4(0)" iocell 6 1
+set_io "dio0(0)" iocell 3 5
+set_io "dio1(0)" iocell 3 6
+set_io "dio2(0)" iocell 3 7
+set_io "nrst(0)" iocell 3 4
+set_io "gpio2_2(0)" iocell 6 2
+set_io "gpio2_5(0)" iocell 6 3
+set_io "press2_6(0)" iocell 2 4
+set_io "flow2_7(0)" iocell 2 5
+set_io "gpio2_8(0)" iocell 0 2
+set_io "gpio2_9(0)" iocell 0 3
+set_io "gpio2_3(0)" iocell 6 0
+set_io "\LCD:tx(0)\" iocell 0 1
+set_location "\sectimer:TimerUDB:status_tc\" 0 0 1 0
+set_location "\ADC_1:IRQ\" interrupt -1 -1 16
+set_location "\ADC_1:cy_psoc4_sar\" p4sarcell -1 -1 0
+set_location "ClockBlock_LFCLK__SYNC_1" 1 1 5 1
+set_location "crdy" interrupt -1 -1 8
+set_location "ClockBlock_LFCLK__SYNC" 1 1 5 0
+set_location "\console:SCB\" m0s8scbcell -1 -1 0
+set_location "wdog" interrupt -1 -1 7
+set_location "\sectimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 0 6
+set_location "\sectimer:TimerUDB:rstSts:stsreg\" 0 0 4
+set_location "\sectimer:TimerUDB:sT16:timerdp:u0\" 1 0 2
+set_location "\sectimer:TimerUDB:sT16:timerdp:u1\" 0 0 2
+set_location "sticks" interrupt -1 -1 0
+set_location "\coretemp:cy_psoc4_temp\" p4tempcell -1 -1 0
+set_location "ubut" interrupt -1 -1 1
+set_location "\switches:sts:sts_reg\" 1 0 3
+set_location "\gpio1:SCB_IRQ\" interrupt -1 -1 10
+set_location "\gpio1:SCB\" m0s8scbcell -1 -1 2
+set_location "\SPI_1:SCB\" m0s8scbcell -1 -1 1
+set_location "\flow:cy_m0s8_tcpwm_1\" m0s8tcpwmcell -1 -1 0
+set_location "Net_335" 0 0 1 1
+set_location "WDT" m0s8wdtcell -1 -1 0

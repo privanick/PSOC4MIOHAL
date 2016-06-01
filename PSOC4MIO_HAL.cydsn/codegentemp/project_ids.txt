@@ -1,0 +1,5 @@
+D:\Users\nray\Desktop\IRIS WIT\LORA multisensor SW\PSOC4MIO_HAL.cydsn\PSOC4MIO_HAL.cyprj|1d5c70ec-7016-4aa6-874e-24d374342731
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a34ab321-5a0a-4edd-9364-405c24194e65
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|06aec171-76ae-4322-82d8-7ee4087f4bb3
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ab77dde8-44c5-41ea-a49d-6354cc4ca6b6
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0506381e-fe10-495f-9769-00b1b74541d9

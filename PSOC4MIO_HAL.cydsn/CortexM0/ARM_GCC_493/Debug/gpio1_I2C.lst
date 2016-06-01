@@ -1,0 +1,1125 @@
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"gpio1_I2C.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.gpio1_I2CInit,"ax",%progbits
+  18              		.align	2
+  19              		.global	gpio1_I2CInit
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	gpio1_I2CInit, %function
+  23              	gpio1_I2CInit:
+  24              	.LFB1:
+  25              		.file 1 ".\\Generated_Source\\PSoC4\\gpio1_I2C.c"
+   1:.\Generated_Source\PSoC4/gpio1_I2C.c **** /***************************************************************************//**
+   2:.\Generated_Source\PSoC4/gpio1_I2C.c **** * \file gpio1_I2C.c
+   3:.\Generated_Source\PSoC4/gpio1_I2C.c **** * \version 3.20
+   4:.\Generated_Source\PSoC4/gpio1_I2C.c **** *
+   5:.\Generated_Source\PSoC4/gpio1_I2C.c **** * \brief
+   6:.\Generated_Source\PSoC4/gpio1_I2C.c **** *  This file provides the source code to the API for the SCB Component in
+   7:.\Generated_Source\PSoC4/gpio1_I2C.c **** *  I2C mode.
+   8:.\Generated_Source\PSoC4/gpio1_I2C.c **** *
+   9:.\Generated_Source\PSoC4/gpio1_I2C.c **** * Note:
+  10:.\Generated_Source\PSoC4/gpio1_I2C.c **** *
+  11:.\Generated_Source\PSoC4/gpio1_I2C.c **** *******************************************************************************
+  12:.\Generated_Source\PSoC4/gpio1_I2C.c **** * \copyright
+  13:.\Generated_Source\PSoC4/gpio1_I2C.c **** * Copyright 2013-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC4/gpio1_I2C.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:.\Generated_Source\PSoC4/gpio1_I2C.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:.\Generated_Source\PSoC4/gpio1_I2C.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC4/gpio1_I2C.c **** *******************************************************************************/
+  18:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  19:.\Generated_Source\PSoC4/gpio1_I2C.c **** #include "gpio1_PVT.h"
+  20:.\Generated_Source\PSoC4/gpio1_I2C.c **** #include "gpio1_I2C_PVT.h"
+  21:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  22:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  23:.\Generated_Source\PSoC4/gpio1_I2C.c **** /***************************************
+  24:.\Generated_Source\PSoC4/gpio1_I2C.c **** *      I2C Private Vars
+  25:.\Generated_Source\PSoC4/gpio1_I2C.c **** ***************************************/
+  26:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  27:.\Generated_Source\PSoC4/gpio1_I2C.c **** volatile uint8 gpio1_state;  /* Current state of I2C FSM */
+  28:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  29:.\Generated_Source\PSoC4/gpio1_I2C.c **** #if(gpio1_SCB_MODE_UNCONFIG_CONST_CFG)
+  30:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  31:.\Generated_Source\PSoC4/gpio1_I2C.c ****     /***************************************
+  32:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  Configuration Structure Initialization
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 2
+
+
+  33:.\Generated_Source\PSoC4/gpio1_I2C.c ****     ***************************************/
+  34:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  35:.\Generated_Source\PSoC4/gpio1_I2C.c ****     /* Constant configuration of I2C */
+  36:.\Generated_Source\PSoC4/gpio1_I2C.c ****     const gpio1_I2C_INIT_STRUCT gpio1_configI2C =
+  37:.\Generated_Source\PSoC4/gpio1_I2C.c ****     {
+  38:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_MODE,
+  39:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_OVS_FACTOR_LOW,
+  40:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_OVS_FACTOR_HIGH,
+  41:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_MEDIAN_FILTER_ENABLE,
+  42:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_SLAVE_ADDRESS,
+  43:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_SLAVE_ADDRESS_MASK,
+  44:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_ACCEPT_ADDRESS,
+  45:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_WAKE_ENABLE,
+  46:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_BYTE_MODE_ENABLE,
+  47:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_DATA_RATE,
+  48:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_ACCEPT_GENERAL_CALL,
+  49:.\Generated_Source\PSoC4/gpio1_I2C.c ****     };
+  50:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  51:.\Generated_Source\PSoC4/gpio1_I2C.c ****     /*******************************************************************************
+  52:.\Generated_Source\PSoC4/gpio1_I2C.c ****     * Function Name: gpio1_I2CInit
+  53:.\Generated_Source\PSoC4/gpio1_I2C.c ****     ****************************************************************************//**
+  54:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *
+  55:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *
+  56:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  Configures the gpio1 for I2C operation.
+  57:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *
+  58:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  This function is intended specifically to be used when the gpio1 
+  59:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  configuration is set to “Unconfigured gpio1” in the customizer. 
+  60:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  After initializing the gpio1 in I2C mode using this function, 
+  61:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  the component can be enabled using the gpio1_Start() or 
+  62:.\Generated_Source\PSoC4/gpio1_I2C.c ****     * gpio1_Enable() function.
+  63:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  This function uses a pointer to a structure that provides the configuration 
+  64:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  settings. This structure contains the same information that would otherwise 
+  65:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  be provided by the customizer settings.
+  66:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *
+  67:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  \param config: pointer to a structure that contains the following list of 
+  68:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *   fields. These fields match the selections available in the customizer. 
+  69:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *   Refer to the customizer for further description of the settings.
+  70:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *
+  71:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *******************************************************************************/
+  72:.\Generated_Source\PSoC4/gpio1_I2C.c ****     void gpio1_I2CInit(const gpio1_I2C_INIT_STRUCT *config)
+  73:.\Generated_Source\PSoC4/gpio1_I2C.c ****     {
+  74:.\Generated_Source\PSoC4/gpio1_I2C.c ****         uint32 medianFilter;
+  75:.\Generated_Source\PSoC4/gpio1_I2C.c ****         uint32 locEnableWake;
+  76:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  77:.\Generated_Source\PSoC4/gpio1_I2C.c ****         if(NULL == config)
+  78:.\Generated_Source\PSoC4/gpio1_I2C.c ****         {
+  79:.\Generated_Source\PSoC4/gpio1_I2C.c ****             CYASSERT(0u != 0u); /* Halt execution due to bad function parameter */
+  80:.\Generated_Source\PSoC4/gpio1_I2C.c ****         }
+  81:.\Generated_Source\PSoC4/gpio1_I2C.c ****         else
+  82:.\Generated_Source\PSoC4/gpio1_I2C.c ****         {
+  83:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Configure pins */
+  84:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_SetPins(gpio1_SCB_MODE_I2C, gpio1_DUMMY_PARAM,
+  85:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                      gpio1_DUMMY_PARAM);
+  86:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  87:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Store internal configuration */
+  88:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_scbMode       = (uint8) gpio1_SCB_MODE_I2C;
+  89:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_scbEnableWake = (uint8) config->enableWake;
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 3
+
+
+  90:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_scbEnableIntr = (uint8) gpio1_SCB_IRQ_INTERNAL;
+  91:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  92:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_mode          = (uint8) config->mode;
+  93:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_acceptAddr    = (uint8) config->acceptAddr;
+  94:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+  95:.\Generated_Source\PSoC4/gpio1_I2C.c ****         #if (gpio1_CY_SCBIP_V0)
+  96:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Adjust SDA filter settings. Ticket ID#150521 */
+  97:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_SET_I2C_CFG_SDA_FILT_TRIM(gpio1_EC_AM_I2C_CFG_SDA_FILT_TRIM);
+  98:.\Generated_Source\PSoC4/gpio1_I2C.c ****         #endif /* (gpio1_CY_SCBIP_V0) */
+  99:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 100:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Adjust AF and DF filter settings. Ticket ID#176179 */
+ 101:.\Generated_Source\PSoC4/gpio1_I2C.c ****             if (((gpio1_I2C_MODE_SLAVE != config->mode) &&
+ 102:.\Generated_Source\PSoC4/gpio1_I2C.c ****                  (config->dataRate <= gpio1_I2C_DATA_RATE_FS_MODE_MAX)) ||
+ 103:.\Generated_Source\PSoC4/gpio1_I2C.c ****                  (gpio1_I2C_MODE_SLAVE == config->mode))
+ 104:.\Generated_Source\PSoC4/gpio1_I2C.c ****             {
+ 105:.\Generated_Source\PSoC4/gpio1_I2C.c ****                 /* AF = 1, DF = 0 */
+ 106:.\Generated_Source\PSoC4/gpio1_I2C.c ****                 gpio1_I2C_CFG_ANALOG_FITER_ENABLE;
+ 107:.\Generated_Source\PSoC4/gpio1_I2C.c ****                 medianFilter = gpio1_DIGITAL_FILTER_DISABLE;
+ 108:.\Generated_Source\PSoC4/gpio1_I2C.c ****             }
+ 109:.\Generated_Source\PSoC4/gpio1_I2C.c ****             else
+ 110:.\Generated_Source\PSoC4/gpio1_I2C.c ****             {
+ 111:.\Generated_Source\PSoC4/gpio1_I2C.c ****                 /* AF = 0, DF = 1 */
+ 112:.\Generated_Source\PSoC4/gpio1_I2C.c ****                 gpio1_I2C_CFG_ANALOG_FITER_DISABLE;
+ 113:.\Generated_Source\PSoC4/gpio1_I2C.c ****                 medianFilter = gpio1_DIGITAL_FILTER_ENABLE;
+ 114:.\Generated_Source\PSoC4/gpio1_I2C.c ****             }
+ 115:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 116:.\Generated_Source\PSoC4/gpio1_I2C.c ****         #if (!gpio1_CY_SCBIP_V0)
+ 117:.\Generated_Source\PSoC4/gpio1_I2C.c ****             locEnableWake = (gpio1_I2C_MULTI_MASTER_SLAVE) ? (0u) : (config->enableWake);
+ 118:.\Generated_Source\PSoC4/gpio1_I2C.c ****         #else
+ 119:.\Generated_Source\PSoC4/gpio1_I2C.c ****             locEnableWake = config->enableWake;
+ 120:.\Generated_Source\PSoC4/gpio1_I2C.c ****         #endif /* (!gpio1_CY_SCBIP_V0) */
+ 121:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 122:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Configure I2C interface */
+ 123:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_CTRL_REG     = gpio1_GET_CTRL_BYTE_MODE  (config->enableByteMode) |
+ 124:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                             gpio1_GET_CTRL_ADDR_ACCEPT(config->acceptAddr)     |
+ 125:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                             gpio1_GET_CTRL_EC_AM_MODE (locEnableWake);
+ 126:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 127:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_I2C_CTRL_REG = gpio1_GET_I2C_CTRL_HIGH_PHASE_OVS(config->oversampleHigh) |
+ 128:.\Generated_Source\PSoC4/gpio1_I2C.c ****                     gpio1_GET_I2C_CTRL_LOW_PHASE_OVS (config->oversampleLow)                       
+ 129:.\Generated_Source\PSoC4/gpio1_I2C.c ****                     gpio1_GET_I2C_CTRL_S_GENERAL_IGNORE((uint32)(0u == config->acceptGeneralAddr)) 
+ 130:.\Generated_Source\PSoC4/gpio1_I2C.c ****                     gpio1_GET_I2C_CTRL_SL_MSTR_MODE  (config->mode);
+ 131:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 132:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Configure RX direction */
+ 133:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_RX_CTRL_REG      = gpio1_GET_RX_CTRL_MEDIAN(medianFilter) |
+ 134:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                                 gpio1_I2C_RX_CTRL;
+ 135:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_RX_FIFO_CTRL_REG = gpio1_CLEAR_REG;
+ 136:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 137:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Set default address and mask */
+ 138:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_RX_MATCH_REG    = ((gpio1_I2C_SLAVE) ?
+ 139:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                                 (gpio1_GET_I2C_8BIT_ADDRESS(config->slaveAddr) |
+ 140:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                                  gpio1_GET_RX_MATCH_MASK(config->slaveAddrMask)) :
+ 141:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                                 (gpio1_CLEAR_REG));
+ 142:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 143:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 144:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Configure TX direction */
+ 145:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_TX_CTRL_REG      = gpio1_I2C_TX_CTRL;
+ 146:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_TX_FIFO_CTRL_REG = gpio1_CLEAR_REG;
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 4
+
+
+ 147:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 148:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Configure interrupt with I2C handler but do not enable it */
+ 149:.\Generated_Source\PSoC4/gpio1_I2C.c ****             CyIntDisable    (gpio1_ISR_NUMBER);
+ 150:.\Generated_Source\PSoC4/gpio1_I2C.c ****             CyIntSetPriority(gpio1_ISR_NUMBER, gpio1_ISR_PRIORITY);
+ 151:.\Generated_Source\PSoC4/gpio1_I2C.c ****             (void) CyIntSetVector(gpio1_ISR_NUMBER, &gpio1_I2C_ISR);
+ 152:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 153:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Configure interrupt sources */
+ 154:.\Generated_Source\PSoC4/gpio1_I2C.c ****         #if(!gpio1_CY_SCBIP_V1)
+ 155:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_INTR_SPI_EC_MASK_REG = gpio1_NO_INTR_SOURCES;
+ 156:.\Generated_Source\PSoC4/gpio1_I2C.c ****         #endif /* (!gpio1_CY_SCBIP_V1) */
+ 157:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 158:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_INTR_I2C_EC_MASK_REG = gpio1_NO_INTR_SOURCES;
+ 159:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_INTR_RX_MASK_REG     = gpio1_NO_INTR_SOURCES;
+ 160:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_INTR_TX_MASK_REG     = gpio1_NO_INTR_SOURCES;
+ 161:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 162:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_INTR_SLAVE_MASK_REG  = ((gpio1_I2C_SLAVE) ?
+ 163:.\Generated_Source\PSoC4/gpio1_I2C.c ****                             (gpio1_GET_INTR_SLAVE_I2C_GENERAL(config->acceptGeneralAddr) |
+ 164:.\Generated_Source\PSoC4/gpio1_I2C.c ****                              gpio1_I2C_INTR_SLAVE_MASK) : (gpio1_CLEAR_REG));
+ 165:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 166:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_INTR_MASTER_MASK_REG = ((gpio1_I2C_MASTER) ?
+ 167:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                                      (gpio1_I2C_INTR_MASTER_MASK) :
+ 168:.\Generated_Source\PSoC4/gpio1_I2C.c ****                                                      (gpio1_CLEAR_REG));
+ 169:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 170:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Configure global variables */
+ 171:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_state = gpio1_I2C_FSM_IDLE;
+ 172:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 173:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Internal slave variables */
+ 174:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_slStatus        = 0u;
+ 175:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_slRdBufIndex    = 0u;
+ 176:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_slWrBufIndex    = 0u;
+ 177:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_slOverFlowCount = 0u;
+ 178:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 179:.\Generated_Source\PSoC4/gpio1_I2C.c ****             /* Internal master variables */
+ 180:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_mstrStatus     = 0u;
+ 181:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_mstrRdBufIndex = 0u;
+ 182:.\Generated_Source\PSoC4/gpio1_I2C.c ****             gpio1_mstrWrBufIndex = 0u;
+ 183:.\Generated_Source\PSoC4/gpio1_I2C.c ****         }
+ 184:.\Generated_Source\PSoC4/gpio1_I2C.c ****     }
+ 185:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 186:.\Generated_Source\PSoC4/gpio1_I2C.c **** #else
+ 187:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 188:.\Generated_Source\PSoC4/gpio1_I2C.c ****     /*******************************************************************************
+ 189:.\Generated_Source\PSoC4/gpio1_I2C.c ****     * Function Name: gpio1_I2CInit
+ 190:.\Generated_Source\PSoC4/gpio1_I2C.c ****     ****************************************************************************//**
+ 191:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *
+ 192:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *  Configures the SCB for the I2C operation.
+ 193:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *
+ 194:.\Generated_Source\PSoC4/gpio1_I2C.c ****     *******************************************************************************/
+ 195:.\Generated_Source\PSoC4/gpio1_I2C.c ****     void gpio1_I2CInit(void)
+ 196:.\Generated_Source\PSoC4/gpio1_I2C.c ****     {
+  26              		.loc 1 196 0
+  27              		.cfi_startproc
+  28 0000 10B5     		push	{r4, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 4, -8
+  31              		.cfi_offset 14, -4
+ 197:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #if(gpio1_CY_SCBIP_V0)
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 5
+
+
+ 198:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Adjust SDA filter settings. Ticket ID#150521 */
+ 199:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_SET_I2C_CFG_SDA_FILT_TRIM(gpio1_EC_AM_I2C_CFG_SDA_FILT_TRIM);
+ 200:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #endif /* (gpio1_CY_SCBIP_V0) */
+ 201:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 202:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Adjust AF and DF filter settings. Ticket ID#176179 */
+ 203:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_CFG_ANALOG_FITER_ENABLE_ADJ;
+ 204:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 205:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Configure I2C interface */
+ 206:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_CTRL_REG     = gpio1_I2C_DEFAULT_CTRL;
+  32              		.loc 1 206 0
+  33 0002 0024     		mov	r4, #0
+  34 0004 1B4B     		ldr	r3, .L2
+  35 0006 1C60     		str	r4, [r3]
+ 207:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_I2C_CTRL_REG = gpio1_I2C_DEFAULT_I2C_CTRL;
+  36              		.loc 1 207 0
+  37 0008 1B4A     		ldr	r2, .L2+4
+  38 000a 1C4B     		ldr	r3, .L2+8
+  39 000c 1A60     		str	r2, [r3]
+ 208:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 209:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Configure RX direction */
+ 210:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_RX_CTRL_REG      = gpio1_I2C_DEFAULT_RX_CTRL;
+  40              		.loc 1 210 0
+  41 000e 1C4B     		ldr	r3, .L2+12
+  42 0010 1C4A     		ldr	r2, .L2+16
+  43 0012 1360     		str	r3, [r2]
+ 211:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_RX_FIFO_CTRL_REG = gpio1_I2C_DEFAULT_RX_FIFO_CTRL;
+  44              		.loc 1 211 0
+  45 0014 1C4A     		ldr	r2, .L2+20
+  46 0016 1460     		str	r4, [r2]
+ 212:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 213:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Set default address and mask */
+ 214:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_RX_MATCH_REG     = gpio1_I2C_DEFAULT_RX_MATCH;
+  47              		.loc 1 214 0
+  48 0018 1C49     		ldr	r1, .L2+24
+  49 001a 1D4A     		ldr	r2, .L2+28
+  50 001c 1160     		str	r1, [r2]
+ 215:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 216:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Configure TX direction */
+ 217:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_TX_CTRL_REG      = gpio1_I2C_DEFAULT_TX_CTRL;
+  51              		.loc 1 217 0
+  52 001e 1D4A     		ldr	r2, .L2+32
+  53 0020 1360     		str	r3, [r2]
+ 218:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_TX_FIFO_CTRL_REG = gpio1_I2C_DEFAULT_TX_FIFO_CTRL;
+  54              		.loc 1 218 0
+  55 0022 1D4B     		ldr	r3, .L2+36
+  56 0024 1C60     		str	r4, [r3]
+ 219:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 220:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Configure interrupt with I2C handler but do not enable it */
+ 221:.\Generated_Source\PSoC4/gpio1_I2C.c ****         CyIntDisable    (gpio1_ISR_NUMBER);
+  57              		.loc 1 221 0
+  58 0026 0A20     		mov	r0, #10
+  59 0028 FFF7FEFF 		bl	CyIntDisable
+  60              	.LVL0:
+ 222:.\Generated_Source\PSoC4/gpio1_I2C.c ****         CyIntSetPriority(gpio1_ISR_NUMBER, gpio1_ISR_PRIORITY);
+  61              		.loc 1 222 0
+  62 002c 0A20     		mov	r0, #10
+  63 002e 0321     		mov	r1, #3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 6
+
+
+  64 0030 FFF7FEFF 		bl	CyIntSetPriority
+  65              	.LVL1:
+ 223:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #if(!gpio1_I2C_EXTERN_INTR_HANDLER)
+ 224:.\Generated_Source\PSoC4/gpio1_I2C.c ****         (void) CyIntSetVector(gpio1_ISR_NUMBER, &gpio1_I2C_ISR);
+  66              		.loc 1 224 0
+  67 0034 0A20     		mov	r0, #10
+  68 0036 1949     		ldr	r1, .L2+40
+  69 0038 FFF7FEFF 		bl	CyIntSetVector
+  70              	.LVL2:
+ 225:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #endif /* (gpio1_I2C_EXTERN_INTR_HANDLER) */
+ 226:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 227:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Configure interrupt sources */
+ 228:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #if(!gpio1_CY_SCBIP_V1)
+ 229:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_INTR_SPI_EC_MASK_REG = gpio1_I2C_DEFAULT_INTR_SPI_EC_MASK;
+  71              		.loc 1 229 0
+  72 003c 184B     		ldr	r3, .L2+44
+  73 003e 1C60     		str	r4, [r3]
+ 230:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #endif /* (!gpio1_CY_SCBIP_V1) */
+ 231:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 232:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_INTR_I2C_EC_MASK_REG = gpio1_I2C_DEFAULT_INTR_I2C_EC_MASK;
+  74              		.loc 1 232 0
+  75 0040 184B     		ldr	r3, .L2+48
+  76 0042 1C60     		str	r4, [r3]
+ 233:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_INTR_SLAVE_MASK_REG  = gpio1_I2C_DEFAULT_INTR_SLAVE_MASK;
+  77              		.loc 1 233 0
+  78 0044 4C22     		mov	r2, #76
+  79 0046 FF32     		add	r2, r2, #255
+  80 0048 174B     		ldr	r3, .L2+52
+  81 004a 1A60     		str	r2, [r3]
+ 234:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_INTR_MASTER_MASK_REG = gpio1_I2C_DEFAULT_INTR_MASTER_MASK;
+  82              		.loc 1 234 0
+  83 004c 174B     		ldr	r3, .L2+56
+  84 004e 1C60     		str	r4, [r3]
+ 235:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_INTR_RX_MASK_REG     = gpio1_I2C_DEFAULT_INTR_RX_MASK;
+  85              		.loc 1 235 0
+  86 0050 174B     		ldr	r3, .L2+60
+  87 0052 1C60     		str	r4, [r3]
+ 236:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_INTR_TX_MASK_REG     = gpio1_I2C_DEFAULT_INTR_TX_MASK;
+  88              		.loc 1 236 0
+  89 0054 174B     		ldr	r3, .L2+64
+  90 0056 1C60     		str	r4, [r3]
+ 237:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 238:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Configure global variables */
+ 239:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_state = gpio1_I2C_FSM_IDLE;
+  91              		.loc 1 239 0
+  92 0058 3C3A     		sub	r2, r2, #60
+  93 005a FF3A     		sub	r2, r2, #255
+  94 005c 164B     		ldr	r3, .L2+68
+  95 005e 1A70     		strb	r2, [r3]
+ 240:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 241:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #if(gpio1_I2C_SLAVE)
+ 242:.\Generated_Source\PSoC4/gpio1_I2C.c ****         /* Internal slave variable */
+ 243:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_slStatus        = 0u;
+  96              		.loc 1 243 0
+  97 0060 164B     		ldr	r3, .L2+72
+  98 0062 1C70     		strb	r4, [r3]
+ 244:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_slRdBufIndex    = 0u;
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 7
+
+
+  99              		.loc 1 244 0
+ 100 0064 164B     		ldr	r3, .L2+76
+ 101 0066 1C60     		str	r4, [r3]
+ 245:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_slWrBufIndex    = 0u;
+ 102              		.loc 1 245 0
+ 103 0068 164B     		ldr	r3, .L2+80
+ 104 006a 1C60     		str	r4, [r3]
+ 246:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_slOverFlowCount = 0u;
+ 105              		.loc 1 246 0
+ 106 006c 164B     		ldr	r3, .L2+84
+ 107 006e 1C70     		strb	r4, [r3]
+ 247:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #endif /* (gpio1_I2C_SLAVE) */
+ 248:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 249:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #if(gpio1_I2C_MASTER)
+ 250:.\Generated_Source\PSoC4/gpio1_I2C.c ****     /* Internal master variable */
+ 251:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_mstrStatus     = 0u;
+ 252:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_mstrRdBufIndex = 0u;
+ 253:.\Generated_Source\PSoC4/gpio1_I2C.c ****         gpio1_mstrWrBufIndex = 0u;
+ 254:.\Generated_Source\PSoC4/gpio1_I2C.c ****     #endif /* (gpio1_I2C_MASTER) */
+ 255:.\Generated_Source\PSoC4/gpio1_I2C.c ****     }
+ 108              		.loc 1 255 0
+ 109              		@ sp needed
+ 110 0070 10BD     		pop	{r4, pc}
+ 111              	.L3:
+ 112 0072 C046     		.align	2
+ 113              	.L2:
+ 114 0074 00002640 		.word	1076232192
+ 115 0078 77080040 		.word	1073743991
+ 116 007c 60002640 		.word	1076232288
+ 117 0080 07010080 		.word	-2147483385
+ 118 0084 00032640 		.word	1076232960
+ 119 0088 04032640 		.word	1076232964
+ 120 008c 1000FE00 		.word	16646160
+ 121 0090 10032640 		.word	1076232976
+ 122 0094 00022640 		.word	1076232704
+ 123 0098 04022640 		.word	1076232708
+ 124 009c 00000000 		.word	gpio1_I2C_ISR
+ 125 00a0 C80E2640 		.word	1076235976
+ 126 00a4 880E2640 		.word	1076235912
+ 127 00a8 480F2640 		.word	1076236104
+ 128 00ac 080F2640 		.word	1076236040
+ 129 00b0 C80F2640 		.word	1076236232
+ 130 00b4 880F2640 		.word	1076236168
+ 131 00b8 00000000 		.word	gpio1_state
+ 132 00bc 00000000 		.word	gpio1_slStatus
+ 133 00c0 00000000 		.word	gpio1_slRdBufIndex
+ 134 00c4 00000000 		.word	gpio1_slWrBufIndex
+ 135 00c8 00000000 		.word	gpio1_slOverFlowCount
+ 136              		.cfi_endproc
+ 137              	.LFE1:
+ 138              		.size	gpio1_I2CInit, .-gpio1_I2CInit
+ 139              		.section	.text.gpio1_I2CStop,"ax",%progbits
+ 140              		.align	2
+ 141              		.global	gpio1_I2CStop
+ 142              		.code	16
+ 143              		.thumb_func
+ 144              		.type	gpio1_I2CStop, %function
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 8
+
+
+ 145              	gpio1_I2CStop:
+ 146              	.LFB2:
+ 256:.\Generated_Source\PSoC4/gpio1_I2C.c **** #endif /* (gpio1_SCB_MODE_UNCONFIG_CONST_CFG) */
+ 257:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 258:.\Generated_Source\PSoC4/gpio1_I2C.c **** 
+ 259:.\Generated_Source\PSoC4/gpio1_I2C.c **** /*******************************************************************************
+ 260:.\Generated_Source\PSoC4/gpio1_I2C.c **** * Function Name: gpio1_I2CStop
+ 261:.\Generated_Source\PSoC4/gpio1_I2C.c **** ****************************************************************************//**
+ 262:.\Generated_Source\PSoC4/gpio1_I2C.c **** *
+ 263:.\Generated_Source\PSoC4/gpio1_I2C.c **** *  Resets the I2C FSM into the default state.
+ 264:.\Generated_Source\PSoC4/gpio1_I2C.c **** *
+ 265:.\Generated_Source\PSoC4/gpio1_I2C.c **** *******************************************************************************/
+ 266:.\Generated_Source\PSoC4/gpio1_I2C.c **** void gpio1_I2CStop(void)
+ 267:.\Generated_Source\PSoC4/gpio1_I2C.c **** {
+ 147              		.loc 1 267 0
+ 148              		.cfi_startproc
+ 268:.\Generated_Source\PSoC4/gpio1_I2C.c ****     gpio1_state = gpio1_I2C_FSM_IDLE;
+ 149              		.loc 1 268 0
+ 150 0000 1022     		mov	r2, #16
+ 151 0002 014B     		ldr	r3, .L5
+ 152 0004 1A70     		strb	r2, [r3]
+ 269:.\Generated_Source\PSoC4/gpio1_I2C.c **** }
+ 153              		.loc 1 269 0
+ 154              		@ sp needed
+ 155 0006 7047     		bx	lr
+ 156              	.L6:
+ 157              		.align	2
+ 158              	.L5:
+ 159 0008 00000000 		.word	gpio1_state
+ 160              		.cfi_endproc
+ 161              	.LFE2:
+ 162              		.size	gpio1_I2CStop, .-gpio1_I2CStop
+ 163              		.comm	gpio1_state,1,1
+ 164              		.text
+ 165              	.Letext0:
+ 166              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 167              		.file 3 ".\\Generated_Source\\PSoC4\\gpio1_I2C_PVT.h"
+ 168              		.file 4 "Generated_Source\\PSoC4/CyLib.h"
+ 169              		.section	.debug_info,"",%progbits
+ 170              	.Ldebug_info0:
+ 171 0000 A1010000 		.4byte	0x1a1
+ 172 0004 0400     		.2byte	0x4
+ 173 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 174 000a 04       		.byte	0x4
+ 175 000b 01       		.uleb128 0x1
+ 176 000c 60010000 		.4byte	.LASF25
+ 177 0010 01       		.byte	0x1
+ 178 0011 01020000 		.4byte	.LASF26
+ 179 0015 AE000000 		.4byte	.LASF27
+ 180 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 181 001d 00000000 		.4byte	0
+ 182 0021 00000000 		.4byte	.Ldebug_line0
+ 183 0025 02       		.uleb128 0x2
+ 184 0026 01       		.byte	0x1
+ 185 0027 06       		.byte	0x6
+ 186 0028 4C020000 		.4byte	.LASF0
+ 187 002c 02       		.uleb128 0x2
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 9
+
+
+ 188 002d 01       		.byte	0x1
+ 189 002e 08       		.byte	0x8
+ 190 002f 74000000 		.4byte	.LASF1
+ 191 0033 02       		.uleb128 0x2
+ 192 0034 02       		.byte	0x2
+ 193 0035 05       		.byte	0x5
+ 194 0036 33020000 		.4byte	.LASF2
+ 195 003a 02       		.uleb128 0x2
+ 196 003b 02       		.byte	0x2
+ 197 003c 07       		.byte	0x7
+ 198 003d 23000000 		.4byte	.LASF3
+ 199 0041 02       		.uleb128 0x2
+ 200 0042 04       		.byte	0x4
+ 201 0043 05       		.byte	0x5
+ 202 0044 43020000 		.4byte	.LASF4
+ 203 0048 02       		.uleb128 0x2
+ 204 0049 04       		.byte	0x4
+ 205 004a 07       		.byte	0x7
+ 206 004b 82000000 		.4byte	.LASF5
+ 207 004f 02       		.uleb128 0x2
+ 208 0050 08       		.byte	0x8
+ 209 0051 05       		.byte	0x5
+ 210 0052 EE010000 		.4byte	.LASF6
+ 211 0056 02       		.uleb128 0x2
+ 212 0057 08       		.byte	0x8
+ 213 0058 07       		.byte	0x7
+ 214 0059 1C010000 		.4byte	.LASF7
+ 215 005d 03       		.uleb128 0x3
+ 216 005e 04       		.byte	0x4
+ 217 005f 05       		.byte	0x5
+ 218 0060 696E7400 		.ascii	"int\000"
+ 219 0064 02       		.uleb128 0x2
+ 220 0065 04       		.byte	0x4
+ 221 0066 07       		.byte	0x7
+ 222 0067 0F010000 		.4byte	.LASF8
+ 223 006b 04       		.uleb128 0x4
+ 224 006c 3D020000 		.4byte	.LASF9
+ 225 0070 02       		.byte	0x2
+ 226 0071 3801     		.2byte	0x138
+ 227 0073 2C000000 		.4byte	0x2c
+ 228 0077 04       		.uleb128 0x4
+ 229 0078 08010000 		.4byte	.LASF10
+ 230 007c 02       		.byte	0x2
+ 231 007d 3A01     		.2byte	0x13a
+ 232 007f 48000000 		.4byte	0x48
+ 233 0083 02       		.uleb128 0x2
+ 234 0084 04       		.byte	0x4
+ 235 0085 04       		.byte	0x4
+ 236 0086 4C000000 		.4byte	.LASF11
+ 237 008a 02       		.uleb128 0x2
+ 238 008b 08       		.byte	0x8
+ 239 008c 04       		.byte	0x4
+ 240 008d F4000000 		.4byte	.LASF12
+ 241 0091 02       		.uleb128 0x2
+ 242 0092 01       		.byte	0x1
+ 243 0093 08       		.byte	0x8
+ 244 0094 FC010000 		.4byte	.LASF13
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 10
+
+
+ 245 0098 05       		.uleb128 0x5
+ 246 0099 6B000000 		.4byte	0x6b
+ 247 009d 04       		.uleb128 0x4
+ 248 009e 00000000 		.4byte	.LASF14
+ 249 00a2 02       		.byte	0x2
+ 250 00a3 E401     		.2byte	0x1e4
+ 251 00a5 A9000000 		.4byte	0xa9
+ 252 00a9 05       		.uleb128 0x5
+ 253 00aa 77000000 		.4byte	0x77
+ 254 00ae 04       		.uleb128 0x4
+ 255 00af FB000000 		.4byte	.LASF15
+ 256 00b3 02       		.byte	0x2
+ 257 00b4 F401     		.2byte	0x1f4
+ 258 00b6 BA000000 		.4byte	0xba
+ 259 00ba 06       		.uleb128 0x6
+ 260 00bb 04       		.byte	0x4
+ 261 00bc C0000000 		.4byte	0xc0
+ 262 00c0 07       		.uleb128 0x7
+ 263 00c1 02       		.uleb128 0x2
+ 264 00c2 04       		.byte	0x4
+ 265 00c3 07       		.byte	0x7
+ 266 00c4 57010000 		.4byte	.LASF16
+ 267 00c8 08       		.uleb128 0x8
+ 268 00c9 06000000 		.4byte	.LASF28
+ 269 00cd 01       		.byte	0x1
+ 270 00ce C3       		.byte	0xc3
+ 271 00cf 00000000 		.4byte	.LFB1
+ 272 00d3 CC000000 		.4byte	.LFE1-.LFB1
+ 273 00d7 01       		.uleb128 0x1
+ 274 00d8 9C       		.byte	0x9c
+ 275 00d9 18010000 		.4byte	0x118
+ 276 00dd 09       		.uleb128 0x9
+ 277 00de 2C000000 		.4byte	.LVL0
+ 278 00e2 67010000 		.4byte	0x167
+ 279 00e6 F0000000 		.4byte	0xf0
+ 280 00ea 0A       		.uleb128 0xa
+ 281 00eb 01       		.uleb128 0x1
+ 282 00ec 50       		.byte	0x50
+ 283 00ed 01       		.uleb128 0x1
+ 284 00ee 3A       		.byte	0x3a
+ 285 00ef 00       		.byte	0
+ 286 00f0 09       		.uleb128 0x9
+ 287 00f1 34000000 		.4byte	.LVL1
+ 288 00f5 78010000 		.4byte	0x178
+ 289 00f9 08010000 		.4byte	0x108
+ 290 00fd 0A       		.uleb128 0xa
+ 291 00fe 01       		.uleb128 0x1
+ 292 00ff 51       		.byte	0x51
+ 293 0100 01       		.uleb128 0x1
+ 294 0101 33       		.byte	0x33
+ 295 0102 0A       		.uleb128 0xa
+ 296 0103 01       		.uleb128 0x1
+ 297 0104 50       		.byte	0x50
+ 298 0105 01       		.uleb128 0x1
+ 299 0106 3A       		.byte	0x3a
+ 300 0107 00       		.byte	0
+ 301 0108 0B       		.uleb128 0xb
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 11
+
+
+ 302 0109 3C000000 		.4byte	.LVL2
+ 303 010d 8E010000 		.4byte	0x18e
+ 304 0111 0A       		.uleb128 0xa
+ 305 0112 01       		.uleb128 0x1
+ 306 0113 50       		.byte	0x50
+ 307 0114 01       		.uleb128 0x1
+ 308 0115 3A       		.byte	0x3a
+ 309 0116 00       		.byte	0
+ 310 0117 00       		.byte	0
+ 311 0118 0C       		.uleb128 0xc
+ 312 0119 A0000000 		.4byte	.LASF29
+ 313 011d 01       		.byte	0x1
+ 314 011e 0A01     		.2byte	0x10a
+ 315 0120 00000000 		.4byte	.LFB2
+ 316 0124 0C000000 		.4byte	.LFE2-.LFB2
+ 317 0128 01       		.uleb128 0x1
+ 318 0129 9C       		.byte	0x9c
+ 319 012a 0D       		.uleb128 0xd
+ 320 012b 94000000 		.4byte	.LASF17
+ 321 012f 01       		.byte	0x1
+ 322 0130 1B       		.byte	0x1b
+ 323 0131 98000000 		.4byte	0x98
+ 324 0135 05       		.uleb128 0x5
+ 325 0136 03       		.byte	0x3
+ 326 0137 00000000 		.4byte	gpio1_state
+ 327 013b 0E       		.uleb128 0xe
+ 328 013c 52000000 		.4byte	.LASF18
+ 329 0140 03       		.byte	0x3
+ 330 0141 21       		.byte	0x21
+ 331 0142 98000000 		.4byte	0x98
+ 332 0146 0E       		.uleb128 0xe
+ 333 0147 61000000 		.4byte	.LASF19
+ 334 014b 03       		.byte	0x3
+ 335 014c 26       		.byte	0x26
+ 336 014d A9000000 		.4byte	0xa9
+ 337 0151 0E       		.uleb128 0xe
+ 338 0152 44010000 		.4byte	.LASF20
+ 339 0156 03       		.byte	0x3
+ 340 0157 2B       		.byte	0x2b
+ 341 0158 A9000000 		.4byte	0xa9
+ 342 015c 0E       		.uleb128 0xe
+ 343 015d 36000000 		.4byte	.LASF21
+ 344 0161 03       		.byte	0x3
+ 345 0162 2D       		.byte	0x2d
+ 346 0163 98000000 		.4byte	0x98
+ 347 0167 0F       		.uleb128 0xf
+ 348 0168 26020000 		.4byte	.LASF22
+ 349 016c 04       		.byte	0x4
+ 350 016d 51       		.byte	0x51
+ 351 016e 78010000 		.4byte	0x178
+ 352 0172 10       		.uleb128 0x10
+ 353 0173 6B000000 		.4byte	0x6b
+ 354 0177 00       		.byte	0
+ 355 0178 0F       		.uleb128 0xf
+ 356 0179 33010000 		.4byte	.LASF23
+ 357 017d 04       		.byte	0x4
+ 358 017e 4C       		.byte	0x4c
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 12
+
+
+ 359 017f 8E010000 		.4byte	0x18e
+ 360 0183 10       		.uleb128 0x10
+ 361 0184 6B000000 		.4byte	0x6b
+ 362 0188 10       		.uleb128 0x10
+ 363 0189 6B000000 		.4byte	0x6b
+ 364 018d 00       		.byte	0
+ 365 018e 11       		.uleb128 0x11
+ 366 018f 14000000 		.4byte	.LASF24
+ 367 0193 04       		.byte	0x4
+ 368 0194 49       		.byte	0x49
+ 369 0195 AE000000 		.4byte	0xae
+ 370 0199 10       		.uleb128 0x10
+ 371 019a 6B000000 		.4byte	0x6b
+ 372 019e 10       		.uleb128 0x10
+ 373 019f AE000000 		.4byte	0xae
+ 374 01a3 00       		.byte	0
+ 375 01a4 00       		.byte	0
+ 376              		.section	.debug_abbrev,"",%progbits
+ 377              	.Ldebug_abbrev0:
+ 378 0000 01       		.uleb128 0x1
+ 379 0001 11       		.uleb128 0x11
+ 380 0002 01       		.byte	0x1
+ 381 0003 25       		.uleb128 0x25
+ 382 0004 0E       		.uleb128 0xe
+ 383 0005 13       		.uleb128 0x13
+ 384 0006 0B       		.uleb128 0xb
+ 385 0007 03       		.uleb128 0x3
+ 386 0008 0E       		.uleb128 0xe
+ 387 0009 1B       		.uleb128 0x1b
+ 388 000a 0E       		.uleb128 0xe
+ 389 000b 55       		.uleb128 0x55
+ 390 000c 17       		.uleb128 0x17
+ 391 000d 11       		.uleb128 0x11
+ 392 000e 01       		.uleb128 0x1
+ 393 000f 10       		.uleb128 0x10
+ 394 0010 17       		.uleb128 0x17
+ 395 0011 00       		.byte	0
+ 396 0012 00       		.byte	0
+ 397 0013 02       		.uleb128 0x2
+ 398 0014 24       		.uleb128 0x24
+ 399 0015 00       		.byte	0
+ 400 0016 0B       		.uleb128 0xb
+ 401 0017 0B       		.uleb128 0xb
+ 402 0018 3E       		.uleb128 0x3e
+ 403 0019 0B       		.uleb128 0xb
+ 404 001a 03       		.uleb128 0x3
+ 405 001b 0E       		.uleb128 0xe
+ 406 001c 00       		.byte	0
+ 407 001d 00       		.byte	0
+ 408 001e 03       		.uleb128 0x3
+ 409 001f 24       		.uleb128 0x24
+ 410 0020 00       		.byte	0
+ 411 0021 0B       		.uleb128 0xb
+ 412 0022 0B       		.uleb128 0xb
+ 413 0023 3E       		.uleb128 0x3e
+ 414 0024 0B       		.uleb128 0xb
+ 415 0025 03       		.uleb128 0x3
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 13
+
+
+ 416 0026 08       		.uleb128 0x8
+ 417 0027 00       		.byte	0
+ 418 0028 00       		.byte	0
+ 419 0029 04       		.uleb128 0x4
+ 420 002a 16       		.uleb128 0x16
+ 421 002b 00       		.byte	0
+ 422 002c 03       		.uleb128 0x3
+ 423 002d 0E       		.uleb128 0xe
+ 424 002e 3A       		.uleb128 0x3a
+ 425 002f 0B       		.uleb128 0xb
+ 426 0030 3B       		.uleb128 0x3b
+ 427 0031 05       		.uleb128 0x5
+ 428 0032 49       		.uleb128 0x49
+ 429 0033 13       		.uleb128 0x13
+ 430 0034 00       		.byte	0
+ 431 0035 00       		.byte	0
+ 432 0036 05       		.uleb128 0x5
+ 433 0037 35       		.uleb128 0x35
+ 434 0038 00       		.byte	0
+ 435 0039 49       		.uleb128 0x49
+ 436 003a 13       		.uleb128 0x13
+ 437 003b 00       		.byte	0
+ 438 003c 00       		.byte	0
+ 439 003d 06       		.uleb128 0x6
+ 440 003e 0F       		.uleb128 0xf
+ 441 003f 00       		.byte	0
+ 442 0040 0B       		.uleb128 0xb
+ 443 0041 0B       		.uleb128 0xb
+ 444 0042 49       		.uleb128 0x49
+ 445 0043 13       		.uleb128 0x13
+ 446 0044 00       		.byte	0
+ 447 0045 00       		.byte	0
+ 448 0046 07       		.uleb128 0x7
+ 449 0047 15       		.uleb128 0x15
+ 450 0048 00       		.byte	0
+ 451 0049 27       		.uleb128 0x27
+ 452 004a 19       		.uleb128 0x19
+ 453 004b 00       		.byte	0
+ 454 004c 00       		.byte	0
+ 455 004d 08       		.uleb128 0x8
+ 456 004e 2E       		.uleb128 0x2e
+ 457 004f 01       		.byte	0x1
+ 458 0050 3F       		.uleb128 0x3f
+ 459 0051 19       		.uleb128 0x19
+ 460 0052 03       		.uleb128 0x3
+ 461 0053 0E       		.uleb128 0xe
+ 462 0054 3A       		.uleb128 0x3a
+ 463 0055 0B       		.uleb128 0xb
+ 464 0056 3B       		.uleb128 0x3b
+ 465 0057 0B       		.uleb128 0xb
+ 466 0058 27       		.uleb128 0x27
+ 467 0059 19       		.uleb128 0x19
+ 468 005a 11       		.uleb128 0x11
+ 469 005b 01       		.uleb128 0x1
+ 470 005c 12       		.uleb128 0x12
+ 471 005d 06       		.uleb128 0x6
+ 472 005e 40       		.uleb128 0x40
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 14
+
+
+ 473 005f 18       		.uleb128 0x18
+ 474 0060 9742     		.uleb128 0x2117
+ 475 0062 19       		.uleb128 0x19
+ 476 0063 01       		.uleb128 0x1
+ 477 0064 13       		.uleb128 0x13
+ 478 0065 00       		.byte	0
+ 479 0066 00       		.byte	0
+ 480 0067 09       		.uleb128 0x9
+ 481 0068 898201   		.uleb128 0x4109
+ 482 006b 01       		.byte	0x1
+ 483 006c 11       		.uleb128 0x11
+ 484 006d 01       		.uleb128 0x1
+ 485 006e 31       		.uleb128 0x31
+ 486 006f 13       		.uleb128 0x13
+ 487 0070 01       		.uleb128 0x1
+ 488 0071 13       		.uleb128 0x13
+ 489 0072 00       		.byte	0
+ 490 0073 00       		.byte	0
+ 491 0074 0A       		.uleb128 0xa
+ 492 0075 8A8201   		.uleb128 0x410a
+ 493 0078 00       		.byte	0
+ 494 0079 02       		.uleb128 0x2
+ 495 007a 18       		.uleb128 0x18
+ 496 007b 9142     		.uleb128 0x2111
+ 497 007d 18       		.uleb128 0x18
+ 498 007e 00       		.byte	0
+ 499 007f 00       		.byte	0
+ 500 0080 0B       		.uleb128 0xb
+ 501 0081 898201   		.uleb128 0x4109
+ 502 0084 01       		.byte	0x1
+ 503 0085 11       		.uleb128 0x11
+ 504 0086 01       		.uleb128 0x1
+ 505 0087 31       		.uleb128 0x31
+ 506 0088 13       		.uleb128 0x13
+ 507 0089 00       		.byte	0
+ 508 008a 00       		.byte	0
+ 509 008b 0C       		.uleb128 0xc
+ 510 008c 2E       		.uleb128 0x2e
+ 511 008d 00       		.byte	0
+ 512 008e 3F       		.uleb128 0x3f
+ 513 008f 19       		.uleb128 0x19
+ 514 0090 03       		.uleb128 0x3
+ 515 0091 0E       		.uleb128 0xe
+ 516 0092 3A       		.uleb128 0x3a
+ 517 0093 0B       		.uleb128 0xb
+ 518 0094 3B       		.uleb128 0x3b
+ 519 0095 05       		.uleb128 0x5
+ 520 0096 27       		.uleb128 0x27
+ 521 0097 19       		.uleb128 0x19
+ 522 0098 11       		.uleb128 0x11
+ 523 0099 01       		.uleb128 0x1
+ 524 009a 12       		.uleb128 0x12
+ 525 009b 06       		.uleb128 0x6
+ 526 009c 40       		.uleb128 0x40
+ 527 009d 18       		.uleb128 0x18
+ 528 009e 9742     		.uleb128 0x2117
+ 529 00a0 19       		.uleb128 0x19
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 15
+
+
+ 530 00a1 00       		.byte	0
+ 531 00a2 00       		.byte	0
+ 532 00a3 0D       		.uleb128 0xd
+ 533 00a4 34       		.uleb128 0x34
+ 534 00a5 00       		.byte	0
+ 535 00a6 03       		.uleb128 0x3
+ 536 00a7 0E       		.uleb128 0xe
+ 537 00a8 3A       		.uleb128 0x3a
+ 538 00a9 0B       		.uleb128 0xb
+ 539 00aa 3B       		.uleb128 0x3b
+ 540 00ab 0B       		.uleb128 0xb
+ 541 00ac 49       		.uleb128 0x49
+ 542 00ad 13       		.uleb128 0x13
+ 543 00ae 3F       		.uleb128 0x3f
+ 544 00af 19       		.uleb128 0x19
+ 545 00b0 02       		.uleb128 0x2
+ 546 00b1 18       		.uleb128 0x18
+ 547 00b2 00       		.byte	0
+ 548 00b3 00       		.byte	0
+ 549 00b4 0E       		.uleb128 0xe
+ 550 00b5 34       		.uleb128 0x34
+ 551 00b6 00       		.byte	0
+ 552 00b7 03       		.uleb128 0x3
+ 553 00b8 0E       		.uleb128 0xe
+ 554 00b9 3A       		.uleb128 0x3a
+ 555 00ba 0B       		.uleb128 0xb
+ 556 00bb 3B       		.uleb128 0x3b
+ 557 00bc 0B       		.uleb128 0xb
+ 558 00bd 49       		.uleb128 0x49
+ 559 00be 13       		.uleb128 0x13
+ 560 00bf 3F       		.uleb128 0x3f
+ 561 00c0 19       		.uleb128 0x19
+ 562 00c1 3C       		.uleb128 0x3c
+ 563 00c2 19       		.uleb128 0x19
+ 564 00c3 00       		.byte	0
+ 565 00c4 00       		.byte	0
+ 566 00c5 0F       		.uleb128 0xf
+ 567 00c6 2E       		.uleb128 0x2e
+ 568 00c7 01       		.byte	0x1
+ 569 00c8 3F       		.uleb128 0x3f
+ 570 00c9 19       		.uleb128 0x19
+ 571 00ca 03       		.uleb128 0x3
+ 572 00cb 0E       		.uleb128 0xe
+ 573 00cc 3A       		.uleb128 0x3a
+ 574 00cd 0B       		.uleb128 0xb
+ 575 00ce 3B       		.uleb128 0x3b
+ 576 00cf 0B       		.uleb128 0xb
+ 577 00d0 27       		.uleb128 0x27
+ 578 00d1 19       		.uleb128 0x19
+ 579 00d2 3C       		.uleb128 0x3c
+ 580 00d3 19       		.uleb128 0x19
+ 581 00d4 01       		.uleb128 0x1
+ 582 00d5 13       		.uleb128 0x13
+ 583 00d6 00       		.byte	0
+ 584 00d7 00       		.byte	0
+ 585 00d8 10       		.uleb128 0x10
+ 586 00d9 05       		.uleb128 0x5
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 16
+
+
+ 587 00da 00       		.byte	0
+ 588 00db 49       		.uleb128 0x49
+ 589 00dc 13       		.uleb128 0x13
+ 590 00dd 00       		.byte	0
+ 591 00de 00       		.byte	0
+ 592 00df 11       		.uleb128 0x11
+ 593 00e0 2E       		.uleb128 0x2e
+ 594 00e1 01       		.byte	0x1
+ 595 00e2 3F       		.uleb128 0x3f
+ 596 00e3 19       		.uleb128 0x19
+ 597 00e4 03       		.uleb128 0x3
+ 598 00e5 0E       		.uleb128 0xe
+ 599 00e6 3A       		.uleb128 0x3a
+ 600 00e7 0B       		.uleb128 0xb
+ 601 00e8 3B       		.uleb128 0x3b
+ 602 00e9 0B       		.uleb128 0xb
+ 603 00ea 27       		.uleb128 0x27
+ 604 00eb 19       		.uleb128 0x19
+ 605 00ec 49       		.uleb128 0x49
+ 606 00ed 13       		.uleb128 0x13
+ 607 00ee 3C       		.uleb128 0x3c
+ 608 00ef 19       		.uleb128 0x19
+ 609 00f0 00       		.byte	0
+ 610 00f1 00       		.byte	0
+ 611 00f2 00       		.byte	0
+ 612              		.section	.debug_aranges,"",%progbits
+ 613 0000 24000000 		.4byte	0x24
+ 614 0004 0200     		.2byte	0x2
+ 615 0006 00000000 		.4byte	.Ldebug_info0
+ 616 000a 04       		.byte	0x4
+ 617 000b 00       		.byte	0
+ 618 000c 0000     		.2byte	0
+ 619 000e 0000     		.2byte	0
+ 620 0010 00000000 		.4byte	.LFB1
+ 621 0014 CC000000 		.4byte	.LFE1-.LFB1
+ 622 0018 00000000 		.4byte	.LFB2
+ 623 001c 0C000000 		.4byte	.LFE2-.LFB2
+ 624 0020 00000000 		.4byte	0
+ 625 0024 00000000 		.4byte	0
+ 626              		.section	.debug_ranges,"",%progbits
+ 627              	.Ldebug_ranges0:
+ 628 0000 00000000 		.4byte	.LFB1
+ 629 0004 CC000000 		.4byte	.LFE1
+ 630 0008 00000000 		.4byte	.LFB2
+ 631 000c 0C000000 		.4byte	.LFE2
+ 632 0010 00000000 		.4byte	0
+ 633 0014 00000000 		.4byte	0
+ 634              		.section	.debug_line,"",%progbits
+ 635              	.Ldebug_line0:
+ 636 0000 BF000000 		.section	.debug_str,"MS",%progbits,1
+ 636      02007D00 
+ 636      00000201 
+ 636      FB0E0D00 
+ 636      01010101 
+ 637              	.LASF14:
+ 638 0000 72656733 		.ascii	"reg32\000"
+ 638      3200
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 17
+
+
+ 639              	.LASF28:
+ 640 0006 6770696F 		.ascii	"gpio1_I2CInit\000"
+ 640      315F4932 
+ 640      43496E69 
+ 640      7400
+ 641              	.LASF24:
+ 642 0014 4379496E 		.ascii	"CyIntSetVector\000"
+ 642      74536574 
+ 642      56656374 
+ 642      6F7200
+ 643              	.LASF3:
+ 644 0023 73686F72 		.ascii	"short unsigned int\000"
+ 644      7420756E 
+ 644      7369676E 
+ 644      65642069 
+ 644      6E7400
+ 645              	.LASF21:
+ 646 0036 6770696F 		.ascii	"gpio1_slOverFlowCount\000"
+ 646      315F736C 
+ 646      4F766572 
+ 646      466C6F77 
+ 646      436F756E 
+ 647              	.LASF11:
+ 648 004c 666C6F61 		.ascii	"float\000"
+ 648      7400
+ 649              	.LASF18:
+ 650 0052 6770696F 		.ascii	"gpio1_slStatus\000"
+ 650      315F736C 
+ 650      53746174 
+ 650      757300
+ 651              	.LASF19:
+ 652 0061 6770696F 		.ascii	"gpio1_slWrBufIndex\000"
+ 652      315F736C 
+ 652      57724275 
+ 652      66496E64 
+ 652      657800
+ 653              	.LASF1:
+ 654 0074 756E7369 		.ascii	"unsigned char\000"
+ 654      676E6564 
+ 654      20636861 
+ 654      7200
+ 655              	.LASF5:
+ 656 0082 6C6F6E67 		.ascii	"long unsigned int\000"
+ 656      20756E73 
+ 656      69676E65 
+ 656      6420696E 
+ 656      7400
+ 657              	.LASF17:
+ 658 0094 6770696F 		.ascii	"gpio1_state\000"
+ 658      315F7374 
+ 658      61746500 
+ 659              	.LASF29:
+ 660 00a0 6770696F 		.ascii	"gpio1_I2CStop\000"
+ 660      315F4932 
+ 660      4353746F 
+ 660      7000
+ 661              	.LASF27:
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 18
+
+
+ 662 00ae 443A5C55 		.ascii	"D:\\Users\\nray\\Desktop\\IRIS WIT\\LORA multisenso"
+ 662      73657273 
+ 662      5C6E7261 
+ 662      795C4465 
+ 662      736B746F 
+ 663 00dc 72205357 		.ascii	"r SW\\PSOC4MIO_HAL.cydsn\000"
+ 663      5C50534F 
+ 663      43344D49 
+ 663      4F5F4841 
+ 663      4C2E6379 
+ 664              	.LASF12:
+ 665 00f4 646F7562 		.ascii	"double\000"
+ 665      6C6500
+ 666              	.LASF15:
+ 667 00fb 63796973 		.ascii	"cyisraddress\000"
+ 667      72616464 
+ 667      72657373 
+ 667      00
+ 668              	.LASF10:
+ 669 0108 75696E74 		.ascii	"uint32\000"
+ 669      333200
+ 670              	.LASF8:
+ 671 010f 756E7369 		.ascii	"unsigned int\000"
+ 671      676E6564 
+ 671      20696E74 
+ 671      00
+ 672              	.LASF7:
+ 673 011c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 673      206C6F6E 
+ 673      6720756E 
+ 673      7369676E 
+ 673      65642069 
+ 674              	.LASF23:
+ 675 0133 4379496E 		.ascii	"CyIntSetPriority\000"
+ 675      74536574 
+ 675      5072696F 
+ 675      72697479 
+ 675      00
+ 676              	.LASF20:
+ 677 0144 6770696F 		.ascii	"gpio1_slRdBufIndex\000"
+ 677      315F736C 
+ 677      52644275 
+ 677      66496E64 
+ 677      657800
+ 678              	.LASF16:
+ 679 0157 73697A65 		.ascii	"sizetype\000"
+ 679      74797065 
+ 679      00
+ 680              	.LASF25:
+ 681 0160 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 681      4320342E 
+ 681      392E3320 
+ 681      32303135 
+ 681      30333033 
+ 682 0193 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 682      20726576 
+ 682      6973696F 
+ARM GAS  C:\Users\NRAY~1.PRI\AppData\Local\Temp\ccT1sIVx.s 			page 19
+
+
+ 682      6E203232 
+ 682      31323230 
+ 683 01c6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 683      66756E63 
+ 683      74696F6E 
+ 683      2D736563 
+ 683      74696F6E 
+ 684              	.LASF6:
+ 685 01ee 6C6F6E67 		.ascii	"long long int\000"
+ 685      206C6F6E 
+ 685      6720696E 
+ 685      7400
+ 686              	.LASF13:
+ 687 01fc 63686172 		.ascii	"char\000"
+ 687      00
+ 688              	.LASF26:
+ 689 0201 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\gpio1_I2C.c\000"
+ 689      6E657261 
+ 689      7465645F 
+ 689      536F7572 
+ 689      63655C50 
+ 690              	.LASF22:
+ 691 0226 4379496E 		.ascii	"CyIntDisable\000"
+ 691      74446973 
+ 691      61626C65 
+ 691      00
+ 692              	.LASF2:
+ 693 0233 73686F72 		.ascii	"short int\000"
+ 693      7420696E 
+ 693      7400
+ 694              	.LASF9:
+ 695 023d 75696E74 		.ascii	"uint8\000"
+ 695      3800
+ 696              	.LASF4:
+ 697 0243 6C6F6E67 		.ascii	"long int\000"
+ 697      20696E74 
+ 697      00
+ 698              	.LASF0:
+ 699 024c 7369676E 		.ascii	"signed char\000"
+ 699      65642063 
+ 699      68617200 
+ 700              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
