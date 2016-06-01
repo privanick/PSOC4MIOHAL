@@ -479,6 +479,54 @@
 <VisibleNodeIds>
 <v>PSOC4MIO_HAL-000</v>
 <v>PSOC4MIO_HAL-000\PSOC4MIO_HAL</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_INT.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_intClock.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_IRQ.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_1_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\chan1.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\chan1_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_BOOT.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_rx.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_rx_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_SCBCLK.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_SPI_UART.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_SPI_UART_INT.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_tx.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_tx_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_UART.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\console_UART_BOOT.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\coretemp.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\crdy.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyDMA.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio0.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio0_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio1.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio1_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio2.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\dio2_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en33v_gpio1.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en33v_gpio1_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio0.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio0_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio1.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\en5v_gpio1_PM.lst</v>
+<v>PSOC4MIO_HAL-000\PSOC4MIO_HAL\CortexM0\ARM_GCC_493\Debug\Listing Files\gpio1.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
